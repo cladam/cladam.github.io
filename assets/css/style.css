@@ -1,32 +1,49 @@
 /* FILE: assets/css/style.css */
-/* A minimal, Lanyon-inspired stylesheet */
+/* A minimal, Lanyon-inspired stylesheet with modern enhancements */
+
+/* Variables */
+:root {
+    --sidebar-bg-color: #1a1a1a;
+    --sidebar-text-color: rgba(255, 255, 255, 0.7);
+    --sidebar-highlight-color: #ffffff;
+    --content-bg-color: #ffffff;
+    --text-color: #333;
+    --heading-color: #111;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+    --border-color: #eee;
+}
 
 /* Basic styles */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--content-bg-color);
     margin: 0;
     padding: 0;
+    font-size: 18px;
 }
 
 .container {
-    max-width: 42rem;
-    padding: 0 1rem;
+    max-width: 45rem;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
-h1, h2, h3 {
-    font-weight: 600;
-    color: #222;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
 }
 
 a {
-    color: #268bd2;
+    color: var(--link-color);
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
 }
 a:hover {
+    color: var(--link-hover-color);
     text-decoration: underline;
 }
 
@@ -36,89 +53,119 @@ a:hover {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
-    padding: 2rem 1rem;
-    color: rgba(255,255,255,.5);
-    background-color: #202020;
+    width: 20rem;
+    padding: 2rem;
+    color: var(--sidebar-text-color);
+    background-color: var(--sidebar-bg-color);
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-about h1 {
-    color: #fff;
+    color: var(--sidebar-highlight-color);
     margin-top: 0;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+}
+.sidebar-about h1 a {
+    color: inherit;
 }
 
 .sidebar-about .lead {
     font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .sidebar-nav {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .sidebar-nav-item {
     display: block;
     padding: .25rem 0;
-    color: #fff;
+    color: var(--sidebar-highlight-color);
     font-weight: 500;
+    transition: color 0.2s ease-in-out;
 }
 .sidebar-nav-item:hover, .sidebar-nav-item:focus {
-    text-decoration: underline;
+    color: var(--link-color);
+    text-decoration: none;
 }
 
 .project-nav-item {
     font-weight: normal;
-    color: rgba(255,255,255,.8);
+    color: var(--sidebar-text-color);
 }
 
-.sidebar-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1rem;
+.sidebar-footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+    font-size: 0.9rem;
 }
-
 
 /* Content Area */
 .content {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-left: 20rem; /* Make room for the sidebar */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: 22rem; /* Make room for the sidebar + padding */
 }
 
 /* Post styles */
+.post {
+    margin-bottom: 4rem;
+}
 .post-title {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: .5rem;
+}
+.post-title a {
+    color: inherit;
 }
 
 .post-date {
     display: block;
-    margin-bottom: 1rem;
-    color: #999;
+    margin-bottom: 1.5rem;
+    color: #888;
+    font-size: 0.9rem;
 }
 
 /* Project page styles */
 .project-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
 }
 .project-tagline {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: #888;
-    margin-top: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 2rem 0;
+}
 
 /* Responsive styles */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 16rem;
+    }
+    .content {
+        margin-left: 18rem;
+    }
+}
+
 @media (max-width: 768px) {
     .sidebar {
         position: static;
         width: auto;
+        text-align: center;
     }
     .content {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
     }
 }
