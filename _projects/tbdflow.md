@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: "tbdflow"
 tagline: "A CLI to streamline and safeguard your Git workflow for Trunk-Based Development."
 ---
