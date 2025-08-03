@@ -1,0 +1,18 @@
+title: Claes Adamsson
+author:
+  name: Claes Adamsson
+  email: claes.adamsson@gmail.com
+description: > 
+  A personal site for projects, documentation, and thoughts on software development.
+
+github_username:  cladam
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+baseurl: ""
+
+collections:
+  projects:
+    output: true

@@ -1,0 +1,124 @@
+/* FILE: assets/css/style.css */
+/* A minimal, Lanyon-inspired stylesheet */
+
+/* Basic styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 42rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #222;
+}
+
+a {
+    color: #268bd2;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    padding: 2rem 1rem;
+    color: rgba(255,255,255,.5);
+    background-color: #202020;
+    z-index: 1;
+}
+
+.sidebar-about h1 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.sidebar-about .lead {
+    font-size: 1.1rem;
+}
+
+.sidebar-nav {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav-item {
+    display: block;
+    padding: .25rem 0;
+    color: #fff;
+    font-weight: 500;
+}
+.sidebar-nav-item:hover, .sidebar-nav-item:focus {
+    text-decoration: underline;
+}
+
+.project-nav-item {
+    font-weight: normal;
+    color: rgba(255,255,255,.8);
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+}
+
+
+/* Content Area */
+.content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 20rem; /* Make room for the sidebar */
+}
+
+/* Post styles */
+.post-title {
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.post-date {
+    display: block;
+    margin-bottom: 1rem;
+    color: #999;
+}
+
+/* Project page styles */
+.project-title {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.project-tagline {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 0;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        width: auto;
+    }
+    .content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
