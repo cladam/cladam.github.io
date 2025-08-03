@@ -11,7 +11,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-baseurl: "/cladam.github.io"
+baseurl: ""
 
 collections:
   projects:
