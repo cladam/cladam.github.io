@@ -2,6 +2,12 @@ title: Claes Adamsson
 author:
   name: Claes Adamsson
   email: claes.adamsson@gmail.com
+  avatar: "https://github.com/cladam.png"
+  bio: >
+    Experienced IT Professional with skills in Software Development, Architecture and System Engineering. 
+    Proponent of DevOps and believer in Cloud Technology.
+  location: Sweden
+  linkedin_username: cadamsson
 description: > 
   A personal site for projects, documentation, and thoughts on software development.
 
