@@ -6,6 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - {{ site.title }}</title>
+    
+    <!-- SEO and Social Media Meta Tags -->
+    {% assign page_description = page.description | default: site.description %}
+    {% assign page_image = page.image | default: site.social_preview_image %}
+    <meta name="description" content="{{ page_description | strip_html | normalize_whitespace | truncate: 160 }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+    <meta property="og:description" content="{{ page_description | strip_html | normalize_whitespace | truncate: 160 }}">
+    <meta property="og:image" content="{{ page_image | absolute_url }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
