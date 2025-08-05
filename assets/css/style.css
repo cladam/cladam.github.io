@@ -50,8 +50,8 @@ a:hover {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 20rem;
-    padding: 2.5rem; /* Increased padding */
+    width: 16rem;
+    padding: 1.3rem;
     color: var(--sidebar-text-color);
     background-color: var(--sidebar-bg-color);
     z-index: 1;
@@ -69,7 +69,7 @@ a:hover {
 }
 
 .sidebar-about {
-    text-align: center; /* Center the avatar, name, and bio */
+    text-align: center;
 }
 
 .sidebar-about h1 {
