@@ -185,3 +185,7 @@ tbdflow current-branch
 tbdflow check-branches
 ```
 
+### Development
+
+All development happens at [tbdflow.git](https://github.com/cladam/tbdflow). Feedback and contributions welcome!
+
