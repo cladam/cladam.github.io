@@ -55,17 +55,14 @@ To move beyond just automating process, `tbdflow` integrates an optional pre-com
 
 **Example** `.dod.yml`:
 
-```
-# .dod.yml in your project root
-
-# If true, requires an --issue <ID> flag on the commit command.
-issue_reference_required: true
-
+```yaml
+# --- Interactive Checklist ---
 checklist:
-  - "All relevant automated tests pass successfully."
-  - "New features or fixes are covered by new tests."
+  - "Code is clean, readable, and adheres to team coding standards."
+  - "All relevant automated tests (unit, integration) pass successfully."
+  - "New features or bug fixes are covered by appropriate new tests."
   - "Security implications of this change have been considered."
-  - "Relevant documentation (code comments, READMEs) is updated."
+  - "Relevant documentation (code comments, READMEs, etc.) is updated."⏎
 ```
 
 If you try to proceed without checking all items, the tool will offer to add a TODO list to your commit message footer, ensuring the incomplete work is tracked directly in your Git history.
@@ -111,46 +108,27 @@ lint:
   body_line_rules:
     body_max_line_length: 80
 ```
----
 
-## Global options
+### Examples of how to use tbdflow
 
-| Flag        | Description                                              | Required |
-|-------------|----------------------------------------------------------|----------|
-| --verbose   | Prints the underlying Git commands as they are executed. | No       |
+#### Initialise
 
-## Commands
-
-### 1. `commit`
-
-This is the primary command for daily work.
-
-Commits staged changes using a Conventional Commits message. This command is context-aware:
-* **On `main`:** It runs the full TBD workflow: pulls the latest changes with rebase, commits, and pushes.
-* **On any other branch:** It simply commits and pushes, allowing you to save work-in-progress.
-
-
-**Usage:**
+Set up a new local repo
 
 ```bash
-tbdflow commit [options]
+# Create a new local repo
+mkdir tbd && cd tbd
+tbdflow init
 ```
 
-**Options:**
+*Next steps:*
+1. Create a repository on your git provider (e.g. GitHub).
+2. Run the following command to link it:
+   git remote add origin <your-repository-url>
 
-| Flag | Option                  | Description                                              | Required |
-|------|-------------------------|----------------------------------------------------------|----------|
-| -t   | --type                  | The type of commit (e.g., feat, fix, chore).             | Yes      |
-| -s   | --scope                 | The scope of the changes (e.g., api, ui).                | No       |
-| -m   | --message               | The descriptive commit message (subject line).           | Yes      |
-|      | --body                  | Optional multi-line body for the commit message.         | No       |
-| -b   | --breaking              | Mark the commit as a breaking change.                    | No       |
-|      | --breaking-description  | Provide a description for the 'BREAKING CHANGE:' footer. | No       |
-|      | --tag                   | Optionally add and push an annotated tag to this commit. | No       |
-|      | --issue                 | Optionally add an issue reference to the footer.         | No       |
-|      | --no-verify             | Bypass the interactive DoD checklist.                    | No       |
+#### Using tbdflow 
 
-**Example:**
+*Default flow:*
 
 ```bash
 # A new feature
@@ -162,30 +140,12 @@ tbdflow commit -t refactor -m "Rename internal API" --breaking --breaking-descri
 
 # A bug fix with a new tag
 tbdflow commit -t fix -m "Correct user permission logic" --tag "v1.1.1"
+
+# Reference an issue
+tbdflow commit -t feat -m "Add feature x as part of bigger thing" --issue "ABC-123"
 ```
 
-### 2.`feature` / `release` / `hotfix`
-
-Creates a new, short-lived branch from the latest version of `main.
-
-**Usage:**
-
-```bash
-# For features or hotfixes
-tbdflow <feature|hotfix> --name <branch-name>
-
-# For releases
-tbdflow release --version <version-number> [options]
-```
-
-**Options (release):**
-
-| Flag | Option        | Description                                    | Required |
-|------|---------------|------------------------------------------------|----------|
-| -f   | --from-commit | Optional commit hash on `main` to branch from. | No       |
-
-
-**Examples:**
+*Exceptions a.k.a. branches*
 
 ```bash
 # Create a feature branch
@@ -199,33 +159,7 @@ tbdflow release -v "2.1.0" -f "39b68b5"
 
 # Create a hotfix branch
 tbdflow hotfix -n "critical-auth-bug"
-```
 
-### 3. complete
-
-Merges a short-lived branch back into main, then deletes the local and remote copies of the branch.
-
-**Automatic Tagging:**
-
-* When completing a release branch, a tag (e.g., v1.2.0) is automatically created and pushed.
-* When completing a hotfix branch, a tag (e.g., hotfix_name-of-fix) is automatically created and pushed.
-
-**Usage:**
-
-```bash
-tbdflow complete --type <branch-type> --name <branch-name>
-```
-
-**Options:**
-
-| Flag | Option   | Description                                             | Required |
-|------|----------|---------------------------------------------------------|----------|
-| -t   | --type   | The type of branch: feature, release, or hotfix.        | Yes      |
-| -n   | --name   | The name or version of the branch to complete.          | Yes      |
-
-**Examples:**
-
-```bash
 # Complete a feature branch
 tbdflow complete -t feature -n "user-profile-page"
 
@@ -233,11 +167,9 @@ tbdflow complete -t feature -n "user-profile-page"
 tbdflow complete -t release -n "2.1.0"
 ```
 
-### 4. Misc commands
+#### Misc commands
 
-`tbdflow` has a couple of commands that can be beneficial to use but they are not part of the workflow, they are for inspecting the state of the repository. 
-
-**Examples:**
+`tbdflow` has a couple of commands that can be beneficial to use but they are not part of the workflow, they are for inspecting the state of the repository.
 
 ```bash
 # Does a pull, shows latest changes to main branch, and warns about stale branches.
