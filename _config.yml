@@ -18,8 +18,11 @@ markdown: kramdown
 highlighter: rouge
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 baseurl: ""
+paginate: 5
+permalink: pretty
 
 collections:
   projects:
