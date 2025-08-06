@@ -176,6 +176,35 @@ hr {
     margin: 2rem 0;
 }
 
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+}
+.pagination-item {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--link-color);
+}
+.pagination-item.older {
+    margin-left: auto;
+}
+.pagination-item.newer {
+    margin-right: auto;
+}
+.pagination-item:hover {
+    background-color: #f5f5f5;
+    text-decoration: none;
+}
+span.pagination-item {
+    color: #999;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
 /* Responsive styles */
 @media (max-width: 992px) {
     .sidebar {
