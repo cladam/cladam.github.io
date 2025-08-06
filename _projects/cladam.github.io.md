@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Personal Site & Blog"
+title: "cladam.github.io"
 tagline: "An iterative journey in building a GitHub Page"
 ---
 
