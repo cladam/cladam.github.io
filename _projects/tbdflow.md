@@ -124,7 +124,9 @@ tbdflow init
 *Next steps:*
 1. Create a repository on your git provider (e.g. GitHub).
 2. Run the following command to link it:
-   git remote add origin <your-repository-url>
+   git remote add origin `<your-repository-url>`
+3. Then run this command to push your initial commit:
+   git push -u origin main
 
 #### Using tbdflow 
 
