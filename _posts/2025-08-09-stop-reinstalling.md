@@ -28,7 +28,7 @@ tbdflow update
 
 The command should:
 
-* Check if a newer version is available on crates.io (or GitHub).
+* Check if a newer version is available on the project's GitHub Releases.
 * If so, download the right pre-compiled binary for the current platform.
 * Replace the existing executable.
 * If not, simply let the user know they’re already up to date.
