@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Stop Re-installing Your Tools
 ---
 
