@@ -82,4 +82,4 @@ tbdflow generate-completion fish | source
 
 After restarting your shell, your command line will come alive. You can now type `tbdflow com<Tab>` and it will expand to `tbdflow commit`. Type `tbdflow commit --<Tab>` and it will show you all the available flags like `--type`, `--scope`, and `--breaking`.
 
-This is the ultimate way to make `tbdflow` fast and easy to use and helping you stay in flow.
+This is the perfect way to make `tbdflow` fast and easy to use and helping you stay in flow.
