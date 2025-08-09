@@ -48,6 +48,18 @@ It’s simple to set up and works across platforms.
 
 ## Implementation
 
+**1. Automate Releases with GitHub Actions (The Prerequisite)**
+
+The `self_update` crate works by looking for pre-compiled binaries attached to a GitHub Release. To make this happen automatically, I created a workflow that triggers whenever I push a new version tag (e.g., v0.10.2).
+
+This workflow does two key things:
+
+* It uses a "matrix build" to compile `tbdflow` for multiple platforms (Linux, macOS and Windows).
+
+* It then creates a new GitHub Release and uploads all the compiled binaries as assets.
+
+Whenever I tag a new version, a release with all the necessary files will be published on GitHub (and crates.io but that's another flow)
+
 **1. Add the dependency**
 
 In `Cargo.toml`:
