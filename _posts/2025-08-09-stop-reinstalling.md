@@ -1,4 +1,6 @@
-## Stop Re-installing Your Tools
+---
+title: Stop Re-installing Your Tools
+---
 
 When you publish a CLI tool on crates.io, you’ll often get a familiar question (at least I did):
 
