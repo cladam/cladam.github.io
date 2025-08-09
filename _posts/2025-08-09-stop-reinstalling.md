@@ -89,8 +89,8 @@ In `main.rs`:
 Commands::Update => {
     println!("{}", "--- Checking for updates ---".blue());
     let status = self_update::backends::github::Update::configure()
-        .repo_owner("cladam") // My username
-        .repo_name("tbdflow") // my crate
+        .repo_owner("cladam")
+        .repo_name("tbdflow")
         .bin_name("tbdflow")
         .show_download_progress(true)
         .current_version(self_update::cargo_crate_version!())
