@@ -60,7 +60,7 @@ This workflow does two key things:
 
 Whenever I tag a new version, a release with all the necessary files will be published on GitHub (and crates.io but that's another flow)
 
-**1. Add the dependency**
+**2. Add the dependency**
 
 In `Cargo.toml`:
 
@@ -68,7 +68,7 @@ In `Cargo.toml`:
 self_update = "0.40.0"
 ```
 
-**2. Add the CLI command**
+**3. Add the CLI command**
 
 In `cli.rs`:
 
@@ -81,7 +81,7 @@ pub enum Commands {
 }
 ```
 
-**3. Wire up the logic**
+**4. Wire up the logic**
 
 In `main.rs`:
 
@@ -106,7 +106,7 @@ Commands::Update => {
 }
 ```
 
-This is now available from `tbdflow-0.10.0` onwards.
+This is now available from `tbdflow-0.10.2` onwards.
 
 ## Wrapping Up
 
