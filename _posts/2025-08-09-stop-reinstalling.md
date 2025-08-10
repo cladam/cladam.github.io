@@ -65,7 +65,7 @@ Whenever I tag a new version, a release with all the necessary files will be pub
 In `Cargo.toml`:
 
 ```toml
-self_update = "0.40.0"
+self_update = "0.42.0"
 ```
 
 **3. Add the CLI command**
