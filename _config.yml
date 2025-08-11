@@ -9,9 +9,9 @@ author:
   location: Sweden
   linkedin_username: cadamsson
 description: > 
-  A personal site for projects, documentation, and thoughts on software development.
+  A personal site for projects, documentation, and thoughts on software development and delivery.
 
-github_username:  cladam
+github_username: cladam
 
 theme: minima
 markdown: kramdown
