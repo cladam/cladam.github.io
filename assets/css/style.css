@@ -183,6 +183,12 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+/* Page styles (for About page, etc.) */
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
 hr {
     border: 0;
     border-top: 1px solid var(--border-color);
