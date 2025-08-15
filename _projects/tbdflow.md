@@ -134,7 +134,7 @@ tbdflow init
 
 ```bash
 # A new feature
-tbdflow commit -t feat -s auth -m "Add password reset endpoint"
+tbdflow commit -t feat -s auth -m "add password reset endpoint"
 
 # A bug fix with a breaking change
 tbdflow commit -t fix -m "correct user permission logic" -b
