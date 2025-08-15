@@ -137,14 +137,14 @@ tbdflow init
 tbdflow commit -t feat -s auth -m "Add password reset endpoint"
 
 # A bug fix with a breaking change
-tbdflow commit -t fix -m "Correct user permission logic" -b
-tbdflow commit -t refactor -m "Rename internal API" --breaking --breaking-description "The `getUser` function has been renamed to `fetchUser`."
+tbdflow commit -t fix -m "correct user permission logic" -b
+tbdflow commit -t refactor -m "rename internal API" --breaking --breaking-description "The `getUser` function has been renamed to `fetchUser`."
 
 # A bug fix with a new tag
-tbdflow commit -t fix -m "Correct user permission logic" --tag "v1.1.1"
+tbdflow commit -t fix -m "correct user permission logic" --tag "v1.1.1"
 
 # Reference an issue
-tbdflow commit -t feat -m "Add feature x as part of bigger thing" --issue "ABC-123"
+tbdflow commit -t feat -m "add feature x as part of bigger thing" --issue "ABC-123"
 ```
 
 *Exceptions a.k.a. branches*
