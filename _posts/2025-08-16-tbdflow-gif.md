@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I created the demo GIF for `tbdflow`
+title: How I created the demo GIF for tbdflow
 ---
 
 All projects need a good `README.md`, It’s the front door to the project and it needs to quickly show a potential user what the tool does and why it’s valuable. I put a lot of effort in having a good `README` for `tbdflow` but it was still static text, and the examples was buried deep down.
@@ -25,9 +25,11 @@ This was exactly what I was looking for, DSL's are great! With the script I coul
 ### From script to GIF
 
 1. **Install the tools needed**
+
   First install `vhs` using their [guidelines](https://github.com/charmbracelet/vhs?tab=readme-ov-file#installation).
 
 2. **Write the "Tape"**
+
   Next, I created a script file named `commit-demo.tape`. The `vhs` scripting language is simple and intuitive. You just write a series of commands that tell it what to do.
 
 Here’s a snippet from the script that demonstrates the `tbdflow commit` command:
@@ -93,5 +95,5 @@ Using a tool like `vhs` was a amazing. It turned what could have been a frustrat
 
 Check it out:
 
-![A terminal running the command tbdflowlow](https://github.com/cladam/tbdflow/blob/main/docs/commit-demo.gif "A demo of tbdflow running commit-to-main commands")
+![A terminal running the command tbdflow](https://raw.githubusercontent.com/cladam/tbdflow/main/docs/commit-demo.gif "A demo of tbdflow running commit-to-main commands")
 
