@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Making `tbdflow` Your Own
+title: Making tbdflow your own
 ---
 
 I've received some great feedback since launching `tbdflow`: while the tool is powerful, the commands can be long to type, and it's another set of flags to remember. This is a great point, the goal of any good CLI is to _reduce_ friction, not add to it.
