@@ -92,7 +92,7 @@ vhs commit-demo.tape
 
 ### Conclusion
 
-Using a tool like `vhs` was a amazing. It turned what could have been a frustrating recording session into a simple, repeatable engineering task. It allowed me to create the exact demo I wanted and is a tool I'd highly recommend to anyone looking to create documentation for their own CLI projects.
+Using a tool like `vhs` was a amazing. It turned the whole process into a simple, repeatable engineering task. It allowed me to create the demo I wanted and made the examples much more attractive. 
 
 Check it out:
 
