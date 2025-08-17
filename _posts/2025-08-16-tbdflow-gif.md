@@ -26,11 +26,11 @@ This was exactly what I was looking for, DSL's are great! With the script I coul
 
 1. **Install the tools needed**
 
-  First install `vhs` using their [guidelines](https://github.com/charmbracelet/vhs?tab=readme-ov-file#installation).
+    First install `vhs` using their [guidelines](https://github.com/charmbracelet/vhs?tab=readme-ov-file#installation).
 
 2. **Write the "Tape"**
 
-  Next, I created a script file named `commit-demo.tape`. The `vhs` scripting language is simple and intuitive. You just write a series of commands that tell it what to do.
+    Next, I created a script file named `commit-demo.tape`. The `vhs` scripting language is simple and intuitive. You just write a series of commands that tell it what to do.
 
 Here’s a snippet from the script that demonstrates the `tbdflow commit` command:
 
@@ -79,8 +79,8 @@ Sleep 5s
 
 See the full script at [tbdflow-commit.tape](https://github.com/cladam/tbdflow/blob/main/docs/commit-demo.tape).
 
-3. Generate the GIF
-  This was the easiest part. With the script written, all I had to do was run:
+3. **Generate the GIF**
+    This was the easiest part. With the script written, all I had to do was run:
 
 ```bash
 vhs commit-demo.tape
