@@ -80,6 +80,7 @@ Sleep 5s
 See the full script at [tbdflow-commit.tape](https://github.com/cladam/tbdflow/blob/main/docs/commit-demo.tape).
 
 3. **Generate the GIF**
+
     This was the easiest part. With the script written, all I had to do was run:
 
 ```bash
