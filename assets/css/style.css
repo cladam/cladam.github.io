@@ -57,6 +57,13 @@ a:hover {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
+/* Make images responsive */
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Sidebar */
 .sidebar {
     position: fixed;
