@@ -62,13 +62,13 @@ It groups commits by category and outputs something like this:
 
 ## Updating CHANGELOG.md
 
-Most projects keep the latest release at the top of the changelog. Prepending text manually can be tricky as `>> append` is the default, but here’s the one-liner I use in tbdflow itself:
+Most projects keep the latest release at the top of the changelog. Prepending text manually can be tricky as `>> append` is the default, but here’s the one-liner I use in `tbdflow` itself:
 
 ```bash
 { tbdflow changelog --from v0.12.0 --to v0.13.0; echo; cat CHANGELOG.md; } > CHANGELOG.md.tmp && mv CHANGELOG.md.tmp CHANGELOG.md
 ```
 
-It generates the new section, adds a blank line, and then appends the old content—all in one step.
+It generates the new section, adds a blank line, and then appends the old content; all in one step.
 
 ## Wrapping Up
 
