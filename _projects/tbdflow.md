@@ -34,7 +34,7 @@ It offers three main benefits:
 3. **It supports "the TBD way"**
    This tool makes the preferred approach easy by providing a smooth, safe, and efficient path for 80% of everyday tasks. For the other 20%, you can always use Git directly.
 
-   ### Installation
+### Installation
 
 You need [Rust and Cargo](https://www.rust-lang.org/tools/install) installed.
 
@@ -192,6 +192,12 @@ tbdflow current-branch
 
 # Explicitly checks for local branches older than one day.
 tbdflow check-branches
+
+# Generate a CHANGELOG
+tbdflow changelog --unreleased
+
+# Do a dry run to see what git commands will be executed
+tbdflow --dry-run sync
 
 # Checks for a new version of tbdflow and updates it if available.
 tbdflow update
