@@ -34,16 +34,35 @@ It offers three main benefits:
 3. **It supports "the TBD way"**
    This tool makes the preferred approach easy by providing a smooth, safe, and efficient path for 80% of everyday tasks. For the other 20%, you can always use Git directly.
 
+   ### Installation
+
+You need [Rust and Cargo](https://www.rust-lang.org/tools/install) installed.
+
+#### Installing from crates.io
+
+The easiest way to install `tbdflow` is to download it from [crates.io](https://crates.io/crates/tbdflow). You can do it using the following command:
+
+```bash
+cargo install tbdflow
+```
+
+If you want to update `tbdflow` to the latest version, execute the following command:
+
+```bash
+tbdflow update
+```
+
 ### Configuration
 `tbdflow` is configurable via two optional files in the root of your repository. To get started quickly, run `tbdflow init` to generate default versions of these files.
 
 `.tbdflow.yml`
-This file controls the core workflow of the tool. You can customize:
-* The name of your main branch (e.g., main, trunk).
-* Branch name prefixes (e.g. feat- instead of feature_).
-* The threshold for stale branch warnings.
-* Automatic tagging formats.
-* Commit message linting rules.
+This file controls the core workflow of the tool. You can customise:
+- The name of your main branch (e.g. main, trunk).
+- Allowed branch types and their prefixes (e.g feat/, chore/)
+- A strategy for handling issue references ("branch-name" or "commit-scope")
+- The threshold for stale branch warnings.
+- Automatic tagging formats.
+- Commit message linting rules.
 
 `.dod.yml`
 This file controls the interactive Definition of Done checklist for the commit command. 
@@ -74,15 +93,6 @@ If a `.tbdflow.yml` file is present and contains a lint section, the commit comm
 **Default linting rules:**
 
 ```yaml
-main_branch_name: main
-stale_branch_threshold_days: 1
-branch_prefixes:
-  feature: feature_
-  release: release_
-  hotfix: hotfix_
-automatic_tags:
-  release_prefix: v
-  hotfix_prefix: hotfix_
 lint:
   conventional_commit_type:
     enabled: true
@@ -101,12 +111,16 @@ lint:
   issue_key_missing:
     enabled: false
     pattern: ^[A-Z]+-\d+$
+  scope:
+    enabled: true
+    enforce_lowercase: true
   subject_line_rules:
-    subject_line_max_length: 72
-    subject_line_not_capitalized: true
-    subject_line_no_period: true
+    max_length: 72
+    enforce_lowercase: true
+    no_period: true
   body_line_rules:
-    body_max_line_length: 80
+    max_line_length: 80
+    leading_blank: true
 ```
 
 ### Examples of how to use tbdflow
@@ -120,13 +134,6 @@ Set up a new local repo
 mkdir tbd && cd tbd
 tbdflow init
 ```
-
-*Next steps:*
-1. Create a repository on your git provider (e.g. GitHub).
-2. Run the following command to link it:
-   `git remote add origin <your-repository-url>`
-3. Then run this command to push your initial commit:
-   `git push -u origin main`
 
 #### Using tbdflow 
 
@@ -190,7 +197,7 @@ tbdflow check-branches
 tbdflow update
 ```
 
-### 5. Advanced Usage
+### Advanced Usage
 
 #### Shell Completion
 
