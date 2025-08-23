@@ -158,19 +158,13 @@ tbdflow commit -t feat -m "add feature x as part of bigger thing" --issue "ABC-1
 
 ```bash
 # Create a feature branch
-tbdflow --type feat --name "user-profile-page"
+tbdflow branch --type feat --name "user-profile-page"
 
 # Create a release branch
-tbdflow release -v "2.1.0"
-
-# Create a release branch from a specific commit
-tbdflow release -v "2.1.0" -f "39b68b5"
-
-# Create a hotfix branch
-tbdflow hotfix -n "critical-auth-bug"
+tbdflow branch -t release -n "2.1.0"
 
 # Complete a feature branch
-tbdflow complete -t feature -n "user-profile-page"
+tbdflow complete -t feat -n "user-profile-page"
 
 # Complete a release branch (this will be tagged v2.1.0)
 tbdflow complete -t release -n "2.1.0"
