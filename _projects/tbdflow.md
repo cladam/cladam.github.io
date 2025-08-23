@@ -163,6 +163,9 @@ tbdflow branch --type feat --name "user-profile-page"
 # Create a release branch
 tbdflow branch -t release -n "2.1.0"
 
+# (This will be named "fix/PROJ-123-login-bug" by default)
+tbdflow branch -t fix -n "login-bug" --issue "PROJ-123"
+
 # Complete a feature branch
 tbdflow complete -t feat -n "user-profile-page"
 
