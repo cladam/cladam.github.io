@@ -158,7 +158,7 @@ tbdflow commit -t feat -m "add feature x as part of bigger thing" --issue "ABC-1
 
 ```bash
 # Create a feature branch
-tbdflow feature -n "user-profile-page"
+tbdflow --type feat --name "user-profile-page"
 
 # Create a release branch
 tbdflow release -v "2.1.0"
