@@ -2,14 +2,8 @@
 layout: page
 title: About Me
 ---
+I’m Claes Adamsson, an engineering leader with a background in DevOps, software delivery, and IT in retail. My roots are in XP and Lean Software Development, and those ideas still guide how I work today. Along the way I’ve also picked up inspiration from DDD, which keeps me focused on solving the right problems rather than just adding more technology.
 
-I’m Claes Adamsson, an engineering leader with a deep background in DevOps, software delivery, and IT in retail. 
-My roots are in XP and Lean Software Development, principles that continue to shape how I work today. 
-These foundations, along with influences from DDD, guide me to focus on delivering the right solutions, not just more technology.
+Most of my work has been about helping teams get better at building and running software, whether that’s shaping architecture, improving ways of working, or creating tools that take some of the friction out of delivery. I like working at the point where technology, people, and business needs meet. Sometimes that means refining a DevOps capability model, sometimes it’s trying out new practices, and sometimes it’s releasing open-source tools like `tbdflow`.
 
-Over the years I’ve helped teams improve how they work, from shaping architecture and processes to building tools that make delivery smoother, 
-faster, and more valuable. I enjoy working where technology, teams, and business needs intersect. Whether it’s refining a DevOps capability model, 
-experimenting with new ways of working, or releasing open-source tools like `tbdflow`, my focus is on enabling sustainable, high-performing delivery.
-
-When I’m not diving into code or delivery metrics, I’m often coaching teams, shaping strategies, or learning from the community. 
-You can find more about my professional journey on [LinkedIn](https://www.linkedin.com/in/cadamsson/), or explore my projects here on GitHub.
+Outside of coding and delivery metrics, I spend a lot of time coaching teams, working with strategies, and learning from the wider community. If you’re curious about my professional journey, you’ll find more on [LinkedIn](https://www.linkedin.com/in/cadamsson/), and if you want to see what I’ve been building lately, my main projects are listed on this page, or visit my [GitHub](https://github.com/cladam).
