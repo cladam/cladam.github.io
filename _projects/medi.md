@@ -15,6 +15,7 @@ A fast, editor-centric, command-line notes manager built in Rust.
 ## Key Features
 
   * **Speed**: Instant access to any note, no matter how large your collection grows.
+  * **Full-Text Search**: Instantly find notes by their content, title, or tags using a powerful built-in search engine.
   * **Focused workflow**: A command-line hub for your writing. Create or edit notes from any directory.
   * **Flexible input**: Create notes interactively in your editor, with a one-liner `-m` flag, or by piping from other commands.
   * **Safe deletion**: An interactive confirmation prompt on `delete` prevents accidental data loss.
