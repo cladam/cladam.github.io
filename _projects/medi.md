@@ -15,13 +15,15 @@ A fast, editor-centric, command-line notes manager built in Rust.
 ## Key Features
 
   - **Speed**: Instant access to any note, no matter how large your collection grows.
+  - **Interactive Fuzzy Finder**: Instantly find and edit any note by its key or title with an interactive `medi find` command.
   - **Full-Text Search**: Instantly find notes by their content, title, or tags using a powerful built-in search engine.
   - **Integrated Task Management**: Turn your notes into actionable to-do lists. Add tasks to any note (`medi task add ...`), list all your pending items, mark them as complete (`medi task done ...`), and set priorities to focus on what's important.
-  - **Focused workflow**: A command-line hub for your writing. Create or edit notes from any directory.
-  - **Flexible input**: Create notes interactively in your editor, with a one-liner `-m` flag, or by piping from other commands.
-  - **Safe deletion**: An interactive confirmation prompt on `delete` prevents accidental data loss.
-  - **Colourful & clear output**: Uses coloured output to clearly distinguish between success, info, warnings, and errors.
-  - **Robust import/export**: Easily create version-controllable snapshots of your database or import notes from disk.
+  - **Status Dashboard**: Get a quick overview of your entire database with the `medi status` command.
+  - **Focused Workflow**: A command-line hub for your writing. Create or edit notes from any directory.
+  - **Flexible Input**: Create notes interactively in your editor, with a one-liner `-m` flag, or by piping from other commands.
+  - **Safe Deletion**: An interactive confirmation prompt on `delete` prevents accidental data loss.
+  - **Colourful & Clear Output**: Uses coloured output to clearly distinguish between success, info, warnings, and errors.
+  - **Robust Import/Export**: Easily create version-controllable snapshots of your database or import notes from disk.
   - **Shell Completion**: Generates completion scripts for `bash`, `zsh`, and `fish` for a faster workflow.
 
 -----
@@ -39,7 +41,7 @@ A fast, editor-centric, command-line notes manager built in Rust.
 
 ## Technical Details
 
-`medi` is written in **Rust**. It uses `clap` for command-line argument parsing, `sled` for the embedded key-value database and `tantivy` for searching.
+`medi` is written in **Rust**. It uses `clap` for command-line argument parsing, `sled` for the embedded key-value database and `tantivy` for searching. For the fuzzy finding i am using the `skim` crate.
 
 [**View on GitHub →**](https://github.com/cladam/medi)
 
