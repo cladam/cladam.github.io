@@ -14,14 +14,15 @@ A fast, editor-centric, command-line notes manager built in Rust.
 
 ## Key Features
 
-  * **Speed**: Instant access to any note, no matter how large your collection grows.
-  * **Full-Text Search**: Instantly find notes by their content, title, or tags using a powerful built-in search engine.
-  * **Focused workflow**: A command-line hub for your writing. Create or edit notes from any directory.
-  * **Flexible input**: Create notes interactively in your editor, with a one-liner `-m` flag, or by piping from other commands.
-  * **Safe deletion**: An interactive confirmation prompt on `delete` prevents accidental data loss.
-  * **Colourful & clear output**: Uses coloured output to clearly distinguish between success, info, warnings, and errors.
-  * **Robust import/export**: Easily create version-controllable snapshots of your database or import notes from disk.
-  * **Shell Completion**: Generates completion scripts for `bash`, `zsh`, and `fish` for a faster workflow.
+  - **Speed**: Instant access to any note, no matter how large your collection grows.
+  - **Full-Text Search**: Instantly find notes by their content, title, or tags using a powerful built-in search engine.
+  - **Integrated Task Management**: Turn your notes into actionable to-do lists. Add tasks to any note (`medi task add ...`), list all your pending items, mark them as complete (`medi task done ...`), and set priorities to focus on what's important.
+  - **Focused workflow**: A command-line hub for your writing. Create or edit notes from any directory.
+  - **Flexible input**: Create notes interactively in your editor, with a one-liner `-m` flag, or by piping from other commands.
+  - **Safe deletion**: An interactive confirmation prompt on `delete` prevents accidental data loss.
+  - **Colourful & clear output**: Uses coloured output to clearly distinguish between success, info, warnings, and errors.
+  - **Robust import/export**: Easily create version-controllable snapshots of your database or import notes from disk.
+  - **Shell Completion**: Generates completion scripts for `bash`, `zsh`, and `fish` for a faster workflow.
 
 -----
 
