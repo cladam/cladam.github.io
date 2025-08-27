@@ -4,6 +4,10 @@ title: "tbdflow"
 tagline: "A CLI to streamline and safeguard your Git workflow for Trunk-Based Development."
 ---
 
+<p align="center">
+  <img src="/assets/images/tbdflow-logo.png" alt="tbdflow logo" width="200"/>
+</p>
+
 ## Overview
 
 `tbdflow` is a lightweight wrapper around Git that codifies an opinionated TBD workflow. It automates common tasks, encourages best practices like Conventional Commits, and helps maintain a clean and stable `main` branch.
@@ -235,4 +239,5 @@ tbdflow generate-man-page > tbdflow.1
 ### Development
 
 All development happens at [tbdflow.git](https://github.com/cladam/tbdflow). Feedback and contributions welcome!
+
 
