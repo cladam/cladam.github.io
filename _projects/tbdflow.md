@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "tbdflow"
-tagline: "A CLI to streamline and safeguard your Git workflow for Trunk-Based Development."
+tagline: "Keep your code flowing"
 ---
 
 <p align="center">
