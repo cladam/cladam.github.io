@@ -4,6 +4,15 @@ title: "medi"
 tagline: "A speedy CLI driven Markdown manager"
 ---
 
+<p align="center">
+  <img src="/assets/images/medi-logo.png" alt="medi logo" width="200"/>
+</p>
+
+<h1 align="center">medi</h1>
+<p align="center"><em>A speedy CLI driven Markdown manager</em></p>
+
+---
+
 ### Overview
 
 A fast, editor-centric, command-line notes manager built in Rust.
