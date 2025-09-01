@@ -43,7 +43,7 @@ A fast, editor-centric, command-line notes manager built in Rust.
 
 ## Technical Details
 
-`medi` is written in **Rust**. It uses `clap` for command-line argument parsing, `sled` for the embedded key-value database and `tantivy` for searching. For the fuzzy finding i am using the `skim` crate.
+`medi` is written in **Rust**. It uses `clap` for command-line argument parsing, `sled` for the embedded key-value database and `tantivy` for searching. For the fuzzy finding I am using the `skim` crate.
 
 [**View on GitHub →**](https://github.com/cladam/medi)
 
