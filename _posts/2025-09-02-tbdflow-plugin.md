@@ -16,7 +16,7 @@ I built the IntelliJ plugin to bridge that gap. It's not a replacement for the I
 
 ### UI-based DevEx
 
-At the heart of the plugin is the **tbdflow Commit Tool Window**. It provides a structured, non-blocking side panel for crafting the perfect commit:tm:.
+At the heart of the plugin is the **tbdflow Commit Tool Window**. It provides a structured, non-blocking side panel for crafting the perfect commit :tm:.
 
 The side panel has two key features:
 
