@@ -41,7 +41,7 @@
     {% include sidebar.html %}
 
     <div class="content container">
-        {{ content | replace: "[[", "`" | replace: "]]", "`" }}
+        {{ content | replace: "[[", "**" | replace: "]]", "**" }}
     </div>
 </body>
 </html>
