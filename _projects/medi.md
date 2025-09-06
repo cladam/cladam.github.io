@@ -2,6 +2,7 @@
 layout: project
 title: "medi"
 tagline: "A speedy CLI driven Markdown manager"
+tags: [project, medi]
 ---
 
 <p align="center">
