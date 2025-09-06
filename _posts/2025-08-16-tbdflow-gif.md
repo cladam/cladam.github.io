@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How I created the demo GIF for tbdflow
+tags: [tbdflow, demo, GIF]
 ---
 
 All projects need a good `README.md`, It’s the front door to the project and it needs to quickly show a potential user what the tool does and why it’s valuable. I put a lot of effort in having a good `README` for `tbdflow` but it was still static text, and the examples was buried deep down.
