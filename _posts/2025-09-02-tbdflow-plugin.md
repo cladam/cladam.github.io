@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Bringing tbdflow to the IDE
-tagline: The tbdflow IntelliJ Plugin 
+tagline: The tbdflow IntelliJ Plugin
+tags: [tbdflow, IntelliJ, plugin]
 ---
 
 I love the terminal, but yes, most developers live in their IDE. It's their primary workspace, and modern IDEs like IntelliJ have great, integrated Git support. You can stage, commit, push, and manage branches without ever touching the command line.
