@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="tags-page">
+  <h1>{{ page.title }}</h1>
+
+  <div class="tag-cloud">
+    {% assign sorted_tags = site.tags | keys | sort %}
+    {% for tag in sorted_tags %}
+      <a href="#{{ tag | slugify }}">{{ tag }}</a>
+    {% endfor %}
+  </div>
+
+  <hr>
+
+  <div class="tag-list">
+    {% for tag in sorted_tags %}
+      <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+      <ul class="posts-for-tag">
+        {% for post in site.tags[tag] %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="post-date">- {{ post.date | date: "%B %d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</div>
