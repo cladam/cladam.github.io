@@ -3,12 +3,22 @@ layout: default
 ---
 <div class="tags-page">
   <h1>{{ page.title }}</h1>
+
+  {% assign tags_list = site.tags | sort %}
+
+  <div class="tag-cloud">
+    {% for tag_item in tags_list %}
+      {% assign tag_name = tag_item[0] %}
+      <a href="#{{ tag_name | slugify }}">{{ tag_name }}</a>
+    {% endfor %}
+  </div>
+
   <hr>
 
   <div class="tag-list">
-    {% for tag in site.tags %}
-      {% assign tag_name = tag[0] %}
-      {% assign posts_with_tag = tag[1] %}
+    {% for tag_item in tags_list %}
+      {% assign tag_name = tag_item[0] %}
+      {% assign posts_with_tag = tag_item[1] %}
       
       <h2 id="{{ tag_name | slugify }}">{{ tag_name }}</h2>
       <ul class="posts-for-tag">
