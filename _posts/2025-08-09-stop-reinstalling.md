@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Stop re-installing your tools
+tags: [tbdflow, self-update]
 ---
 
 When you publish a CLI tool on crates.io, you’ll often get a familiar question (at least I did):
