@@ -2,6 +2,7 @@
 layout: project
 title: "cladam.github.io"
 tagline: "An iterative journey in building a GitHub Page"
+tags: [blog, cladam]
 ---
 
 ## The Goal: A Home for My Work
