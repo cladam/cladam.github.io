@@ -2,6 +2,7 @@
 layout: project
 title: "tbdflow"
 tagline: "Keep your code flowing"
+tags: [project, tbdflow]
 ---
 
 <p align="center">
