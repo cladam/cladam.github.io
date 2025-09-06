@@ -31,6 +31,6 @@ The real win is search speed. That 106ms includes everything: starting the binar
 
 This test also validates the architecture choice: `sled` for storage + `tantivy` for search is reliable and **fast**. It gives me confidence that `medi` will stay responsive with 10,000 notes as it is with just 10.
 
-If you’re building a Rust app that needs local search, I can highly recommend [`tantivy`](https://github.com/quickwit-oss/tantivy). You can also check out `medi` and its implementation on [my GitHub](https://github.com/cladam/medi).
+If you’re building a Rust app that needs local search, I can highly recommend [`tantivy`](https://github.com/quickwit-oss/tantivy). You can also check out `medi` and its implementation on [my GitHub](https://github.com/cladam/medi), the specific test can be found at [test_performance()](https://github.com/cladam/medi/blob/2a1c505f6b8f3496be08b880b01412a891518e8c/tests/cli.rs#L590)
 
 
