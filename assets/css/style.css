@@ -144,6 +144,10 @@ a:hover {
     stroke: var(--sidebar-highlight-color);
 }
 
+/* Indent project links in the sidebar */
+.project-nav-item {
+  padding-left: 1.5rem;
+}
 
 .sidebar-footer {
     margin-top: auto;
