@@ -2,5 +2,5 @@
 layout: tags
 title: "Tags"
 permalink: /tags/
-exclude: true
+nav_exclude: true
 ---
