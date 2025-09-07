@@ -6,4 +6,12 @@ layout: default
   <p class="project-tagline">{{ page.tagline }}</p>
   <hr>
   {{ content }}
+  {% if page.tags.size > 0 %}
+  <div class="tags">
+    <strong>Tags:</strong>
+    {% for tag in page.tags %}
+      <a href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
