@@ -25,7 +25,7 @@
             
             <span class="sidebar-nav-item">Projects</span>
             {% for project in site.projects %}
-              <a class="sidebar-nav-item project-nav-item" href="{{ project.url | relative_url }}">&nbsp;&nbsp;&nbsp;{{ project.title }}</a>
+              <a class="sidebar-nav-item project-nav-item" href="{{ project.url | relative_url }}">{{ project.title }}</a>
             {% endfor %}
         </nav>
         <div class="sidebar-social">
