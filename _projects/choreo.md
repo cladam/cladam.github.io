@@ -26,7 +26,7 @@ The tests are written in a structured, Gherkin-inspired format, making them easy
 
 ### Technologies Used:
 
-* **Rust:** `choreo` is written in Rust, using `pest` for grammar, `protable-pty` for the terminal and `ureq` for HTTP requests. 
+* **Rust:** `choreo` is written in Rust, using `pest` for parsing the grammar, `portable-pty` for the pseudo terminal and `ureq` for HTTP requests. 
 * **Gherkin-inspired DSL:** The testing language is inspired by Gherkin, the language used by Cucumber, making it easy to learn and use for those familiar with BDD.
 
 **[Link to GitHub Repository](https://github.com/cladam/choreo)**
