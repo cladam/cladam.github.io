@@ -2,6 +2,7 @@
 layout: post
 title: Nine Wastes Hiding in Your Software Team
 tags: [waste, software development, team]
+comments: true
 ---
 
 Measuring the productivity of software engineering teams is notoriously difficult and can often backfire. However, we don't need complex metrics to recognise when time and effort are being wasted.
