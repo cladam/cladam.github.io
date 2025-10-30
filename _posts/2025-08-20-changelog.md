@@ -2,6 +2,7 @@
 layout: post
 title: CHANGELOG.md
 tags: [tbdflow, CHANGELOG, Conventional Commit]
+comments: true
 ---
 
 I've seen some teams and projects having really nice CHANGELOG.md and release notes but knowing from experience, writing release notes by hand is a pain. Scrolling through `git log`, guessing which commits count as features or fixes, and hoping you don’t forget something important isn’t exactly fun.
