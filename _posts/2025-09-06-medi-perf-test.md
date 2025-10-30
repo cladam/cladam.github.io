@@ -2,6 +2,7 @@
 layout: post
 title: Blazing fast search
 tags: [medi, performance, search]
+comments: true
 ---
 
 When I started building `medi`, my command-line notes manager, the goal was a fast, local-first workflow. But how fast is _fast_? Could it stay fast at scale? With a database of thousands of notes, would search grind to a halt?
