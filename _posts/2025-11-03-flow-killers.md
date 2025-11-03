@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wastes That Kill Your Flow:
+title: Wastes That Kill Your Flow
 tags: [waste, software development, flow]
 comments: true
 ---
