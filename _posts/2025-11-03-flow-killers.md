@@ -9,7 +9,7 @@ In my last post, I introduced [nine wastes that hide in software teams](https://
 
 Recognising them is the first step. The next step is learning how to remove them, starting with the ones that break _flow_.
 
-In this post, we’ll look at the most common _flow killers_. These three wastes are often interconnected, and can quitly destroy momentum.
+In this post, we’ll look at the most common _flow killers_. These three wastes are often interconnected, and can quietly destroy momentum.
 
 
 ### 1. Mismanaging the Backlog
