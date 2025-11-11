@@ -28,7 +28,7 @@ An efficient team building the wrong product is simply getting better at creatin
 
 **How to reduce this waste:**
 
-* **Validate aggressively:** Use techniques like feature validation , usability testing , and participatory design.
+* **Validate aggressively:** Use techniques like feature validation, usability testing, and participatory design.
 * **Use falsifiable hypotheses:** Frame new ideas as a hypothesis that can be proven or disproven (_"We believe X will cause Y, and we'll know it's true when Z happens"_).
 * **Release frequently:** Shorten feedback loops so you can correct course early before you've wasted significant effort.
 
