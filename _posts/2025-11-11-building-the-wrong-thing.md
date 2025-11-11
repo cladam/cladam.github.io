@@ -50,7 +50,7 @@ Every time you choose a complex solution, you are taking out a "**complexity loa
 
 ### What's Next?
 
-We've covered wastes of flow (how you build) and wastes of product (what you build).
+We've covered wastes of _flow_ (how you build) and wastes of _product_ (what you build).
 
 In the next post, we'll look at the technical wastes that hide in the code itself, the friction that accumulates over time and makes all future work harder. We'll be covering **Rework**, **Extraneous Cognitive Load**, and **Knowledge Loss**.
 
