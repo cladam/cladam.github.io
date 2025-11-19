@@ -16,7 +16,7 @@ This is the friction that accumulates over time, making every new feature harder
 
 This is the cost of altering delivered work that should have been done correctly the first time.
 
-This waste is so critical to team health that the [2024 DORA Report](https://dora.dev/research/2025/dora-report/) officially added **Rework Rate** as a key metric.
+This waste is so critical to team health that the [DORA Report](https://dora.dev/research/2025/dora-report/) officially added **Rework Rate** as a key metric.
 
 This metric measures the ratio of deployments that are unplanned and performed to address a user-facing bug or incident in production. It reflects the quality of the development process itself, highlighting the cost of fixing work that wasn't right the first time.
 
