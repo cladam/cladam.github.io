@@ -19,7 +19,7 @@ Most to-do apps only made things worse. Endless lists, constant switching, and t
 
 #### Context Filtering
 
-You define your main life roles—Work, Family, Health, Projects. When you switch to a context, everything else disappears. No giant master list messing with your attention.
+You define your main life roles: Work, Family, Health, Projects. When you switch to a context, everything else disappears. No giant master list messing with your attention.
 
 #### Protected Focus Blocks
 
@@ -57,6 +57,7 @@ Default dark mode, clean typography, and minimal visual elements keep the interf
 
 
 **[Link to GitHub Repository](https://github.com/cladam/ilseon)**
+
 **[Link to Play Store](https://play.google.com/store/apps/details?id=com.ilseon&pcampaignid=web_share)**
 
 
