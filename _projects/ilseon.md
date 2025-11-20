@@ -6,7 +6,7 @@ tags: [project, ilseon]
 ---
 
 <p align="center">
-  <img src="/assets/images/ilseon-icon.png" alt="ilseon icon" width="200"/>
+  <img src="/assets/images/ilseon-icon2.png" alt="ilseon icon" width="200"/>
 </p>
 
 ### Overview
@@ -23,7 +23,7 @@ You define your main life roles—Work, Family, Health, Projects. When you switc
 
 #### Protected Focus Blocks
 
-Set a focus block (e.g. 45 or 60 minutes) and Ilseon gives you a clean circular countdown timer. It externalises the passage of time, helping counter time blindness.
+Set a focus block (e.g. 45 or 60 minutes) and `Ilseon` gives you a clean circular countdown timer. It externalises the passage of time, helping counter time blindness.
 
 #### Low-Sensory Reminders
 
@@ -37,6 +37,7 @@ This builds a habit of reflection and helps you understand your own focus patter
 #### Quick Capture
 
 Add a task or note in a couple of seconds through a floating capture button, ideal for getting thoughts out of your head before they disappear.
+It has configurable Bluetooth support for automatic speech-to-text, STT can also be activated by a microphone icon.
 
 #### Flexible Scheduling
 
