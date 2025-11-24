@@ -53,6 +53,6 @@ If traditional to-do apps leave you overwhelmed, this approach may be a better f
 
 Ilseon is built using Kotlin and Jetpack Compose. It’s free, open source, and designed around a simple idea: give your brain less to fight with.
 
-[Download/Buy](https://play.google.com/store/apps/details?id=com.ilseon)
+[Get at Google Play Store](https://play.google.com/store/apps/details?id=com.ilseon)
 
-[Source code](https://github.com/cladam/ilseon)
+[Source code at GitHub](https://github.com/cladam/ilseon)
