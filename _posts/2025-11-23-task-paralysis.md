@@ -20,7 +20,7 @@ Opening a typical to-do app immediately puts your brain under pressure. You’re
 
 Even before you start working, you’re already mentally negotiating, switching contexts, and feeling guilty about everything you’re not doing.
 
-That mental juggling is not productivity. It’s cognitive friction, and it’s exhausting.
+That mental juggling is cognitive friction, and it’s exhausting.
 
 ### A Different Approach: The Context Filter
 
