@@ -57,7 +57,7 @@ We started this series by defining waste as friction.
 
 Whether it’s a messy backlog, a confusing codebase, or a fearful team, waste is what stops us from delivering value.
 
-Reducing that waste isn’t a side quest — it _is_ DevOps.
+Reducing that waste isn’t a side quest, it _is_ DevOps.
 
 Good DevOps practices like automation, continuous delivery, small batches, and blameless culture are essentially waste-reduction strategies.
 
@@ -67,7 +67,7 @@ By identifying these nine wastes, we stop treating symptoms and start curing the
 2. **Name the waste.**
 3. **Remove the waste.**
 
-"If we can see the waste, we can name it."
+"If we can see the waste, we can name it."  
 "If we can name it, we can remove it."
 
 That is how you build a high-performing team.
