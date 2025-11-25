@@ -20,7 +20,7 @@ This final post looks at the human cost of waste.
 This is the cost of burdening the team with unhelpful stress.
 
 Psychological distress is intrinsically wasteful. Some pressure can be energising, but everyone has a limit. 
-Beyond that limit, stress becomes distracting and draining. It makes people anxious, overwhelmed, and unmotivated .When a developer is worrying about interpersonal conflict or fearing blame for a mistake, they are not solving problems. They are managing their own safety.
+Beyond that limit, stress becomes distracting and draining. It makes people anxious, overwhelmed, and unmotivated. When a developer is worrying about interpersonal conflict or fearing blame for a mistake, they are not solving problems, they are managing their own safety.
 
 #### Common causes of this waste:
 
@@ -67,7 +67,7 @@ By identifying these nine wastes, we stop treating symptoms and start curing the
 2. **Name the waste.**
 3. **Remove the waste.**
 
-> If we can see the waste, we can name it.
-> If we can name it, we can remove it.
+"If we can see the waste, we can name it."
+"If we can name it, we can remove it."
 
 That is how you build a high-performing team.
