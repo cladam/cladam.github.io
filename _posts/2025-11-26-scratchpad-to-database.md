@@ -5,7 +5,7 @@ tags: [medi, scratch, note]
 comments: true
 ---
 
-I love the terminal, but I still spend half my day in Sublime Text. When an idea appears — or a meeting suddenly starts — I just hit **Cmd+N** to open a blank, unsaved buffer and start typing.
+I love the terminal, but I still spend half my day in Sublime Text. When an idea appears I hit **Cmd+N** to open a blank, unsaved buffer and start typing.
 
 Saving it on the other hand, that is a friction point for me:
 **File → Save As → choose a folder → name the file → confirm → then remember where it actually went.**
@@ -14,9 +14,9 @@ I wanted to skip the filesystem entirely. So I wrote a small Python plugin for S
 
 ### The frictionless workflow
 
-**Write:** I jot down thoughts in a fresh, untitled tab.
-**Push:** I press **Cmd+Shift+m**.
-**Name:** A tiny input bar appears — *Medi key?* I type `meeting-notes` (or whatever so i can get back to it easily).
+**Write:** I jot down thoughts in a fresh, untitled tab.  
+**Push:** I press **Cmd+Shift+m**.  
+**Name:** A tiny input bar appears: *Medi key?* I type `meeting-notes` (or whatever so i can get back to it easily).  
 **Done:** The text is pushed straight into my sled database via `medi import`.
 
 That’s it.
