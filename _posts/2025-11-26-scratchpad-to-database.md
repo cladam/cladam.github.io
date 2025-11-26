@@ -10,7 +10,7 @@ I love the terminal, but I still spend half my day in Sublime Text. When an idea
 Saving it on the other hand, that is a friction point for me:
 **File → Save As → choose a folder → name the file → confirm → then remember where it actually went.**
 
-I wanted to skip the filesystem entirely. So I wrote a small Python plugin for Sublime that talks directly to **medi**.
+I wanted to skip the filesystem entirely. So I wrote a small Python plugin for Sublime that talks directly to [**medi**](https://cladam.github.io/projects/medi/).
 
 ### The frictionless workflow
 
