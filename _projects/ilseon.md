@@ -11,9 +11,9 @@ tags: [project, ilseon]
 
 ### Overview
 
-`Ilseon` is a minimalist executive-function assistant built to reduce mental noise and help you focus on one thing at a time. I created it after years of struggling with time blindness, task paralysis, and the overwhelm that comes from traditional productivity apps.
+`Ilseon` is a minimalist executive-function assistant designed to reduce mental noise and help users focus on one thing at a time. The tool was created to address the common challenges of time blindness, task paralysis, and the overwhelm often associated with traditional productivity apps.
 
-Most to-do apps only made things worse. Endless lists, constant switching, and too many features left me more scattered than before. `Ilseon` is my attempt to build the quiet, predictable tool I _actually needed_, one that filters down to a single clear point of action.
+Many existing to-do applications can be counterproductive, with endless lists, constant switching, and feature bloat contributing to distraction. `Ilseon` was developed as a quiet, predictable alternative, designed to filter the user's attention down to a single, clear point of action.
 
 ### Key Features:
 
@@ -29,6 +29,10 @@ Set a focus block (e.g. 45 or 60 minutes) and `Ilseon` gives you a clean circula
 
 Notifications use soft vibration patterns and quiet tones instead of sharp alarms, designed to support focus without causing anxiety.
 
+#### Idea Inbox 
+
+Captures "non-task" mental clutter, such as fleeting ideas, random thoughts, or things to look up later. This separate inbox allows you to clear your mind without disrupting your current focus. Ideas can be converted into actionable tasks with a long-press action.
+
 #### Reflection Loop
 
 When you complete a task, `Ilseon` asks a simple question: *“How did that go?”*  
@@ -36,8 +40,7 @@ This builds a habit of reflection and helps you understand your own focus patter
 
 #### Quick Capture
 
-Add a task or note in a couple of seconds through a floating capture button, ideal for getting thoughts out of your head before they disappear.
-It has configurable Bluetooth support for automatic speech-to-text, STT can also be activated by a microphone icon.
+Add a task or note in a couple of seconds through a floating capture button, ideal for getting thoughts out of your head before they disappear. It has configurable Bluetooth support for automatic speech-to-text; STT can also be activated by a microphone icon.
 
 #### Flexible Scheduling
 
