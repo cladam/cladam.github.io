@@ -63,7 +63,7 @@ In practice, I see two anchors that help this endure.
 2. **A generative culture**
   Moving away from rule-heavy, approval-driven models towards high-trust environments where information flows freely and problems are surfaced early.
 
-This is how refreezing becomes less about rigidity and more about flow.
+This is how refreezing becomes more about flow instead of rigidity.
 
 ## Fighting gravity: Lewin’s force field analysis
 
@@ -74,7 +74,7 @@ Lewin also described change as a balance between opposing forces. Progress is no
 * **Transformational leadership**
   Leaders who provide direction, challenge assumptions, and give teams room to think.
 * **High-quality documentation**
-  Often overlooked, yet quietly powerful. Good documentation scales learning, reduces dependency on individuals, and strengthens every other technical capability.
+  Unfortunately often overlooked, yet very powerful. Good documentation scales learning, reduces dependency on individuals, and strengthens every other technical capability.
 
 ### The restraining forces, the brakes
 
