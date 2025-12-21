@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lewin's teachings and modern DevOps
-tags: [DevOps, change]
+tags: [DevOps, change, team]
 comments: true
 ---
 
