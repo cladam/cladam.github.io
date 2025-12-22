@@ -5,7 +5,7 @@ tags: [DevOps, change, team]
 comments: true
 ---
 
-When we talk about DevOps transformation, the conversation usually starts with tools. Kubernetes. CI/CD pipelines. Cloud platforms.
+When we talk about DevOps transformation, the conversation usually starts with tools. Kubernetes. CI/CD pipelines. Cloud platforms, and nowadays LLMs.
 
 But anyone who has tried to lead a real transformation knows that the tools are rarely the hard part; people are.
 
