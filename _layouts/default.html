@@ -38,24 +38,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
 </head>
 <body>
-    <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    {% include sidebar.html %}
+
+    <div class="content container">
+        {{ content }}
     </div>
-
-    <main class="main-container">
-        {% include sidebar.html %}
-
-        <div class="main-content" id="main-content">
-            {% unless page.project_id %}
-              <h1 class="page-title">{{ page.title }}</h1>
-            {% endunless %}
-            
-            {{ content }}
-        </div>
-    </main>
-    
-    {% include scripts.html %}
 </body>
 </html>
