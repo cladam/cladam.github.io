@@ -33,6 +33,6 @@ Once a transient idea is vetted, it can be "promoted" to a persisted note.
 * **The "Just Enough" Approach:** We provide enough structure to keep notes useful without the overhead of a full-scale "Second Brain" system.
 
 
-#### The Ilseon Philosophy
+#### The Philosophy
 
 > Don't let a powerful note-taking system distract you from the act of having ideas in the first place.

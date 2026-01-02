@@ -45,7 +45,7 @@ We move beyond the "Due Date" obsession. Instead, Ilseon surfaces what you shoul
 * **Effort:** What is your current "fuel level"? (Low energy vs. High focus)
 * **Eisenhower Matrix:** Is this truly important, or just loud (urgent)?
 
-By blending these, the app hides the noise. If you're tired and at home, it won't show you high-effort work tasks. It shows you what you can actually finish now.
+By blending these, the app hides the noise. If you're tired and at home, it won't show you high-effort work tasks. It shows you what you can actually finish now. Read more about how Ilseon has improved the Eisenhower Matrix: [Hacking Eisenhower Matrix](https://cladam.github.io/2025/12/20/hacking-eisenhower-matrix/)
 
 ### Meta-Cognitive Reflections
 

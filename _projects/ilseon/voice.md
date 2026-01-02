@@ -4,7 +4,7 @@ title: Voice Inbox
 parent: "ilseon"
 ---
 
-[← Back to mock Overview]({{ '/projects/ilseon/' | relative_url }})
+[← Back to Ilseon Overview]({{ '/projects/ilseon/' | relative_url }})
 
 ## 🎙️ Voice Capture & Task Extraction
 
