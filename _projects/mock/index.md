@@ -1,6 +1,7 @@
 ---
 layout: page
-project_id: mock
+title: mock
+project_id: "mock"
 ---
 
 <div style="text-align: center; padding: 40px 0; border-bottom: 1px solid #eee;">

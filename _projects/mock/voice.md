@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Voice Inbox
-parent: mock
+parent: "mock"
 ---
 
 [← Back to mock Overview]({{ '/projects/mock/' | relative_url }})
