@@ -3,6 +3,7 @@ layout: project
 title: "ilseon"
 tagline: "A calm focus tool built for clarity in chaotic moments."
 tags: [project, ilseon]
+project_id: ilseon
 ---
 
 <p align="center">
