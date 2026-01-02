@@ -126,8 +126,8 @@ a:hover {
 
 /* Sidebar sub-item styling */
 .sidebar-sub-nav .sidebar-nav-item {
-  font-size: 0.85em;
-  padding-left: 20px;
+  font-size: 0.75em;
+  padding-left: 40px;
   border-left: 2px solid #eee;
   margin-left: 10px;
 }
