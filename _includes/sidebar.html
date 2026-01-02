@@ -24,8 +24,30 @@
             {% endfor %}
             
             <span class="sidebar-nav-item">Projects</span>
-            {% for project in site.projects %}
-              <a class="sidebar-nav-item project-nav-item" href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            {% comment %} 
+              Filter to get only top-level projects (those without a 'parent' attribute) 
+            {% endcomment %}
+            {% assign top_level_projects = site.projects | where_exp: "item", "item.parent == nil" %}
+
+            {% for project in top_level_projects %}
+              <a class="sidebar-nav-item project-nav-item {% if page.url == project.url %}active{% endif %}" 
+                 href="{{ project.url | relative_url }}">
+                {{ project.title }}
+              </a>
+
+              {% comment %} 
+                Optional: Show sub-pages ONLY if we are currently looking at this project 
+              {% endcomment %}
+              {% if page.url contains project.url or page.parent == project.project_id %}
+                <div class="sidebar-sub-nav" style="margin-left: 15px; border-left: 1px solid #eee;">
+                  {% assign sub_pages = site.projects | where: "parent", project.project_id %}
+                  {% for sub in sub_pages %}
+                    <a class="sidebar-nav-item" href="{{ sub.url | relative_url }}" style="font-size: 0.85em; opacity: 0.8;">
+                      ↳ {{ sub.title }}
+                    </a>
+                  {% endfor %}
+                </div>
+              {% endif %}
             {% endfor %}
         </nav>
         <div class="sidebar-social">

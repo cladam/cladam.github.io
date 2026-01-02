@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: mock
 project_id: mock
 ---
