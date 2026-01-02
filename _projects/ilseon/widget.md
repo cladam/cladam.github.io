@@ -12,7 +12,7 @@ The Ilseon widget brings the app's most critical information directly to your ho
 
 ### Current Priority Task
 
-The top section of the widget mirrors the **Dashboard** inside the app. It displays the one task you've marked as your current priority. This keeps your immediate goal visible every time you glance at your phone, helping you stay on track without the distraction of a full list.
+The content of the widget mirrors the **Dashboard** inside the app. It displays the one task you've marked as your current priority. This keeps your immediate goal visible every time you glance at your phone, helping you stay on track without the distraction of a full list.
 
 <div style="display: flex; justify-content: center; margin: 30px 0;">
 	<img src="/assets/images/widget.png" alt="Widget Current Priority View" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"/>
