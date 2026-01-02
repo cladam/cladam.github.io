@@ -43,6 +43,14 @@ project_id: "mock"
     </div>
   </a>
 
+    <a href="{{ '/projects/mock/widget/' | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
+      <h3 style="margin-top: 0;">Ilseon Widget</h3>
+      <p style="font-size: 0.9em;">Convenient widget for easy access.</p>
+      <small style="color: #007bff;">Learn more →</small>
+    </div>
+  </a>
+
 </div>
 
 <style>
