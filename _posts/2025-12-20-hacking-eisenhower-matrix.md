@@ -7,9 +7,7 @@ comments: true
 
 The Eisenhower Matrix is one of those productivity tools everyone knows. It’s neat, simple, and widely taught.
 
-The matrix sorts work along two axes: **Urgency** and **Importance**. In theory, that should be enough. In practice, it ignores one variable that tends to dominate real life: 
-
-**How much effort does the task actually take?**
+The matrix sorts work along two axes: **Urgency** and **Importance**. In theory, that should be enough. In practice, it ignores one variable that tends to dominate real life: **How much effort does the task actually take?**
 
 A task that is both *Urgent and Important* might be a five-minute phone call, or it might be a five-hour deep dive requiring absolute silence, focus and uninterrupted time. The matrix treats them as equals. Your brain does not.
 
