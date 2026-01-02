@@ -6,18 +6,24 @@ parent: "mock"
 
 [← Back to mock Overview]({{ '/projects/mock/' | relative_url }})
 
-## 🎙️ Hands-Free Productivity
+## 🎙️ Voice Capture & Task Extraction
 
-The Voice feature in Ilseon is designed for when you are on the move—driving, walking, or in the middle of a workout. 
+The Voice feature in Ilseon is designed for high-velocity capture when you are on the move – driving, walking, or in the middle of a workout. It ensures that no task or thought is lost just because you can't reach your keyboard.
 
-### Key Capabilities:
-* **Instant Transcription:** Converts speech to text with high accuracy.
-* **Auto-Tagging:** Uses NLP (Natural Language Processing) to detect if a recording should be a Task or an Idea.
-* **Background Processing:** Keep moving while the app handles the heavy lifting.
+<div style="display: flex; justify-content: center; margin: 30px 0;">
+	<img src="/assets/images/ilseon-screenshot-PS9.png" alt="Voice Capture Screen" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"/>
+</div>
 
-> "The goal is to move the thought from your brain to the system in under 3 seconds."
+### Key Capabilities
 
----
-### Technical Implementation
+* **Persistent Capture:** A dedicated foreground service ensures that recordings aren't interrupted by the OS, even if you navigate away from the app.
+* **BYOK (Bring Your Own Key):** To keep the app lightweight and private, AI features are unlocked by providing your own Gemini API Key in the settings.
+* **Intelligent Task Extraction:** Once a recording is transcribed, Ilseon uses Large Language Models (LLMs) to scan the text and automatically extract actionable tasks, separating them from general context.
 
-...
+#### Technical Implementation
+
+The voice workflow is a two-stage pipeline designed for privacy and flexibility:
+1. **Local Audio Processing:** The app handles the audio recording using a background service to maintain state across different Android lifecycle events.
+2. **AI-Powered Refinement:** 
+	* **Transcription:** Converts raw audio into text, saved as a persistent **Note**.
+	* **Task Distillation:** If a Gemini API key is present, the app sends the transcript to the model with a specific system prompt to identify and format "Task" items.
