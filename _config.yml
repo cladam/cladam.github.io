@@ -28,4 +28,4 @@ permalink: pretty
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects/:path/index:output_ext
