@@ -20,6 +20,14 @@ The Voice feature in Ilseon is designed for high-velocity capture when you are o
 * **BYOK (Bring Your Own Key):** To keep the app lightweight and private, AI features are unlocked by providing your own Gemini API Key in the settings.
 * **Intelligent Task Extraction:** Once a recording is transcribed, Ilseon uses Large Language Models (LLMs) to scan the text and automatically extract actionable tasks, separating them from general context.
 
+### Open Storage & Data Portability
+
+Ilseon follows a "local-first" philosophy. Your recordings are your own, stored in a transparent directory structure rather than hidden in a private database:
+
+* **Location:** `Recordings/ilseon/` on your local device storage.
+* **Format:** Industry-standard `.m4a` files.
+* **Ownership:** Because these files are stored in a standard directory, they can be backed up, shared, or managed using ordinary OS functions or third-party cloud sync tools.
+
 #### Technical Implementation
 
 The voice workflow is a two-stage pipeline designed for privacy and flexibility:
