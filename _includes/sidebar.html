@@ -1,67 +1,77 @@
-<div class="sidebar">
-    <div class="container sidebar-sticky">
-        <div class="sidebar-about">
-            <!-- Profile Picture -->
-            <img src="{{ site.author.avatar }}" alt="Profile picture" class="sidebar-avatar">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-about" style="text-align: center; padding: 20px;">
+    <img src="{{ site.author.avatar }}" alt="Profile picture" class="sidebar-avatar" style="border-radius: 50%; width: 100px; margin-bottom: 15px;">
+    
+    <h1>
+      <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: var(--primary-text);">
+        {{ site.author.name }}
+      </a>
+    </h1>
+    <p class="lead" style="font-size: 0.9em; color: var(--secondary-text); margin-top: 10px;">{{ site.author.bio }}</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <div class="nav-category">
+      <ul>
+        <li>
+          <a href="{{ '/' | relative_url }}" class="sidebar-nav-item {% if page.url == '/' %}active{% endif %}">Blog</a>
+        </li>
+        {% assign pages_list = site.pages | sort:"title" %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if node.url != "/" and node.title != "Home" and node.nav_exclude != true %}
+              <li>
+                <a class="sidebar-nav-item {% if page.url == node.url %}active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+              </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="nav-category">
+      <h3 class="nav-category-title">Projects</h3>
+      <ul>
+        {% assign top_level = site.projects | where_exp: "item", "item.parent == nil" | sort: "title" %}
+        {% for project in top_level %}
+          <li>
+            {% comment %} Ensure the link is clean (no /index/) {% endcomment %}
+            {% assign project_url = project.url | replace: '/index/', '/' %}
             
-            <h1>
-                <a href="{{ '/' | relative_url }}">
-                    {{ site.author.name }}
-                </a>
-            </h1>
-            <p class="lead">{{ site.author.bio }}</p>
-        </div>
+            <a class="sidebar-nav-item project-nav-item {% if page.url contains project_url %}active{% endif %}" 
+               href="{{ project_url | relative_url }}">
+              {{ project.title }}
+            </a>
 
-        <nav class="sidebar-nav">
-            <a class="sidebar-nav-item" href="{{ '/' | relative_url }}">Blog</a>
-            {% assign pages_list = site.pages | sort:"title" %}
-            {% for node in pages_list %}
-                {% if node.title != null %}
-                    {% if node.url != "/" and node.title != "Home" and node.nav_exclude != true %}
-                        <a class="sidebar-nav-item" href="{{ node.url | relative_url }}">{{ node.title }}</a>
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-            
-            <span class="sidebar-nav-item">Projects</span>
-
-            {% assign top_level = site.projects | where_exp: "item", "item.parent == nil" | sort: "title" %}
-
-            {% for project in top_level %}
-              {% comment %} Strip /index/ from the URL for display if it exists {% endcomment %}
-              {% assign project_url = project.url | replace: '/index/', '/' %}
-              
-              <a class="sidebar-nav-item project-nav-item {% if page.url == project.url or page.url == project_url %}active{% endif %}" 
-                 href="{{ project_url | relative_url }}">
-                {{ project.title }}
-              </a>
-
-              {% if page.url contains project_url and project.project_id %}
-                {% assign children = site.projects | where: "parent", project.project_id %}
-                {% if children.size > 0 %}
-                  <div class="sidebar-sub-nav">
-                    {% for child in children %}
+            {% comment %} Nest sub-pages for active project branches {% endcomment %}
+            {% if page.url contains project_url and project.project_id %}
+              {% assign children = site.projects | where: "parent", project.project_id %}
+              {% if children.size > 0 %}
+                <ul class="sidebar-sub-nav">
+                  {% for child in children %}
+                    <li>
                       <a class="sidebar-nav-item" href="{{ child.url | relative_url }}">
                         ↳ {{ child.title }}
                       </a>
-                    {% endfor %}
-                  </div>
-                {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
               {% endif %}
-            {% endfor %}
-        </nav>
-        <div class="sidebar-social">
-            <a href="https://github.com/{{ site.github_username }}" title="GitHub">
-                <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-            <a href="https://linkedin.com/in/{{ site.author.linkedin_username }}" title="LinkedIn">
-                <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-            <a href="mailto:{{ site.author.email }}" title="Email">
-                <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </a>
-        </div>
-
-        <p class="sidebar-footer">&copy; {{ 'now' | date: "%Y" }}. All rights reserved.</p>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-</div>
+  </nav>
+
+  <div class="sidebar-social" style="text-align: center; margin-top: 30px;">
+    <a href="https://github.com/{{ site.github_username }}" title="GitHub" style="margin: 0 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+    </a>
+    <a href="https://linkedin.com/in/{{ site.author.linkedin_username }}" title="LinkedIn" style="margin: 0 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    </a>
+  </div>
+
+  <p class="sidebar-footer" style="text-align: center; font-size: 0.75em; margin-top: 20px;">&copy; {{ 'now' | date: "%Y" }}.</p>
+</aside>
