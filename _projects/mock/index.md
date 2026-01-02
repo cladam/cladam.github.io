@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Ilseon
-project_id: ilseon
+project_id: mock
 ---
 
 <div style="text-align: center; padding: 40px 0; border-bottom: 1px solid #eee;">
-  <img src="/assets/images/ilseon-icon2.png" alt="ilseon icon" width="120" style="border-radius: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <img src="/assets/images/ilseon-icon2.png" alt="ilseon icon" width="200"/>
   <h1 style="margin-top: 20px; font-size: 2.5em;">Ilseon</h1>
   <p style="font-size: 1.2em; color: #666; max-width: 600px; margin: 0 auto;">
     A minimalist personal task manager designed for speed. Capture thoughts before they escape.
