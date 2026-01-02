@@ -10,7 +10,7 @@ project_id: "ilseon"
   <img src="/assets/images/ilseon-icon2.png" alt="ilseon icon" width="200"/>
   <h1 style="margin-top: 20px; font-size: 2.5em;">Ilseon</h1>
   <p style="font-size: 1.2em; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.6;">
-    A minimalist cognitive support tool designed for high-velocity capture. Built for developers and thinkers who need to offload thoughts instantly.
+    A minimalist executive-function assistant designed to reduce mental noise and help users focus on one thing at a time. 
   </p>
   <div style="margin-top: 25px;">
     <a href="https://play.google.com/store/apps/details?id=com.ilseon" style="display: inline-block;">
