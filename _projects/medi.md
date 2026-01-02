@@ -3,7 +3,7 @@ layout: project
 title: "medi"
 tagline: "A speedy CLI driven Markdown manager"
 tags: [project, medi]
-project_id: medi
+project_id: "medi"
 ---
 
 <p align="center">

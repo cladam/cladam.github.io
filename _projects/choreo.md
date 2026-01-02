@@ -3,7 +3,7 @@ layout: project
 title: "choreo"
 tagline: "BDD testing that runs in your shell"
 tags: [project, choreo]
-project_id: choreo
+project_id: "choreo"
 ---
 
 <p align="center">

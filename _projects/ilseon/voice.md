@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Voice Inbox
-parent: "mock"
+parent: "ilseon"
 ---
 
-[← Back to mock Overview]({{ '/projects/mock/' | relative_url }})
+[← Back to mock Overview]({{ '/projects/ilseon/' | relative_url }})
 
 ## 🎙️ Voice Capture & Task Extraction
 

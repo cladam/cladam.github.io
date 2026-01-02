@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Tasks & Reflections
-parent: "mock"
+parent: "ilseon"
 ---
 
-[← Back to Ilseon Overview]({{ '/projects/mock/' | relative_url }})
+[← Back to Ilseon Overview]({{ '/projects/ilseon/' | relative_url }})
 
 # ✅ The Core Engine
 

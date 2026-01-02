@@ -1,55 +1,68 @@
 ---
-layout: project
+layout: page
 title: "ilseon"
 tagline: "A calm focus tool built for clarity in chaotic moments."
 tags: [project, ilseon]
-project_id: ilseon
+project_id: "ilseon"
 ---
 
-<p align="center">
+<div style="text-align: center; padding: 40px 0; border-bottom: 1px solid #eee;">
   <img src="/assets/images/ilseon-icon2.png" alt="ilseon icon" width="200"/>
-</p>
+  <h1 style="margin-top: 20px; font-size: 2.5em;">Ilseon</h1>
+  <p style="font-size: 1.2em; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+    A minimalist cognitive support tool designed for high-velocity capture. Built for developers and thinkers who need to offload thoughts instantly.
+  </p>
+  <div style="margin-top: 25px;">
+    <a href="https://play.google.com/store/apps/details?id=com.ilseon" style="display: inline-block;">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="180" alt="Get it on Google Play">
+    </a>
+  </div>
+</div>
 
-### Overview
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px;">
+  
+  <a href="{{ '/projects/mock/tasks/' | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
+      <h3 style="margin-top: 0;">Tasks & Reflections</h3>
+      <p style="font-size: 0.9em;">Efficient task tracking with a focus on 'Current Priority'.</p>
+      <small style="color: #007bff;">Learn more →</small>
+    </div>
+  </a>
 
-`Ilseon` is a minimalist executive-function assistant designed to reduce mental noise and help users focus on one thing at a time. The tool was created to address the common challenges of time blindness, task paralysis, and the overwhelm often associated with traditional productivity apps.
+  <a href="{{ '/projects/mock/ideas/' | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
+      <h3 style="margin-top: 0;">Idea Inbox</h3>
+      <p style="font-size: 0.9em;">A dual-system approach separating transient "scratchpad" thoughts from long-term knowledge.</p>
+      <small style="color: #007bff;">Learn more →</small>
+    </div>
+  </a>
 
-Many existing to-do applications can be counterproductive, with endless lists, constant switching, and feature bloat contributing to distraction. `Ilseon` was developed as a quiet, predictable alternative, designed to filter the user's attention down to a single, clear point of action.
+  <a href="{{ '/projects/mock/voice/' | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
+      <h3 style="margin-top: 0;">Voice Inbox</h3>
+      <p style="font-size: 0.9em;">Hands-free voice recording to capture brilliance while you're on the move.</p>
+      <small style="color: #007bff;">Learn more →</small>
+    </div>
+  </a>
 
-### Key Features:
+    <a href="{{ '/projects/mock/widget/' | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
+      <h3 style="margin-top: 0;">Ilseon Widget</h3>
+      <p style="font-size: 0.9em;">Convenient widget for easy access.</p>
+      <small style="color: #007bff;">Learn more →</small>
+    </div>
+  </a>
 
-#### Context Filtering
+</div>
 
-You define your main life roles: Work, Family, Health, Projects. When you switch to a context, everything else disappears. No giant master list messing with your attention.
+<style>
+  .feature-card:hover { border-color: #007bff !important; background: #fcfcfc; transform: translateY(-3px); }
+</style>
 
-#### Protected Focus Blocks
 
-Set a focus block (e.g. 45 or 60 minutes) and `Ilseon` gives you a clean circular countdown timer. It externalises the passage of time, helping counter time blindness.
+### The Vision
 
-#### Low-Sensory Reminders
-
-Notifications use soft vibration patterns and quiet tones instead of sharp alarms, designed to support focus without causing anxiety.
-
-#### Idea Inbox 
-
-Captures "non-task" mental clutter, such as fleeting ideas, random thoughts, or things to look up later. This separate inbox allows you to clear your mind without disrupting your current focus. Ideas can be converted into actionable tasks with a long-press action.
-
-#### Reflection Loop
-
-When you complete a task, `Ilseon` asks a simple question: *“How did that go?”*  
-This builds a habit of reflection and helps you understand your own focus patterns over time.
-
-#### Quick Capture
-
-Add a task or note in a couple of seconds through a floating capture button, ideal for getting thoughts out of your head before they disappear. It has configurable Bluetooth support for automatic speech-to-text; STT can also be activated by a microphone icon.
-
-#### Flexible Scheduling
-
-Focus blocks can repeat on specific days and fit into different contexts (e.g. Work on weekdays, Health on Monday/Wednesday/Friday).
-
-#### Low-Sensory Design
-
-Default dark mode, clean typography, and minimal visual elements keep the interface calm and predictable.
+`Ilseon` was born from the need for a "Front Line" productivity tool. Most apps are too heavy—they ask for categories, dates, and priorities before they let you save a thought. Ilseon assumes that **speed is the most important feature**.
 
 ### Technologies Used:
 
@@ -60,8 +73,8 @@ Default dark mode, clean typography, and minimal visual elements keep the interf
 - **Open Source:** Yes, the full codebase is available on GitHub
 
 
-**[Link to GitHub Repository](https://github.com/cladam/ilseon)**
+**[GitHub Repository](https://github.com/cladam/ilseon)**
 
-**[Link to Play Store](https://play.google.com/store/apps/details?id=com.ilseon&pcampaignid=web_share)**
+**[Play Store](https://play.google.com/store/apps/details?id=com.ilseon)**
 
 
