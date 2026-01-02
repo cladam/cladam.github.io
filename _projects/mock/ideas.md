@@ -11,7 +11,8 @@ parent: "mock"
 **The 2-System Idea Architecture**, the Idea Inbox is built on a "System 1 vs System 2" cognitive model, separating fast, fleeting thoughts from deliberate knowledge.
 
 <div style="display: flex; justify-content: center; margin: 30px 0;">
-	<img src="/assets/images/ilseon-screenshot-PS8.png" alt="Idea Inbox List" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"/>
+	<img src="/assets/images/ilseon-screenshot-PS8.png" alt="Idea Inbox" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"/>
+	<img src="/assets/images/ilseon-screenshot-PS8.1.png" alt="Idea Inbox Notes" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"/>
 </div>
 
 ### System 1: The Scratchpad (Capture)
