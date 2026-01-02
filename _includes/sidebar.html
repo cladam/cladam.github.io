@@ -25,31 +25,28 @@
             
             <span class="sidebar-nav-item">Projects</span>
 
-            {% comment %} 1. Get only Top-Level Projects {% endcomment %}
-            {% assign top_level_projects = site.projects | where_exp: "item", "item.parent == nil" %}
+            {% assign top_level = site.projects | where_exp: "item", "item.parent == nil" | sort: "title" %}
 
-            {% for project in top_level_projects %}
-              <a class="sidebar-nav-item project-nav-item {% if page.url == project.url %}active{% endif %}" 
-                 href="{{ project.url | relative_url }}">
+            {% for project in top_level %}
+              {% comment %} Strip /index/ from the URL for display if it exists {% endcomment %}
+              {% assign project_url = project.url | replace: '/index/', '/' %}
+              
+              <a class="sidebar-nav-item project-nav-item {% if page.url == project.url or page.url == project_url %}active{% endif %}" 
+                 href="{{ project_url | relative_url }}">
                 {{ project.title }}
               </a>
 
-              {% comment %} 2. Only show sub-nav if we are on this project or its children {% endcomment %}
-              {% if page.url contains project.url or page.parent == project.project_id %}
-                
-                {% comment %} 3. Filter for children that specifically belong to THIS project_id {% endcomment %}
-                {% assign sub_pages = site.projects | where: "parent", project.project_id %}
-                
-                {% if sub_pages.size > 0 %}
+              {% if page.url contains project_url and project.project_id %}
+                {% assign children = site.projects | where: "parent", project.project_id %}
+                {% if children.size > 0 %}
                   <div class="sidebar-sub-nav">
-                    {% for sub in sub_pages %}
-                      <a class="sidebar-nav-item" href="{{ sub.url | relative_url }}">
-                        ↳ {{ sub.title }}
+                    {% for child in children %}
+                      <a class="sidebar-nav-item" href="{{ child.url | relative_url }}">
+                        ↳ {{ child.title }}
                       </a>
                     {% endfor %}
                   </div>
                 {% endif %}
-
               {% endif %}
             {% endfor %}
         </nav>
