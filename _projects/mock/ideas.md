@@ -8,16 +8,24 @@ parent: "mock"
 
 # 💡 The Idea Inbox
 
-Most note-taking apps fail because they force you to organize the idea at the moment of inspiration. Ilseon separates **Capture** from **Storage** using a unique "2-System" architecture.
+**The 2-System Idea Architecture**, the Idea Inbox is built on a "System 1 vs System 2" cognitive model, separating fast, fleeting thoughts from deliberate knowledge.
 
-### System 1: Transient Quick Ideas (The Scratchpad)
-This is for the "fleeting thoughts"—the architectural patterns that come to you while walking or the snippet of code you want to try. 
-* **Transient by nature:** These ideas are meant to be processed, not buried.
-* **Low Friction:** No folders, no categories. Just raw thought.
+<div style="display: flex; justify-content: center; margin: 30px 0;">
+	<img src="/assets/images/ilseon-screenshot-PS8.png" alt="Idea Inbox List" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"/>
+</div>
 
-### System 2: Persisted Notes (The Knowledge Base)
-While Ilseon is not a dedicated long-form editor (like Obsidian or Notion), it contains a powerful persistence layer for ideas that prove their value.
-* **Promotion:** Once a transient idea is vetted, it can be "promoted" to a persisted note.
-* **The "Just Enough" Approach:** We provide enough structure to keep notes useful, without the overhead of a full-scale "Second Brain" system. 
+### System 1: The Scratchpad (Capture)
+
+This is for the "fleeting thoughts"—the architectural patterns that come to you while walking or the snippet of code you want to try.
+
+* **Low Friction:** No folders, no categories.
+* **Transient by nature:** These ideas are meant to be processed: converted to a task, saved as a persisten note, or discarded.
+
+### System 2: The Knowledge Base (Persist)
+
+Once a transient idea is vetted, it can be "promoted" to a persisted note.
+
+* **Markdown Support:** Basic formatting for code snippets and structured lists using a formatting bar.
+* **The "Just Enough" Approach:** We provide enough structure to keep notes useful without the overhead of a full-scale "Second Brain" system.
 
 > **The Ilseon Philosophy:** Don't let a powerful note-taking system distract you from the act of having ideas in the first place.
