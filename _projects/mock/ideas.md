@@ -28,4 +28,7 @@ Once a transient idea is vetted, it can be "promoted" to a persisted note.
 * **Markdown Support:** Basic formatting for code snippets and structured lists using a formatting bar.
 * **The "Just Enough" Approach:** We provide enough structure to keep notes useful without the overhead of a full-scale "Second Brain" system.
 
-> **The Ilseon Philosophy:** Don't let a powerful note-taking system distract you from the act of having ideas in the first place.
+
+#### The Ilseon Philosophy
+
+> Don't let a powerful note-taking system distract you from the act of having ideas in the first place.
