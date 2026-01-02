@@ -4,7 +4,7 @@ title: Voice Inbox
 parent: mock
 ---
 
-[← Back to mock Overview]({{ '/projects/mock/index/' | relative_url }})
+[← Back to mock Overview]({{ '/projects/mock/' | relative_url }})
 
 ## 🎙️ Hands-Free Productivity
 

@@ -125,15 +125,21 @@ a:hover {
 }
 
 /* Sidebar sub-item styling */
+.sidebar-sub-nav {
+  margin-left: 1.5rem; /* Aligns the vertical bar with the start of the parent text */
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.5rem;
+}
+
 .sidebar-sub-nav .sidebar-nav-item {
-  font-size: 0.75em;
-  padding-left: 40px;
-  border-left: 2px solid #eee;
-  margin-left: 10px;
+  font-size: 0.85em;
+  padding-left: 1rem;
+  font-weight: normal;
+  color: var(--sidebar-text-color);
 }
 
 .sidebar-sub-nav .sidebar-nav-item:hover {
-  border-left-color: #007bff;
+  color: var(--sidebar-highlight-color);
 }
 
 .project-nav-item {
