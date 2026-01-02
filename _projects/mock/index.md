@@ -19,15 +19,15 @@ project_id: mock
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px;">
   
-  <a href="{{ '/projects/ilseon/tasks/' | relative_url }}" style="text-decoration: none; color: inherit;">
+  <a href="{{ '/projects/mock/tasks/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
       <h3 style="margin-top: 0;">Tasks</h3>
-      <p style="font-size: 0.9em;">Efficient task tracking with a focus on 'What's Next'.</p>
+      <p style="font-size: 0.9em;">Efficient task tracking with a focus on 'Current Priority'.</p>
       <small style="color: #007bff;">Learn more →</small>
     </div>
   </a>
 
-  <a href="{{ '/projects/ilseon/ideas/' | relative_url }}" style="text-decoration: none; color: inherit;">
+  <a href="{{ '/projects/mock/ideas/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
       <h3 style="margin-top: 0;">Ideas</h3>
       <p style="font-size: 0.9em;">A digital scratchpad for fleeting thoughts and long-term vision.</p>
@@ -35,7 +35,7 @@ project_id: mock
     </div>
   </a>
 
-  <a href="{{ '/projects/ilseon/voice/' | relative_url }}" style="text-decoration: none; color: inherit;">
+  <a href="{{ '/projects/mock/voice/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
       <h3 style="margin-top: 0;">Voice</h3>
       <p style="font-size: 0.9em;">Hands-free capture using advanced voice-to-text integration.</p>
