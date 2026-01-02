@@ -30,7 +30,7 @@ project_id: "mock"
   <a href="{{ '/projects/mock/ideas/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
       <h3 style="margin-top: 0;">Idea Inbox</h3>
-      <p style="font-size: 0.9em;">AA dual-system approach separating transient "scratchpad" thoughts from long-term knowledge.</p>
+      <p style="font-size: 0.9em;">A dual-system approach separating transient "scratchpad" thoughts from long-term knowledge.</p>
       <small style="color: #007bff;">Learn more →</small>
     </div>
   </a>
@@ -61,3 +61,16 @@ project_id: "mock"
 ### The Vision
 
 `Ilseon` was born from the need for a "Front Line" productivity tool. Most apps are too heavy—they ask for categories, dates, and priorities before they let you save a thought. Ilseon assumes that **speed is the most important feature**.
+
+### Technologies Used:
+
+- **Platform:** Android  
+- **Language:** Kotlin  
+- **UI:** Jetpack Compose  
+- **Storage:** Room (SQLite)
+- **Open Source:** Yes, the full codebase is available on GitHub
+
+
+**[GitHub Repository](https://github.com/cladam/ilseon)**
+
+**[Play Store](https://play.google.com/store/apps/details?id=com.ilseon)**
