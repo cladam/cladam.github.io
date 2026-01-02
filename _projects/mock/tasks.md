@@ -18,6 +18,10 @@ Productivity isn't just a list of strings; it's a series of commitments. We cate
 * **The Time Block:** A hard commitment tied to a specific slot on the clock.
 * **The Duration:** A "deep work" chunk. You don't know when you'll start, but you know you need 90 minutes of silence to finish it.
 
+<div style="display: flex; justify-content: center; margin: 30px 0;">
+	<img src="/assets/images/ilseon-screenshot-PS2.png" alt="Momentum and Task View" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"/>
+</div>
+
 ### ⭐️ Momentum: The Reward of Focus
 
 Completion is the fuel, Ilseon tracks a 7-day rolling streak that resets every 24 hours. When you complete a task and pair it with a reflection, you trigger the **Momentum Engine**.
@@ -30,7 +34,7 @@ The **Momentum** is about the visual evolution of your day:
 4. **7+ Tasks — Mastery:** The pulsing star is replaced by a static **Mastery Badge**. You’ve moved past simple productivity into an exceptionally rare level of output.
 
 <div style="display: flex; justify-content: center; margin: 30px 0;">
-<img src="/assets/images/ilseon-screenshot-PS2.png" alt="Momentum and Task View" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"/>
+	<img src="/assets/images/ilseon-screenshot-PS10.png" alt="Task Matrix View" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"/>
 </div>
 
 ### The Ilseon Priority
@@ -42,10 +46,6 @@ We move beyond the "Due Date" obsession. Instead, Ilseon surfaces what you shoul
 * **Eisenhower Matrix:** Is this truly important, or just loud (urgent)?
 
 By blending these, the app hides the noise. If you're tired and at home, it won't show you high-effort work tasks. It shows you what you can actually finish now.
-
-<div style="display: flex; justify-content: center; margin: 30px 0;">
-<img src="/assets/images/ilseon-screenshot-PS10.png" alt="Task Matrix View" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"/>
-</div>
 
 ### Meta-Cognitive Reflections
 
