@@ -28,3 +28,4 @@ permalink: pretty
 collections:
   projects:
     output: true
+    permalink: /projects/:path/
