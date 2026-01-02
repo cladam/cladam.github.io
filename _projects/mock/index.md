@@ -1,6 +1,5 @@
 ---
 layout: page
-title: mock
 project_id: mock
 ---
 
