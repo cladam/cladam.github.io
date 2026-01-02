@@ -21,7 +21,7 @@ project_id: "ilseon"
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px;">
   
-  <a href="{{ '/projects/mock/tasks/' | relative_url }}" style="text-decoration: none; color: inherit;">
+  <a href="{{ '/projects/ilseon/tasks/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
       <h3 style="margin-top: 0;">Tasks & Reflections</h3>
       <p style="font-size: 0.9em;">Efficient task tracking with a focus on 'Current Priority'.</p>
@@ -29,7 +29,7 @@ project_id: "ilseon"
     </div>
   </a>
 
-  <a href="{{ '/projects/mock/ideas/' | relative_url }}" style="text-decoration: none; color: inherit;">
+  <a href="{{ '/projects/ilseon/ideas/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
       <h3 style="margin-top: 0;">Idea Inbox</h3>
       <p style="font-size: 0.9em;">A dual-system approach separating transient "scratchpad" thoughts from long-term knowledge.</p>
@@ -37,7 +37,7 @@ project_id: "ilseon"
     </div>
   </a>
 
-  <a href="{{ '/projects/mock/voice/' | relative_url }}" style="text-decoration: none; color: inherit;">
+  <a href="{{ '/projects/ilseon/voice/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
       <h3 style="margin-top: 0;">Voice Inbox</h3>
       <p style="font-size: 0.9em;">Hands-free voice recording to capture brilliance while you're on the move.</p>
@@ -45,7 +45,7 @@ project_id: "ilseon"
     </div>
   </a>
 
-    <a href="{{ '/projects/mock/widget/' | relative_url }}" style="text-decoration: none; color: inherit;">
+    <a href="{{ '/projects/ilseon/widget/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="padding: 20px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s;" class="feature-card">
       <h3 style="margin-top: 0;">Ilseon Widget</h3>
       <p style="font-size: 0.9em;">Convenient widget for easy access.</p>
@@ -62,7 +62,7 @@ project_id: "ilseon"
 
 ### The Vision
 
-`Ilseon` was born from the need for a "Front Line" productivity tool. Most apps are too heavy—they ask for categories, dates, and priorities before they let you save a thought. Ilseon assumes that **speed is the most important feature**.
+`Ilseon` was born from the need for a "Front Line" productivity tool. Most apps are too heavy; they ask for categories, dates, and priorities before they let you save a thought. Ilseon assumes that **speed is the most important feature**.
 
 ### Technologies Used:
 
