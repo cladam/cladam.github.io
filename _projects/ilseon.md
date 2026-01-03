@@ -62,7 +62,7 @@ project_id: "ilseon"
 
 ### The Vision
 
-`Ilseon` was born from the need for a "Front Line" productivity tool. Most apps are too heavy; they ask for categories, dates, and priorities before they let you save a thought. Ilseon assumes that **speed is the most important feature**.
+`Ilseon` is a **cognitive offloading** tool designed for neurodivergent users who need less friction, not more features. Its purpose is simple: help users reclaim their front line of focus, one context at a time.
 
 ### Technologies Used:
 
