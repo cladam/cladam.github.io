@@ -26,6 +26,7 @@ Ilseon follows a "local-first" philosophy. Your recordings are your own, stored 
 
 * **Location:** `Recordings/ilseon/` on your local device storage.
 * **Format:** Industry-standard `.m4a` files.
+* **Fidelity:** Audio is captured at **44.1kHz** with a **128kbps bitrate** using the **AAC_ELD** (Enhanced Low Delay) encoder. A professional-grade clarity whith a small storage footprint.
 * **Ownership:** Because these files are stored in a standard directory, they can be backed up, shared, or managed using ordinary OS functions or third-party cloud sync tools.
 
 #### Technical Implementation
@@ -34,4 +35,4 @@ The voice workflow is a two-stage pipeline designed for privacy and flexibility:
 1. **Local Audio Processing:** The app handles the audio recording using a background service to maintain state across different Android lifecycle events.
 2. **AI-Powered Refinement:** 
 	* **Transcription:** Converts raw audio into text, saved as a persistent **Note**.
-	* **Task Distillation:** If a Gemini API key is present, the app sends the transcript to the model with a specific system prompt to identify and format "Task" items.
+	* **Task Distillation:** If a Gemini API key is present, the app sends the transcript to the model (_gemini-2.5-flash_) with a specific system prompt to identify and format "Task" items.
