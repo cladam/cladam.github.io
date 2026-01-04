@@ -39,3 +39,9 @@ Once a transient idea is vetted, it can be "promoted" to a persisted note.
 #### The Philosophy
 
 > Don't let a powerful note-taking system distract you from the act of having ideas in the first place.
+
+<div style="text-align: center; padding: 40px 0; border-bottom: 1px solid #eee; margin-top: 25px;">
+     <a href="https://play.google.com/store/apps/details?id=com.ilseon" style="display: inline-block;">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="180" alt="Get it on Google Play">
+     </a>
+</div>

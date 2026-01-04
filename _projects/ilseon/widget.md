@@ -27,3 +27,9 @@ The top right of the widget features three dedicated buttons that act as shortcu
 * **Voice Memo:** Starts a new voice recording.
 
 By providing these direct paths, the widget ensures that the time between having a thought and saving it is as short as possible.
+
+<div style="text-align: center; padding: 40px 0; border-bottom: 1px solid #eee; margin-top: 25px;">
+     <a href="https://play.google.com/store/apps/details?id=com.ilseon" style="display: inline-block;">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="180" alt="Get it on Google Play">
+     </a>
+</div>

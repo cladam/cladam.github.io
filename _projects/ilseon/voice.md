@@ -36,3 +36,9 @@ The voice workflow is a two-stage pipeline designed for privacy and flexibility:
 2. **AI-Powered Refinement:** 
 	* **Transcription:** Converts raw audio into text, saved as a persistent **Note**.
 	* **Task Distillation:** If a Gemini API key is present, the app sends the transcript to the model (_gemini-2.5-flash_) with a specific system prompt to identify and format "Task" items.
+
+<div style="text-align: center; padding: 40px 0; border-bottom: 1px solid #eee; margin-top: 25px;">
+     <a href="https://play.google.com/store/apps/details?id=com.ilseon" style="display: inline-block;">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="180" alt="Get it on Google Play">
+     </a>
+</div>
