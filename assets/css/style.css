@@ -9,7 +9,7 @@
     --link-color: #007bff;
     --link-hover-color: #0056b3;
     --border-color: #eee;
-    --nav-width: 280px;
+    --nav-width: 350px;
     --inline-code-bg: #eef2f5; /* Light blue-grey for code background */
     --inline-code-text: #3d5a80; /* Darker blue for code text */
 }
@@ -107,6 +107,7 @@ a:hover {
     top: 0;
     overflow-y: auto;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
     z-index: 1002;
 }
 
