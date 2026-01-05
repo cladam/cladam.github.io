@@ -208,10 +208,10 @@ a:hover {
 /* Content Area */
 
 .main-content {
-    grid-area: main; /* Matches the grid definition in body */
-    padding: 4rem 40px; /* Top/Bottom matches your old 4rem, sides are 40px */
-    max-width: 1024px; /* Improves readability on wide screens */
-    box-sizing: border-box; /* Ensures padding doesn't break layout */
+    grid-area: main;
+    padding: 4rem 40px;
+    max-width: 975px;
+    box-sizing: border-box;
     flex-grow: 1;
 }
 
