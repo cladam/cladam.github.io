@@ -35,6 +35,21 @@ Once a transient idea is vetted, it can be "promoted" to a persisted note.
 * **Weight-Based Sorting:** Besides pinning a Note on-top, Notes also utilise swipe-to-weight mechanics, helping you put active Notes on top of your list.
 * **The "Just Enough" Approach:** We provide enough structure to keep notes useful without the overhead of a full-scale "Second Brain" system.
 
+### 🖼️ Visual Context: Image Attachments
+
+Sometimes an idea is a whiteboard sketch, a screenshot, or a page from a book. Ilseon now supports rich visual capture:
+
+* **Multi-Image Support:** Attach one or multiple images to any Idea or Note to provide immediate context.
+* **Seamless Editing:** Add or remove attachments at any time as your notes evolve from raw thoughts into structured knowledge.
+
+<div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+    <img src="/assets/images/idea_one_image.png" 
+         alt="Idea with one image attached" 
+         style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);"/>
+    <img src="/assets/images/idea_multiple_images.png" 
+         alt="Idea with multiple images attached" 
+         style="width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);"/>
+</div>
 
 #### The Philosophy
 
