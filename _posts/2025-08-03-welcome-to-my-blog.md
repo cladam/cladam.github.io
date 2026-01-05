@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome to my blog"
+tags: [blog, cladam]
 comments: true
 ---
 

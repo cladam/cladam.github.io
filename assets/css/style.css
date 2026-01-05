@@ -9,11 +9,14 @@
     --link-color: #007bff;
     --link-hover-color: #0056b3;
     --border-color: #eee;
+    --nav-width: 280px;
     --inline-code-bg: #eef2f5; /* Light blue-grey for code background */
     --inline-code-text: #3d5a80; /* Darker blue for code text */
 }
 
 /* Basic styles */
+
+/*
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.7;
@@ -22,6 +25,21 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
+}
+*/
+body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: var(--nav-width) 1fr;
+    grid-template-areas:
+        "sidebar main";
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--content-bg-color);
 }
 
 .container {
@@ -133,7 +151,7 @@ a:hover {
 
 .sidebar-sub-nav .sidebar-nav-item {
   font-size: 0.85em;
-  padding-left: 1rem;
+  padding: 6px 15px !important;
   font-weight: normal;
   color: var(--sidebar-text-color);
 }
@@ -178,6 +196,14 @@ a:hover {
     padding-top: 4rem;
     padding-bottom: 4rem;
     margin-left: 25rem; /* Increased margin to match new sidebar padding */
+}
+
+.main-content {
+    grid-area: main; /* Matches the grid definition in body */
+    padding: 4rem 40px; /* Top/Bottom matches your old 4rem, sides are 40px */
+    max-width: 1024px; /* Improves readability on wide screens */
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+    flex-grow: 1;
 }
 
 /* CTA button */
@@ -271,26 +297,79 @@ span.pagination-item {
     cursor: not-allowed;
 }
 
+/* Hamburgesa */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1003;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 4px auto;
+    background-color: var(--primary-text); /* Neutral dark gray/blue */
+    transition: 0.3s ease;
+}
+
+.hamburger.active .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.active .bar:nth-child(2) { opacity: 0; }
+.hamburger.active .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+
 /* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "main" "footer";
+    }
+
+    .hamburger { display: block; }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: var(--nav-width);
+        transform: translateX(-100%);
+        z-index: 1002;
+        background-color: var(--content-bg-color);
+        box-shadow: none;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+        box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    }
+
+    .main-content {
+        padding: 70px 20px 20px 20px !important;
+    }
+
+    .main-content {
+        padding: 70px 20px 20px 20px !important; /* Extra top padding for the mobile hamburger */
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 992px) {
     .sidebar {
         width: 16rem;
         padding: 2rem;
     }
-    .content {
-        margin-left: 20rem;
-    }
-}
 
-@media (max-width: 768px) {
-    .sidebar {
-        position: static;
-        width: auto;
-        text-align: center;
-    }
-    .content {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        padding-top: 2rem;
+    .main-content {
+        margin-left: 20rem;
     }
 }
