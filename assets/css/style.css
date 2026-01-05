@@ -30,6 +30,7 @@ body {
     line-height: 1.7;
     color: var(--text-color);
     background-color: var(--content-bg-color);
+    min-width: 0;
 }
 
 .container {
@@ -73,6 +74,17 @@ a:hover {
   white-space: pre-wrap; /* Wraps text if it's too long */
   word-break: break-all;
   overflow-x: auto; /* Adds a scrollbar if wrapping isn't enough */
+}
+
+/* Targets Jekyll/Rouge code blocks */
+.highlighter-rouge, 
+pre.highlight,
+pre {
+    max-width: 100%;
+    overflow-x: auto; /* Adds a horizontal scrollbar if the line is too long */
+    white-space: pre; /* Keeps code structure but allows scrolling */
+    word-wrap: normal;
+    border-radius: 4px;
 }
 
 /* Make images responsive */
