@@ -70,6 +70,9 @@ a:hover {
   font-size: 85%;
   border-radius: 3px;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  white-space: pre-wrap; /* Wraps text if it's too long */
+  word-break: break-all;
+  overflow-x: auto; /* Adds a scrollbar if wrapping isn't enough */
 }
 
 /* Make images responsive */
