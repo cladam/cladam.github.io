@@ -115,7 +115,7 @@ a:hover {
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    margin: auto 2.5rem;
+    margin: auto 5rem;
     border: 3px solid var(--sidebar-highlight-color);
     object-fit: cover;
 }
@@ -324,7 +324,7 @@ span.pagination-item {
     width: 22px;
     height: 2px;
     margin: 4px auto;
-    background-color: var(--primary-text); /* Neutral dark gray/blue */
+    background-color: var(--text-color);
     transition: 0.3s ease;
 }
 
