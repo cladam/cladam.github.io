@@ -46,7 +46,7 @@
     <main class="main-container">
         {% include sidebar.html %}
         <div class="main-content" id="main-content">
-            {% unless page.project_id %}
+            {% unless page.project_id or node.title != "Home" or node.title != "About Me" %}
               <h1 class="page-title">{{ page.title }}</h1>
             {% endunless %}
             {{ content }}
