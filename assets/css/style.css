@@ -43,6 +43,13 @@ body {
     margin: 0 auto;
 }
 
+.main-container {
+    display: grid;
+    grid-template-columns: var(--nav-width) 1fr;
+    grid-template-areas: "sidebar main";
+    min-height: 100vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: var(--heading-color);
