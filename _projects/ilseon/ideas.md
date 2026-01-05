@@ -33,7 +33,7 @@ Once a transient idea is vetted, it can be "promoted" to a persisted note.
 
 * **Markdown Support:** Basic formatting for code snippets and structured lists using a formatting bar.
 * **Weight-Based Sorting:** Besides pinning a Note on-top, Notes also utilise swipe-to-weight mechanics, helping you put active Notes on top of your list.
-* **The "Just Enough" Approach:** We provide enough structure to keep notes useful without the overhead of a full-scale "Second Brain" system.
+* **The "Just Enough" Approach:** Ilseon provide enough structure to keep notes useful without the overhead of a full-scale "Second Brain" system.
 
 ### 🖼️ Visual Context: Image Attachments
 
