@@ -101,6 +101,7 @@ a:hover {
     background-color: var(--sidebar-bg-color);
     border-right: 1px solid var(--border-color);
     color: var(--sidebar-text-color);
+    padding: 1.3rem;
     height: 100vh;
     position: sticky;
     top: 0;
