@@ -215,7 +215,7 @@ a:hover {
     padding: 4rem 40px;
     max-width: 975px;
     box-sizing: border-box;
-    flex-grow: 1;
+    overflow-x: hidden;
 }
 
 /* CTA button */
