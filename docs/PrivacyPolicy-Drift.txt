@@ -1,0 +1,53 @@
+Privacy Policy for ilseon Drift
+
+Effective Date: November 15, 2025
+
+This Privacy Policy governs the manner in which cladam ("we," "us," or "our") makes the Ilseon Drift mobile application (the "App") available to users (each, a "User").
+
+We are committed to protecting your privacy by ensuring complete transparency about our data practices.
+
+1. DATA COLLECTION
+
+Ilseon Drift is a privacy-first application and does not collect, store, or transmit any personal data from its users.
+
+The App's design and functionality ensures that no information that can identify you, your device, or your usage patterns is collected by us or any third-party services.
+
+    No Personal Data: We do not collect names, email addresses, phone numbers, location data (GPS or IP-derived), financial information, or any other personally identifiable information.
+
+    No Usage Data: We do not track or record in-app usage, features used, or any behavioral data for analytics or advertising purposes.
+
+    No Device Information: We do not collect device IDs, operating system versions, or mobile network information.
+
+    No Third-Party Analytics/Advertising: The App does not integrate with any third-party analytics or advertising SDKs (Software Development Kits) that collect data from users.
+
+2. DATA STORAGE AND SECURITY
+
+Since Ilseon Drift does not collect any personal data, there is no personal data stored on our servers that could be subject to unauthorized access, disclosure, or breach.
+
+Any data the App uses (such as internal settings or non-identifiable usage preferences) is stored locally on your device only.
+
+3. THIRD-PARTY SERVICES
+
+Ilseon Drift does not rely on third-party services that collect user data.
+
+4. SHARING AND DISCLOSURE OF DATA
+
+Since we do not collect any personal data, we have no personal data to share or disclose to any third parties, including service providers, law enforcement, or for business purposes.
+
+5. YOUR RIGHTS AND CHOICES
+
+Because Ilseon Drift does not collect or retain any personal data about you, the concepts of data access, correction, deletion, or portability do not apply.
+
+6. CHILDREN'S PRIVACY
+
+Ilseon Drift does not collect any personal information from children under the age of 13.
+
+7. CHANGES TO THIS POLICY
+
+We may update this Privacy Policy from time to time if the App's functionality changes in a way that would affect data collection. We will indicate the revised version by updating the Effective Date at the top of this policy.
+
+8. CONTACT US
+
+If you have any questions or comments about this Privacy Policy, please contact us at the following email address:
+
+    Email: claes.adamsson@gmail.com
