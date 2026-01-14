@@ -69,5 +69,7 @@ Designed for speed and "muscle memory" to keep your hands on the keys and your m
 
 ### The ilseon Umbrella
 
-> **ilseon (Mobile):** High-speed capture and single-priority execution on the go.
+> **ilseon (Mobile):** High-speed capture and single-priority execution on the go.  
 > **myeon (TUI):** Desktop triage and spatial visualisation.
+
+**[GitHub Repository](https://github.com/cladam/myeon)**
