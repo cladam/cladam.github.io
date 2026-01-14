@@ -55,6 +55,7 @@ Designed for speed and "muscle memory" to keep your hands on the keys and your m
 | `h / l` | **Shift** | Move between Idea, To Do, Doing, and Done. |
 | `j / k` | **Scan** | Navigate through tasks in a column. |
 | `Enter` | **Commit** | Move a task to the next stage of flow. |
+| `Backspace` | **Un-commit** | Move a task backwards one stage. | 
 | `c` | **Context** | Filter out the noise of unrelated projects. |
 | `d / e` | **Clean** | Delete or edit to maintain a tidy landscape. |
 
