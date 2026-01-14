@@ -7,7 +7,7 @@ project_id: "myeon"
 ---
 
 <p align="center">
-  <img src="/assets/images/myeon-screenshot.png" alt="myeon screenshot" width="200"/>
+  <img src="/assets/images/myeon-screenshot.png" alt="myeon screenshot" width="500"/>
 </p>
 
 ## Overview
