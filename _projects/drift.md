@@ -47,11 +47,11 @@ This balances the intensity of the present moment with the wider context of the 
 
 **Drift** shares the exact same "Quiet Colours" DNA as the rest of the ecosystem to ensure a low-sensory experience:
 
-| State | Colour | Meaning |
-| --- | --- | --- |
-| **Optimal** | Sage (StatusMedium) | Balanced regulation and recovery. |
-| **Alert** | Ochre (StatusHigh) | Increased mobilisation and effort. |
-| **Urgent** | Terracotta (StatusUrgent) | High stress or exhaustion; time to drift. |
+| State         | Colour      | Meaning                             |
+| ------------- | ----------- | ----------------------------------- |
+| **Optimal**   | Sage        | Balanced regulation and recovery.   |
+| **Alert**     | Ochre       | Increased mobilisation and effort.  |
+| **Urgent**    | Terracotta  | High stress or exhaustion.          |
 
 ## Technology Used
 
