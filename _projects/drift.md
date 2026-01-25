@@ -1,9 +1,9 @@
 ---
 layout: project
-title: "drift"
+title: "Drift"
 tagline: "Biometric health intelligence for self-regulation"
 tags: [project, drift]
-project_id: "drift"
+project_id: "Drift"
 ---
 
 <p align="center">
@@ -14,7 +14,7 @@ project_id: "drift"
 
 **Drift** is a health intelligence tool built for stillness and self-regulation. As the biometric pillar of the [ilseon](https://cladam.github.io/projects/ilseon/) ecosystem, it translates the body’s quiet signals into a visual language that remains intuitive even during periods of high cognitive load.
 
-Drift helps you understand your current capacity.
+Drift helps you understand your current capacity by looking at **BPM, HRV, SI and amount of sleep per night**.
 
 ## Biometrics as a Compass
 
