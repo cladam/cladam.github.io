@@ -28,51 +28,62 @@ Claes as in `/klaːs/`
 
 ---
 
-### Clarity, Autonomy and Collaboration
+### 2. Clarity, Autonomy and Collaboration
+*High performance is a product of aligned effort.*
 
 | # | Question | What to look for | Yes / No | Notes |
-|---|-----------|------------------|-----------|-------|
-| 4 | Do engineers understand the “why” behind the work? | Purpose and customer value are explained, not just tasks. | | |
-| 5 | Do teams have a clear backlog and roadmap? | Work is visible, prioritised, and linked to outcomes. | | |
-| 6 | Do you communicate openly and directly when solving problems? | Discussions are honest, respectful, and focused on improvement. | | |
-| 7 | Do teams collaborate across functions (e.g. Development, Operations, Product, Design)? | Boundaries don’t block progress, teams solve problems together. | | |
-| 8 | Do you celebrate and reward people who take initiative? | Efforts to improve, simplify, or innovate are recognised and shared. | | |
+|---|:---|:---|:---:|:---|
+| 4 | **The "Why"** | Purpose and customer value are explained, not just tasks. | [ ] | |
+| 5 | **Clear Roadmap** | Work is visible, prioritised, and linked to outcomes. | [ ] | |
+| 6 | **Open Communication** | Discussions are honest, respectful, and focused on improvement. | [ ] | |
+| 7 | **Cross-functional Collaboration** | Boundaries don’t block progress; teams solve problems together. | [ ] | |
+| 8 | **Rewarded Initiative** | Efforts to improve, simplify, or innovate are recognised and shared. | [ ] | |
+{: .claes-test-table}
 
 ---
 
-### Sustainable Engineering Culture
+### 3. Sustainable Engineering Culture
+*Building the safety net into the daily workflow.*
 
 | # | Question | What to look for | Yes / No | Notes |
-|---|-----------|------------------|-----------|-------|
-| 9 | Do you have clear “Definition of Done” standards for production readiness? | Reliability, observability, security, and rollback considerations are part of finishing work, not afterthoughts. | | |
-| 10 | Do you use code reviews and automated testing? | Code is reviewed for quality and learning; automated tests run in CI. | | |
-| 11 | Are Continuous Integration and Continuous Delivery (CI/CD) in active use? | Changes can be deployed safely and frequently with minimal manual steps. | | |
-| 12 | Do you have clear on-call and escalation processes? | Incidents are handled calmly, ownership is shared, and on-call is compensated or balanced with time off. | | |
-| 13 | Do you practise InnerSource (internal open source)? | Teams share code and tools openly across the organisation (primarily applicable in multi-team environments). | | |
+|---|:---|:---|:---:|:---|
+| 9 | **Production Readiness** | Reliability, observability, and rollback plans are part of the "Definition of Done." | [ ] | |
+| 10 | **Quality Gates** | Code reviews and automated tests are non-negotiable and run in CI. | [ ] | |
+| 11 | **CI/CD** | Changes can be deployed safely and frequently with minimal manual steps. | [ ] | |
+| 12 | **Humane On-Call** | Incidents are handled calmly; on-call is compensated or balanced with time off. | [ ] | |
+| 13 | **InnerSource** | Teams share code and tools openly across the organisation. | [ ] | |
+{: .claes-test-table}
 
 ---
 
-### Career Progression and Growth
+### 4. Career Progression and Growth
+*Growth as a function of impact, not just management tenure.*
 
 | # | Question | What to look for | Yes / No | Notes |
-|---|-----------|------------------|-----------|-------|
-| 14 | Do you have technical Engineering Managers? | Managers understand the technical context and support engineers effectively. | | |
-| 15 | Do you have a clear career ladder and promotion process? | Paths for growth are transparent, fair, and based on impact. | | |
-| 16 | Do you have separate tracks for individual contributors and managers? | Technical excellence and leadership are equally valued. | | |
-| 17 | Do you have a culture of regular, constructive feedback? | Feedback is ongoing, two-way, and used for growth; not performance policing. | | |
-| 18 | Do you invest in people’s personal and professional growth? | There’s dedicated time and budget for learning, mentoring, and development. | | |
+|---|:---|:---|:---:|:---|
+| 14 | **Technical Leadership** | Managers understand the technical context and support engineers effectively. | [ ] | |
+| 15 | **Career Ladder** | Paths for growth are transparent, fair, and based on impact. | [ ] | |
+| 16 | **Parallel Tracks** | IC and Manager tracks are separate and equally valued. | [ ] | |
+| 17 | **Feedback Culture** | Feedback is ongoing, two-way, and used for growth; not performance policing. | [ ] | |
+| 18 | **Growth Investment** | There’s dedicated time and budget for learning and mentoring. | [ ] | |
+{: .claes-test-table}
 
 ---
 
 ### Scoring Guide
 
-- **15–18** → Exceptional developer culture: protect and build upon it  
-- **10–14** → Healthy foundation: identify one area per quarter to improve  
-- **0–9** → Warning signs: focus on essentials such as safety, clarity, and leadership  
+- **15–18** → **Exceptional**: Protect and build upon it.
+- **10–14** → **Healthy**: Identify one area per quarter to improve.
+- **0–9** → **Warning**: Focus on essentials like safety, clarity, and leadership.
 
 ---
 
 ### How to Use
 
-Run this as a team exercise. Discuss each question openly and agree on whether the answer is genuinely “yes”.  
-Capture examples and gaps, then turn them into concrete improvement actions.
+Run this as a team exercise. Discuss each question openly and agree on whether the answer is genuinely “yes”. If you find a "No," you have found the friction in your environment.
+
+Remember Kurt Lewin's equation:
+
+$$B = f(P, E)$$
+
+*Behavior is a function of the Person and their Environment.* Fix the environment, and the behavior will follow.
