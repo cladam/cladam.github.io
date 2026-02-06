@@ -8,9 +8,9 @@ comments: true
 
 In a [previous post](https://cladam.github.io/2025/12/22/lewin-and-devops/), I talked about Kurt Lewin’s equation: $$B = f(P, E)$$.
 
-Behavior is a function of the Person and their Environment.
+Behaviour is a function of the Person and their Environment.
 
-When a team is struggling with missed “deadlines”, burnout, or shipping bugs, management usually looks at the **Person**. They hire “rockstars” or mandate “no.” They try to change the $$P$$.
+When a team is struggling with missed “deadlines”, burnout, or shipping bugs, management usually looks at the **Person**. They hire “rockstars” or mandate “accountability”. They try to change the $$P$$.
 
 But changing the $$P$$ is an exercise in futility. The $$E$$ (the **Environment**) is the lever we actually control.
 
@@ -18,13 +18,13 @@ In 2000, Joel Spolsky gave us the [Joel Test](https://www.joelonsoftware.com/200
 
 Today, the tools are table stakes. Our modern bottlenecks are no longer technical; they are cultural and systemic.
 
-I’ve spent some time thinking about what the Joel Test looks like if we apply Lewin’s Equation to 2025. I call it **The Claes Test**, or more formally, "The Developer Culture Test".
+I’ve spent some time thinking about what the Joel Test looks like if we apply Lewin’s Equation to 2025. I call it **The Claes Test**, or more formally, **The Developer Culture Test**.
 
 Claes, as in `/klaːs/`
 
 ## Beyond Intentions
 
-Most companies "value" psychological safety. Most companies "believe" in growth. But values and beliefs are invisible. Behaviour is what matters.
+Most companies "value" psychological safety. Most companies "believe" in growth. But values and beliefs aren’t tangible or directly visible. Behaviour is the real litmus test.
 
 The Claes Test doesn't ask what you believe. It asks what you **do**.
 
@@ -41,15 +41,17 @@ If the environment is built on fear or financial instability, you won't get inno
 ### 2. Clarity & Alignment
 
 Autonomy without clarity is a recipe for chaos.
+
 4.  **The "Why":** Can every engineer explain the customer impact of their current sprint?
-5.  **Visible Roadmap:** Is the backlog prioritized, visible, and linked to business goals?
+5.  **Visible Roadmap:** Is the backlog prioritised, visible, and linked to business goals?
 6.  **Direct Communication:** Is there a documented process (like RFCs) for technical dissent?
 7.  **Cross-Functional Unity:** Do Dev, Ops, and Product solve problems together, or "pass the ticket"?
-8.  **Recognized Initiative:** Is work that improves the "commons" (refactoring, tooling) rewarded?
+8.  **Recognised Initiative:** Is work that improves the "commons" (refactoring, tooling) rewarded?
 
 ### 3. Sustainable Engineering
 
-This is where we measure the "friction" in your environment. High friction = low velocity.
+This is where we measure the "friction" in your environment. High friction = low throughput.
+
 9.  **Operational Readiness:** Is there a mandatory "Definition of Done" for production safety?
 10. **Quality Gates:** Are code reviews and automated testing non-negotiable?
 11. **Continuous Delivery:** Can you deploy safely multiple times a day?
@@ -59,6 +61,7 @@ This is where we measure the "friction" in your environment. High friction = low
 ### 4. Growth & Progression
 
 If the environment doesn't offer a path forward, the best people will find one that does.
+
 14. **Technical Management:** Do leaders have the depth to be credible partners to the team?
 15. **Transparent Ladder:** Are promotion criteria objective and public?
 16. **Parallel Tracks:** Can a Staff Engineer earn/influence as much as a Director?
@@ -72,7 +75,7 @@ The Joel Test was binary. You either did it or you didn't.
 
 The Claes Test is a mirror.
 
-If you want to understand why your team's behavior isn't meeting expectations, stop looking at the people. Run this test. Be honest.
+If you want to understand why your team's behaviour isn't meeting expectations, stop looking at the people. Run this test and be honest.
 
 **A “yes” requires evidence.** “We try to do this” is a “no.”
 
