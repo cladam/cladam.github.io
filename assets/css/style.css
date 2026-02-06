@@ -292,6 +292,41 @@ hr {
     margin: 2rem 0;
 }
 
+/* Custom styling for the Claes Test tables */
+.claes-test-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.95rem;
+}
+
+.claes-test-table th, .claes-test-table td {
+  padding: 12px 15px;
+  border: 1px solid #e1e4e8;
+  vertical-align: top; /* Keeps text aligned at the top if one cell is longer */
+}
+
+/* Give the descriptive columns more "breathing room" */
+.claes-test-table th:nth-child(2), 
+.claes-test-table td:nth-child(2) {
+  width: 25%;
+}
+
+.claes-test-table th:nth-child(3), 
+.claes-test-table td:nth-child(3) {
+  width: 40%;
+}
+
+/* Mobile responsiveness: Allow the table to scroll horizontally on small screens */
+@media screen and (max-width: 768px) {
+  .claes-test-table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+}
+
+
 /* Pagination styles */
 .pagination {
     display: flex;

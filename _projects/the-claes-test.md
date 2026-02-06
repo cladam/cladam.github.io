@@ -17,12 +17,12 @@ Claes as in `/klaːs/`
 
 ### The Basics
 
+{:.claes-test-table}
 | # | Question | What to look for | Yes / No | Notes |
-|---|-----------|------------------|-----------|-------|
-| 1 | Do you work in a psychologically safe and blameless culture? | People can speak up, make mistakes, and raise concerns without fear of blame; blameless post-mortems are practised after incidents. | | |
-| 2 | Do you pay a fair and competitive wage for your local market? | Salaries are regularly reviewed, benchmarked, and discussed transparently. | | |
-| 3 | Do you offer flexible working hours? | Developers can plan their day for focus and work-life balance, not rigid schedules. | | |
-
+|---|:---|:---|:---:|:---|
+| 1 | **Psychological Safety** | People can speak up, make mistakes, and raise concerns without fear; blameless post-mortems are practiced. | [ ] | |
+| 2 | **Fair Wage** | Salaries are regularly reviewed, benchmarked, and discussed transparently. | [ ] | |
+| 3 | **Flexibility** | Developers can plan their day for focus and balance, not rigid schedules. | [ ] | |
 ---
 
 ### Clarity, Autonomy and Collaboration
