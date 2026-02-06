@@ -15,15 +15,17 @@ Claes as in `/klaːs/`
 
 ---
 
-### The Basics
+### 1. The Basics
 
-{:.claes-test-table}
+*If these are missing, the environment is working against the people.*
 
 | # | Question | What to look for | Yes / No | Notes |
 |---|:---|:---|:---:|:---|
 | 1 | **Psychological Safety** | People can speak up, make mistakes, and raise concerns without fear; blameless post-mortems are practiced. | [ ] | |
 | 2 | **Fair Wage** | Salaries are regularly reviewed, benchmarked, and discussed transparently. | [ ] | |
 | 3 | **Flexibility** | Developers can plan their day for focus and balance, not rigid schedules. | [ ] | |
+{: .claes-test-table}
+
 ---
 
 ### Clarity, Autonomy and Collaboration
