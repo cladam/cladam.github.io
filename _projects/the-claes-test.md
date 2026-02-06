@@ -18,6 +18,7 @@ Claes as in `/klaːs/`
 ### The Basics
 
 {:.claes-test-table}
+
 | # | Question | What to look for | Yes / No | Notes |
 |---|:---|:---|:---:|:---|
 | 1 | **Psychological Safety** | People can speak up, make mistakes, and raise concerns without fear; blameless post-mortems are practiced. | [ ] | |

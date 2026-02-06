@@ -10,7 +10,7 @@ In a [previous post](https://cladam.github.io/2025/12/22/lewin-and-devops/), I t
 
 Behavior is a function of the Person and their Environment.
 
-When a team is struggling with missed “deadlines”, burnout, or shipping bugs, management usually looks at the **Person**. They hire “rockstars” or mandate “no.” They try to change the $P$.
+When a team is struggling with missed “deadlines”, burnout, or shipping bugs, management usually looks at the **Person**. They hire “rockstars” or mandate “no.” They try to change the $$P$$.
 
 But changing the $$P$$ is an exercise in futility. The $$E$$ (the **Environment**) is the lever we actually control.
 
