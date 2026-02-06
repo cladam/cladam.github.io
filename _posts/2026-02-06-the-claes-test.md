@@ -85,4 +85,5 @@ If you want a practical way to do that, run the Claes Test with your team.
 
 It’s designed to surface where your culture is helping, and where it’s holding you back.
 
-[The Claes Test](https://cladam.github.io/the-claes-test)
+[The Claes Test](https://cladam.github.io/projects/the-claes-test/)
+
