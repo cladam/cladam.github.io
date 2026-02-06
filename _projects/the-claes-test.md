@@ -29,6 +29,7 @@ Claes as in `/klaːs/`
 ---
 
 ### 2. Clarity, Autonomy and Collaboration
+
 *High performance is a product of aligned effort.*
 
 | # | Question | What to look for | Yes / No | Notes |
@@ -43,6 +44,7 @@ Claes as in `/klaːs/`
 ---
 
 ### 3. Sustainable Engineering Culture
+
 *Building the safety net into the daily workflow.*
 
 | # | Question | What to look for | Yes / No | Notes |
@@ -57,7 +59,8 @@ Claes as in `/klaːs/`
 ---
 
 ### 4. Career Progression and Growth
-*Growth as a function of impact, not just management tenure.*
+
+*Growth as a function of impact.*
 
 | # | Question | What to look for | Yes / No | Notes |
 |---|:---|:---|:---:|:---|
@@ -86,4 +89,4 @@ Remember Kurt Lewin's equation:
 
 $$B = f(P, E)$$
 
-*Behavior is a function of the Person and their Environment.* Fix the environment, and the behavior will follow.
+*Behaviour is a function of the Person and their Environment.* Fix the environment, and the behavior will follow.
