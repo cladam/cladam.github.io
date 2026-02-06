@@ -6,7 +6,7 @@ tags: [project, test, culture, DevOps]
 project_id: "The Claes Test"
 ---
 
-*A modern take on “The Joel Test”, focused on what truly shapes great software teams: clarity, autonomy, collaboration, sustainable engineering, and career growth.*
+*A modern take on “The Joel Test”, focused on what shapes great software teams: clarity, autonomy, collaboration, sustainable engineering, and career growth.*
 
 This test is designed for engineering leaders, managers, and teams who want to take an honest look at their developer culture.  
 For each question, answer **“yes”** only if you can clearly demonstrate it with evidence through actions; not intentions.
