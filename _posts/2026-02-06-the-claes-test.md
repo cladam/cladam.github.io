@@ -1,20 +1,18 @@
 ---
 layout: post
 title: The Claes Test
-tagline: The Developer Culture Test
+tagline: Engineering the Environment for Great Work
 tags: [DevOps, culture, team]
 comments: true
 ---
 
-# The Claes Test: Engineering the Environment for Great Work
-
-In a [previous post](https://cladam.github.io/2025/12/22/lewin-and-devops/), I talked about Kurt Lewin’s equation: $B = f(P, E)$.
+In a [previous post](https://cladam.github.io/2025/12/22/lewin-and-devops/), I talked about Kurt Lewin’s equation: $$B = f(P, E)$$.
 
 Behavior is a function of the Person and their Environment.
 
 When a team is struggling with missed “deadlines”, burnout, or shipping bugs, management usually looks at the **Person**. They hire “rockstars” or mandate “no.” They try to change the $P$.
 
-But changing the $P$ is an exercise in futility. The $E$ (the **Environment**) is the lever we actually control.
+But changing the $$P$$ is an exercise in futility. The $$E$$ (the **Environment**) is the lever we actually control.
 
 In 2000, Joel Spolsky gave us the [Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/). It was a brilliant, 12-question metric for the engineering environment. But back then, the environment was mostly about tools: *Do you use source control? Do you have a bug database?*
 
@@ -30,7 +28,7 @@ Most companies "value" psychological safety. Most companies "believe" in growth.
 
 The Claes Test doesn't ask what you believe. It asks what you **do**.
 
-It’s divided into four environmental pillars. If you can’t answer "Yes" and provide evidence for these 18 points, your $E$ is likely working against your $B$.
+It’s divided into four environmental pillars. If you can’t answer "Yes" and provide evidence for these 18 points, your $$E$$ is likely working against your $$B$$.
 
 ### 1. The Foundation (The Safety Net)
 

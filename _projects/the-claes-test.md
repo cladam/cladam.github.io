@@ -1,11 +1,10 @@
 ---
 layout: project
 title: "The Claes Test"
+tagline: "The Developer Culture Test"
 tags: [project, test, culture, DevOps]
 project_id: "The Claes Test"
 ---
-
-# The Claes Test: The Developer Culture Test
 
 *A modern take on “The Joel Test”, focused on what truly shapes great software teams: clarity, autonomy, collaboration, sustainable engineering, and career growth.*
 
