@@ -89,4 +89,4 @@ Remember Kurt Lewin's equation:
 
 $$B = f(P, E)$$
 
-*Behaviour is a function of the Person and their Environment.* Fix the environment, and the behavior will follow.
+*Behaviour is a function of the Person and their Environment.* Fix the environment, and the behaviour will follow.
