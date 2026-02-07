@@ -10,11 +10,11 @@ project_id: "The Claes Test"
   .claes-test-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; table-layout: fixed; }
   .claes-test-table th, .claes-test-table td { border: 1px solid #ddd; padding: 12px; vertical-align: top; text-align: left; word-wrap: break-word; }
   .claes-test-table th { background-color: #f8f9fa; }
-  .claes-test-table td:nth-child(1) { width: 5%; }
+  .claes-test-table td:nth-child(1) { width: 3%; }
   .claes-test-table td:nth-child(2) { width: 25%; font-weight: 600; }
   .claes-test-table td:nth-child(3) { width: 35%; font-size: 0.9em; color: #555; }
-  .claes-test-table td:nth-child(4) { width: 8%; text-align: center; }
-  .claes-test-table td:nth-child(5) { width: 27%; }
+  .claes-test-table td:nth-child(4) { width: 5%; text-align: center; }
+  .claes-test-table td:nth-child(5) { width: 32%; }
   .claes-test-table textarea { width: 100%; min-height: 60px; border: 1px solid #eee; border-radius: 4px; padding: 5px; font-family: inherit; font-size: 0.85em; resize: vertical; }
   #results-area { background: #fdfdfd; padding: 20px; border: 2px solid #eee; border-radius: 8px; margin-top: 30px; text-align: center; }
   .print-btn { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; margin-top: 15px; }
@@ -76,7 +76,7 @@ project_id: "The Claes Test"
         <tr><th>#</th><th>Question</th><th>What to look for</th><th>Yes?</th><th>Evidence / Gaps</th></tr>
       </thead>
       <tbody>
-        <tr><td>9</td><td>Definition of Done</td><td>Reliability, observability, and rollback plans are part of finishing work.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>9</td><td>Production Readiness</td><td>Reliability, observability, and rollback plans are part of the "Definition of Done."</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
         <tr><td>10</td><td>Code Reviews & Testing</td><td>Code is reviewed for quality; automated tests run in CI.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
         <tr><td>11</td><td>CI/CD</td><td>Changes can be deployed safely and frequently with minimal manual steps.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
         <tr><td>12</td><td>On-call Processes</td><td>Incidents are handled calmly; ownership is shared and on-call is compensated or balanced with time off.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
