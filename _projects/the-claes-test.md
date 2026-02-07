@@ -15,21 +15,10 @@ project_id: "The Claes Test"
   .claes-test-table td:nth-child(3) { width: 35%; font-size: 0.9em; color: #555; }
   .claes-test-table td:nth-child(4) { width: 5%; text-align: center; }
   .claes-test-table td:nth-child(5) { width: 32%; }
-  .claes-test-table textarea {
-    width: calc(100% + 12px);
-    min-height: 60px;
-    margin-left: -6px;
-    margin-right: -6px;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    padding: 8px;
-    font-family: inherit;
-    font-size: 0.85em;
-    resize: vertical;
-  }
+  .claes-test-table textarea { width: 100%; min-height: 60px; border: 1px solid #eee; border-radius: 4px; padding: 5px; font-family: inherit; font-size: 0.85em; resize: vertical; }
   #results-area { background: #fdfdfd; padding: 20px; border: 2px solid #eee; border-radius: 8px; margin-top: 30px; text-align: center; }
   .print-btn { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; margin-top: 15px; }
-  .print-btn:hover { background: #0056b3; }
+  .print-btn:hover { background: #0058a3; }
   
   @media print {
     .sidebar, .hamburger, .print-btn, .tags, .sidebar-social, .sidebar-footer { display: none !important; }
