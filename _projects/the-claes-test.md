@@ -46,10 +46,9 @@ project_id: "The Claes Test"
         <tr><th>#</th><th>Question</th><th>What to look for</th><th>Yes?</th><th>Evidence / Gaps</th></tr>
       </thead>
       <tbody>
-        <tr><td>1</td><td>Psychological Safety</td><td>People can speak up, make mistakes, and raise concerns without fear; blameless post-mortems are practised.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></textarea></td></tr>
+        <tr><td>1</td><td>Psychological Safety</td><td>People can speak up, make mistakes, and raise concerns without fear; blameless post-mortems are practised.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
         <tr><td>2</td><td>Fair Wage</td><td>Salaries are regularly reviewed, benchmarked, and discussed transparently.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
-        <tr><td>3</td><td>Flexible Hours</td><td>Developers can plan their day for focus and work-life balance, not rigid schedules.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea>
-</td></tr>
+        <tr><td>3</td><td>Flexible Hours</td><td>Developers can plan their day for focus and work-life balance, not rigid schedules.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
       </tbody>
     </table>
   </section>
