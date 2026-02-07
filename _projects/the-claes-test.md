@@ -136,7 +136,10 @@ project_id: "The Claes Test"
 ---
 
 ### How to Use
-Run this as a team exercise. Discuss each question openly and agree on whether the answer is genuinely “yes”. If you find a “No,” you have found the friction in your environment.
+
+Run this as a team exercise. Discuss each question openly and agree on whether the answer is genuinely “yes”. 
+If a question is left unticked, you’ve likely found friction in your environment.
+
 Capture examples and gaps, then turn them into concrete improvement actions.
 
 Remember Kurt Lewin's equation:
