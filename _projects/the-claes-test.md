@@ -17,8 +17,8 @@ project_id: "The Claes Test"
   .claes-test-table td:nth-child(5) { width: 32%; }
   .claes-test-table textarea { width: 100%; min-height: 60px; border: 1px solid #eee; border-radius: 4px; padding: 5px; font-family: inherit; font-size: 0.85em; resize: vertical; }
   #results-area { background: #fdfdfd; padding: 20px; border: 2px solid #eee; border-radius: 8px; margin-top: 30px; text-align: center; }
-  .print-btn { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; margin-top: 15px; }
-  .print-btn:hover { background: #0058a3; }
+  .print-btn { background: #0058a3; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; margin-top: 15px; }
+  .print-btn:hover { background: #1a69ac; }
   
   @media print {
     .sidebar, .hamburger, .print-btn, .tags, .sidebar-social, .sidebar-footer { display: none !important; }
