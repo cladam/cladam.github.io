@@ -6,87 +6,142 @@ tags: [project, test, culture, DevOps]
 project_id: "The Claes Test"
 ---
 
-*A modern take on “The Joel Test”, focused on what shapes great software teams: clarity, autonomy, collaboration, sustainable engineering, and career growth.*
+<style>
+  .claes-test-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; table-layout: fixed; }
+  .claes-test-table th, .claes-test-table td { border: 1px solid #ddd; padding: 12px; vertical-align: top; text-align: left; word-wrap: break-word; }
+  .claes-test-table th { background-color: #f8f9fa; }
+  .claes-test-table td:nth-child(1) { width: 5%; }
+  .claes-test-table td:nth-child(2) { width: 25%; font-weight: 600; }
+  .claes-test-table td:nth-child(3) { width: 35%; font-size: 0.9em; color: #555; }
+  .claes-test-table td:nth-child(4) { width: 8%; text-align: center; }
+  .claes-test-table td:nth-child(5) { width: 27%; }
+  .claes-test-table textarea { width: 100%; min-height: 60px; border: 1px solid #eee; border-radius: 4px; padding: 5px; font-family: inherit; font-size: 0.85em; resize: vertical; }
+  #results-area { background: #fdfdfd; padding: 20px; border: 2px solid #eee; border-radius: 8px; margin-top: 30px; text-align: center; }
+  .print-btn { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; margin-top: 15px; }
+  .print-btn:hover { background: #0056b3; }
+  
+  @media print {
+    .sidebar, .hamburger, .print-btn, .tags, .sidebar-social, .sidebar-footer { display: none !important; }
+    .main-content { width: 100% !important; margin: 0 !important; padding: 0 !important; }
+    textarea { border: none !important; overflow: visible !important; height: auto !important; }
+    input[type="checkbox"] { transform: scale(1.5); }
+    .claes-test-table { font-size: 10pt; }
+  }
+</style>
 
-This test is designed for engineering leaders, managers, and teams who want to take an honest look at their developer culture.  
-For each question, answer **“yes”** only if you can clearly demonstrate it with evidence through actions; not intentions.
+<div id="interactive-test">
+  <p><em>A modern take on “The Joel Test”, focused on what shapes great software teams: clarity, autonomy, collaboration, sustainable engineering, and career growth.</em></p>
 
-Claes as in `/klaːs/`
+  <p>This test is designed for engineering leaders, managers, and teams who want to take an honest look at their developer culture.<br />
+  For each question, answer <strong>“yes”</strong> only if you can clearly demonstrate it with evidence through actions, not intentions.</p>
 
----
+  <p>Claes as in <code class="language-plaintext highlighter-rouge">/klaːs/</code></p>
 
-### 1. The Basics
+  <hr />
 
-*If these are missing, the environment is working against the people.*
+  <section class="test-category">
+    <h3>1. The Basics</h3>
+    <table class="claes-test-table">
+      <thead>
+        <tr><th>#</th><th>Question</th><th>What to look for</th><th>Yes?</th><th>Evidence / Gaps</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Psychological Safety</td><td>People can speak up, make mistakes, and raise concerns without fear; blameless post-mortems are practised.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></textarea></td></tr>
+        <tr><td>2</td><td>Fair Wage</td><td>Salaries are regularly reviewed, benchmarked, and discussed transparently.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>3</td><td>Flexible Hours</td><td>Developers can plan their day for focus and work-life balance, not rigid schedules.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea>
+</td></tr>
+      </tbody>
+    </table>
+  </section>
 
-| # | Question | What to look for | Yes / No | Notes |
-|---|:---|:---|:---:|:---|
-| 1 | **Psychological Safety** | People can speak up, make mistakes, and raise concerns without fear; blameless post-mortems are practiced. | [ ] | |
-| 2 | **Fair Wage** | Salaries are regularly reviewed, benchmarked, and discussed transparently. | [ ] | |
-| 3 | **Flexibility** | Developers can plan their day for focus and balance, not rigid schedules. | [ ] | |
-{: .claes-test-table}
+  <section class="test-category">
+    <h3>2. Clarity, Autonomy and Collaboration</h3>
+    <table class="claes-test-table">
+      <thead>
+        <tr><th>#</th><th>Question</th><th>What to look for</th><th>Yes?</th><th>Evidence / Gaps</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>4</td><td>The “Why”</td><td>Purpose and customer value are explained, not just tasks.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>5</td><td>Clear Roadmap</td><td>Work is visible, prioritised, and linked to outcomes.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>6</td><td>Open Communication</td><td>Discussions are honest, respectful, and focused on improvement.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>7</td><td>Collaboration</td><td>Boundaries don’t block progress; teams solve problems together.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>8</td><td>Rewarded Initiative</td><td>Efforts to improve, simplify, or innovate are recognised and shared.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+      </tbody>
+    </table>
+  </section>
 
----
+  <section class="test-category">
+    <h3>3. Sustainable Engineering Culture</h3>
+    <table class="claes-test-table">
+      <thead>
+        <tr><th>#</th><th>Question</th><th>What to look for</th><th>Yes?</th><th>Evidence / Gaps</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>9</td><td>Definition of Done</td><td>Reliability, observability, and rollback plans are part of finishing work.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>10</td><td>Code Reviews & Testing</td><td>Code is reviewed for quality; automated tests run in CI.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>11</td><td>CI/CD</td><td>Changes can be deployed safely and frequently with minimal manual steps.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>12</td><td>On-call Processes</td><td>Incidents are handled calmly; ownership is shared and on-call is compensated or balanced with time off.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>13</td><td>InnerSource</td><td>Teams share code and tools openly across the organisation.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+      </tbody>
+    </table>
+  </section>
 
-### 2. Clarity, Autonomy and Collaboration
+  <section class="test-category">
+    <h3>4. Career Progression and Growth</h3>
+    <table class="claes-test-table">
+      <thead>
+        <tr><th>#</th><th>Question</th><th>What to look for</th><th>Yes?</th><th>Evidence / Gaps</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>14</td><td>Technical Managers</td><td>Managers understand the technical context and support engineers effectively.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>15</td><td>Career Ladder</td><td>Paths for growth are transparent, fair, and based on impact.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>16</td><td>Parallel Tracks</td><td>Technical excellence (IC) and leadership (Manager) are equally valued.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>17</td><td>Feedback Culture</td><td>Feedback is ongoing, two-way, and used for growth.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+        <tr><td>18</td><td>Growth Investment</td><td>There’s dedicated time and budget for learning and mentoring.</td><td><input type="checkbox" class="score-check"></td><td><textarea placeholder="e.g. Link to document, example, or concrete practice..."></textarea></td></tr>
+      </tbody>
+    </table>
+  </section>
 
-*High performance is a product of aligned effort.*
+  <div id="results-area">
+    <h2>Your Score: <span id="current-score">0</span> / 18</h2>
+    <p id="score-feedback" style="font-weight: bold; font-size: 1.2em;">Select your answers above.</p>
+    <button onclick="window.print()" class="print-btn">Print to PDF / Save Results</button>
+  </div>
+</div>
 
-| # | Question | What to look for | Yes / No | Notes |
-|---|:---|:---|:---:|:---|
-| 4 | **The "Why"** | Purpose and customer value are explained, not just tasks. | [ ] | |
-| 5 | **Clear Roadmap** | Work is visible, prioritised, and linked to outcomes. | [ ] | |
-| 6 | **Open Communication** | Discussions are honest, respectful, and focused on improvement. | [ ] | |
-| 7 | **Cross-functional Collaboration** | Boundaries don’t block progress; teams solve problems together. | [ ] | |
-| 8 | **Rewarded Initiative** | Efforts to improve, simplify, or innovate are recognised and shared. | [ ] | |
-{: .claes-test-table}
+<script>
+  const checkboxes = document.querySelectorAll('.score-check');
+  const scoreDisplay = document.getElementById('current-score');
+  const feedbackDisplay = document.getElementById('score-feedback');
 
----
+  function calculateScore() {
+    let score = 0;
+    checkboxes.forEach(cb => { if (cb.checked) score++; });
+    scoreDisplay.innerText = score;
 
-### 3. Sustainable Engineering Culture
+    if (score >= 15) {
+      feedbackDisplay.innerText = "Exceptional developer culture: protect and build upon it.";
+      feedbackDisplay.style.color = "#28a745";
+    } else if (score >= 10) {
+      feedbackDisplay.innerText = "Healthy foundation: identify one area per quarter to improve.";
+      feedbackDisplay.style.color = "#856404";
+    } else {
+      feedbackDisplay.innerText = "Warning signs: focus on essentials such as safety, clarity, and leadership.";
+      feedbackDisplay.style.color = "#721c24";
+    }
+  }
 
-*Building the safety net into the daily workflow.*
-
-| # | Question | What to look for | Yes / No | Notes |
-|---|:---|:---|:---:|:---|
-| 9 | **Production Readiness** | Reliability, observability, and rollback plans are part of the "Definition of Done." | [ ] | |
-| 10 | **Quality Gates** | Code reviews and automated tests are non-negotiable and run in CI. | [ ] | |
-| 11 | **CI/CD** | Changes can be deployed safely and frequently with minimal manual steps. | [ ] | |
-| 12 | **Humane On-Call** | Incidents are handled calmly; on-call is compensated or balanced with time off. | [ ] | |
-| 13 | **InnerSource** | Teams share code and tools openly across the organisation. | [ ] | |
-{: .claes-test-table}
-
----
-
-### 4. Career Progression and Growth
-
-*Growth as a function of impact.*
-
-| # | Question | What to look for | Yes / No | Notes |
-|---|:---|:---|:---:|:---|
-| 14 | **Technical Leadership** | Managers understand the technical context and support engineers effectively. | [ ] | |
-| 15 | **Career Ladder** | Paths for growth are transparent, fair, and based on impact. | [ ] | |
-| 16 | **Parallel Tracks** | IC and Manager tracks are separate and equally valued. | [ ] | |
-| 17 | **Feedback Culture** | Feedback is ongoing, two-way, and used for growth; not performance policing. | [ ] | |
-| 18 | **Growth Investment** | There’s dedicated time and budget for learning and mentoring. | [ ] | |
-{: .claes-test-table}
-
----
-
-### Scoring Guide
-
-- **15–18** → **Exceptional**: Protect and build upon it.
-- **10–14** → **Healthy**: Identify one area per quarter to improve.
-- **0–9** → **Warning**: Focus on essentials like safety, clarity, and leadership.
+  checkboxes.forEach(box => box.addEventListener('change', calculateScore));
+</script>
 
 ---
 
 ### How to Use
-
-Run this as a team exercise. Discuss each question openly and agree on whether the answer is genuinely “yes”. If you find a "No," you have found the friction in your environment.
+Run this as a team exercise. Discuss each question openly and agree on whether the answer is genuinely “yes”. If you find a “No,” you have found the friction in your environment.
+Capture examples and gaps, then turn them into concrete improvement actions.
 
 Remember Kurt Lewin's equation:
 
 $$B = f(P, E)$$
 
-*Behaviour is a function of the Person and their Environment.* Fix the environment, and the behaviour will follow.
+*Behavior is a function of the Person and their Environment.* Fix the environment, and the behavior will follow.
