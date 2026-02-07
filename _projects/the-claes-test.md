@@ -10,12 +10,22 @@ project_id: "The Claes Test"
   .claes-test-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; table-layout: fixed; }
   .claes-test-table th, .claes-test-table td { border: 1px solid #ddd; padding: 12px; vertical-align: top; text-align: left; word-wrap: break-word; }
   .claes-test-table th { background-color: #f8f9fa; }
-  .claes-test-table td:nth-child(1) { width: 3%; }
-  .claes-test-table td:nth-child(2) { width: 25%; font-weight: 600; }
-  .claes-test-table td:nth-child(3) { width: 35%; font-size: 0.9em; color: #555; }
+  .claes-test-table td:nth-child(1) { width: 4%; }
+  .claes-test-table td:nth-child(2) { width: 16%; font-weight: 600; }
+  .claes-test-table td:nth-child(3) { width: 30%; font-size: 0.9em; color: #555; }
   .claes-test-table td:nth-child(4) { width: 5%; text-align: center; }
-  .claes-test-table td:nth-child(5) { width: 32%; }
-  .claes-test-table textarea { width: 100%; min-height: 60px; border: 1px solid #eee; border-radius: 4px; padding: 5px; font-family: inherit; font-size: 0.85em; resize: vertical; }
+  .claes-test-table td:nth-child(5) { width: 45%; }
+  .claes-test-table textarea { 
+    width: 100%; 
+    box-sizing: border-box;
+    min-height: 60px; 
+    border: 1px solid #eee; 
+    border-radius: 4px; 
+    padding: 8px; 
+    font-family: inherit; 
+    font-size: 0.85em; 
+    resize: vertical; 
+  }
   #results-area { background: #fdfdfd; padding: 20px; border: 2px solid #eee; border-radius: 8px; margin-top: 30px; text-align: center; }
   .print-btn { background: #0058a3; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; margin-top: 15px; }
   .print-btn:hover { background: #1a69ac; }
@@ -26,6 +36,15 @@ project_id: "The Claes Test"
     textarea { border: none !important; overflow: visible !important; height: auto !important; }
     input[type="checkbox"] { transform: scale(1.5); }
     .claes-test-table { font-size: 10pt; }
+  }
+
+  @media screen and (max-width: 768px) {
+    #interactive-test {
+      overflow-x: auto;
+    }
+    .claes-test-table {
+      min-width: 800px;
+    }
   }
 </style>
 
