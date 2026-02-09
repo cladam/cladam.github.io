@@ -2,7 +2,7 @@
 layout: post
 title: The Claes Test
 tagline: Engineering the Environment for Great Work
-tags: [DevOps, culture, team]
+tags: [DevOps, culture, team, The Claes Test]
 comments: true
 ---
 
@@ -44,7 +44,7 @@ Autonomy without clarity is a recipe for chaos.
 
 4.  **The "Why":** Can every engineer explain the customer impact of their current sprint?
 5.  **Visible Roadmap:** Is the backlog prioritised, visible, and linked to business goals?
-6.  **Direct Communication:** Is there a documented process (like RFCs) for technical dissent?
+6.  **Direct Communication:** Is there a documented process (like RFCs or ADRs) for technical dissent?
 7.  **Cross-Functional Unity:** Do Dev, Ops, and Product solve problems together, or "pass the ticket"?
 8.  **Recognised Initiative:** Is work that improves the "commons" (refactoring, tooling) rewarded?
 
@@ -64,7 +64,7 @@ If the environment doesn't offer a path forward, the best people will find one t
 
 14. **Technical Management:** Do leaders have the depth to be credible partners to the team?
 15. **Transparent Ladder:** Are promotion criteria objective and public?
-16. **Parallel Tracks:** Can a Staff Engineer earn/influence as much as a Director?
+16. **Parallel Tracks:** Can a Principal Engineer earn/influence as much as a Head of Engineering?
 17. **Feedback Loops:** Is feedback regular, peer-to-peer, and focused on growth?
 18. **Investment:** Is there a dedicated budget and *time* for professional development?
 
@@ -85,5 +85,4 @@ If you want a practical way to do that, run the Claes Test with your team.
 
 It’s designed to surface where your culture is helping, and where it’s holding you back.
 
-[The Claes Test](https://cladam.github.io/projects/the-claes-test/)
-
+Take [The Claes Test](https://cladam.github.io/projects/the-claes-test/)
