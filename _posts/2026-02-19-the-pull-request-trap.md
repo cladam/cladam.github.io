@@ -15,16 +15,20 @@ In many modern teams, the PR has become the default "gatekeeper." While intended
 The PR model introduces several "invisible" costs that directly conflict with a high-throughput culture.
 
 **Wait time**
+
 This is pure queue time. In a PR workflow, the gap between “code complete” and “code integrated” stretches into hours or days. In a healthy TBD system, it is measured in seconds.
 
 **Context switching**
+
 Developers don't sit idle. They start something new while waiting. When the feedback finally arrives, they must drop their current work to revisit old code. 
 Their flow is broken repeatadly, it's a real "flow killer."
 
 **Batching**
+
 Because the "transaction cost" of opening a PR is high, developers tend to batch more changes into a single PR. Larger batches are harder to review, harder to test, and riskier to deploy.
 
 **A false sense of safety**
+
 Many reviews end with a quick “LGTM” under time pressure. The gate exists, but are ceremonial in nature and the signal is weak.
 With non-blocking reviews, the code is already live, which raises the bar for real understanding rather than rubber-stamping.
 
@@ -34,15 +38,19 @@ A common objection to true TBD is the perceived cost of running full CI on every
 In practice, small increments are far more efficient than large batches.
 
 **Human time versus compute time**
+
 A developer’s hour costs far more than a CI runner’s hour. Pausing flow to save compute is almost always the wrong trade-off.
 
 **Continuous verification**
+
 When CI runs in parallel with development, feedback arrives within minutes. Small changes are confirmed before the next task even begins.
 
 **Reduced blast radius**
+
 When a ten-line commit fails, the fix is immediate and obvious. When a thousand-line PR fails, investigation becomes slow and uncertain.
 
 **Incremental testing**
+
 Modern pipelines can scope tests to the parts of the system that changed. Small commits allow feedback to stay fast and focused.
 
 ### Why gates do not automatically create quality
@@ -51,13 +59,13 @@ The industry often assumes that more approval steps lead to safer software but D
 
 High-performing teams favour lightweight, fast feedback and rapid integration. Heavy approval processes correlate with longer lead times and lower deployment frequency, without improvements in stability.
 
-| Metric                 | PR-centric flow     | Non-blocking flow                  |
-| ---------------------- | ------------------- | ---------------------------------- |
-| Lead time              | High                | Low                                |
-| Context switching      | Frequent            | Minimal                            |
-| Batch size             | Large               | Small                              |
-| Primary quality signal | Asynchronous review | Automated checks + fast correction |
-| DORA performance       | Lower               | Higher                             |
+| Metric                  | PR-centric flow      | Non-blocking flow                  |
+| :---------------------- | :------------------- | :--------------------------------- |
+| Lead time               | High                 | Low                                |
+| Context switching       | Frequent             | Minimal                            |
+| Batch size              | Large                | Small                              |
+| Primary quality signal  | Asynchronous review  | Automated checks + fast correction |
+| DORA performance        | Lower                | Higher                             |
 
 Quality comes from fast feedback and rapid correction, not from waiting.
 
@@ -66,13 +74,16 @@ Quality comes from fast feedback and rapid correction, not from waiting.
 In `tbdflow`, the workflow shifts away from PRs as gates and toward continuous integration by default.
 
 **Pair or mob programming**
+
 Real-time review happens as the code is written. The four-eyes principle is built into the work itself.
 
 **Non-blocking reviews**
+
 Changes integrate immediately. CI starts at once. Review happens in parallel.
 If an issue is found, the team fixes forward.
 
 **Atomic commits**
+
 When integration is effortless, changes stay small. Small commits are easier to understand, easier to test, and easier to correct.
 
 ### Summary: Throughput is a Safety Feature
