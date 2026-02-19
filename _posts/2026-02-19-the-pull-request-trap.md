@@ -8,7 +8,7 @@ comments: true
 
 We have all lived through the "Waiting Room" of software development. You have written the code, the tests are green, and the value is ready for the customer. Then, you hit the wall. You hit `git push`, open a Pull Request (PR), and then... you wait.
 
-In many modern teams, the PR has become the default "gatekeeper." While intended to ensure quality, in practice, it is often a bottleneck that erodes the core benefits of Trunk-Based Development (TBD). If you are trying to pass [The Claes Test](https://cladam.github.io/projects/the-claes-test/)), particularly Question 11 (CI/CD) and Question 7 (Collaboration), the PR might be the very thing holding you back.
+In many modern teams, the PR has become the default "gatekeeper." While intended to ensure quality, in practice, it is often a bottleneck that erodes the core benefits of Trunk-Based Development (TBD). If you are trying to pass [The Claes Test](https://cladam.github.io/projects/the-claes-test/), particularly Question 11 (CI/CD) and Question 7 (Collaboration), the PR might be the very thing holding you back.
 
 ### The Hidden Cost of the "Gatekeeper"
 
