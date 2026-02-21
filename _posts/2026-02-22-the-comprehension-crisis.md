@@ -58,10 +58,6 @@ In DevOps we know that speed without feedback creates instability. The same appl
 
 ### Capability and comprehension
 
-AI will unquestionably increase delivery capacity but the individuals and organisations that benefit most won’t be the ones producing the most output. They will be the ones that use this new capacity to deepen understanding, strengthen system thinking, and accelerate learning.
-
-Adopting the tool is easy, preserving and growing the capability to understand the result is the real competitive advantage.
-
 AI will unquestionably increase delivery capacity.
 But faster output does not automatically translate into stronger capability. A team can move quickly while its understanding of the system quietly erodes.
 
