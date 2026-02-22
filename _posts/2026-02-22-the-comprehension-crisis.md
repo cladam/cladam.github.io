@@ -32,7 +32,7 @@ This is also changing what experience and seniority mean, it used to be easy to 
 
 AI can generate plausible answers almost instantly, but plausibility is not the same as fit. Deciding what belongs in a particular system still requires an understanding of constraints, history, and trade-offs.
 
-These are the kinds of decisions that DevOps teams already deal with:
+These are the kinds of decisions that teams already deal with:
 
 * deciding where to reduce batch size
 * choosing what to automate first
@@ -59,6 +59,6 @@ In DevOps we know that speed without feedback creates instability. The same appl
 ### Capability and comprehension
 
 AI will unquestionably increase delivery capacity.
-But faster output does not automatically translate into stronger capability. A team can move quickly while its understanding of the system quietly erodes.
+But faster output does not automatically translate into stronger capability. A team can move quickly while its understanding of the system gradually becomes thinner.
 
 Adopting the tool is easy. Preserving and growing the capability to understand the result is harder, and that is where the real advantage lies.
