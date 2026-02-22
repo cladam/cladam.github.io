@@ -6,17 +6,17 @@ tags: [DevOps, culture, TBD, The Claes Test]
 comments: true
 ---
 
-We have all lived through the "Waiting Room" of software development. You have written the code, the tests are green, and the value is ready for the customer. Then, you hit the wall. You hit `git push`, open a Pull Request (PR), and then... you wait.
+Most developers recognise the "waiting room" of software development. The code is written, the tests are green, and the change is ready. Then you hit `git push`, open a Pull Request (PR), and the work stops moving, the wait begins.
 
-In many teams, PRs have become the standard way of working. They are introduced to improve quality, but they also create waiting and hand-offs that make fast integration harder. Over time, the workflow itself becomes the constraint. If you are trying to pass [The Claes Test](https://cladam.github.io/projects/the-claes-test/), especially Question 11 (CI/CD) and Question 7 (Collaboration), the pull request process may be what is holding you back.
+In many teams, PRs have become the standard way of working. They are introduced to improve quality, but they also introduce waiting and hand-offs that slow integration. Over time, the workflow itself becomes the constraint. If you are trying to pass [The Claes Test](https://cladam.github.io/projects/the-claes-test/), especially Question 11 (CI/CD) and Question 7 (Collaboration), the pull request process may be what is holding you back.
 
 ### The Hidden Cost of the "Gatekeeper"
 
-The PR model introduces several "invisible" costs that directly conflict with a high-throughput culture.
+The PR model introduces several costs that are easy to overlook but directly conflict with a high-throughput culture.
 
 **Wait time**
 
-This is pure queue time. In a PR workflow, the gap between “code complete” and “code integrated” stretches into hours or days. In a healthy TBD system, it is measured in seconds.
+This is pure queue time. In a PR workflow, the gap between “code complete” and “code integrated” stretches into hours or days. In a healthy TBD system, it is measured in seconds, or at least minutes.
 
 **Context switching**
 
@@ -88,10 +88,10 @@ When integration is effortless, changes stay small. Small commits are easier to 
 
 ### Summary: Throughput is a Safety Feature
 
-In a traditional mindset, PRs provide stability and are seen as protection.
+Pull Requests are often treated as a safety mechanism. The assumption is that stopping changes before integration reduces risk.
 
-In a DevOps and systems thinking perspective, safety comes from the ability to detect problems quickly and correct them immediately.
+In practice, safety comes from fast feedback and the ability to correct problems quickly. Systems that integrate continuously tend to detect issues earlier and recover faster.
 
-By removing the PR trap, we empower developers to take ownership of the trunk. We move away from "gatekeeping" and toward a culture where every commit is treated as a production-ready investment.
+Removing the PR trap does not remove quality control. It shifts quality into the daily work: small changes, fast feedback, and shared responsibility for the trunk.
 
-It is a cultural shift, from gatekeeping towards a shared responsibility and continuous learning.
+That shift is less about tooling and more about how teams work together.
