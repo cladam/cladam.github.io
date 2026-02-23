@@ -6,7 +6,8 @@ tags: [DevOps, culture, TBD, The Claes Test]
 comments: true
 ---
 
-Most developers recognise the "waiting room" of software development. The code is written, the tests are green, and the change is ready. Then you hit `git push`, open a Pull Request (PR), and the work stops moving, the wait begins.
+Most developers recognise the "waiting room" of software development. The code is written, the tests are green, and the change is ready. Then you hit `git push`, open a Pull Request (PR), and the work stops moving, and then the wait begins.
+For many developers, the time spent waiting for reviews exceeds the time spent writing the change.
 
 In many teams, PRs have become the standard way of working. They are introduced to improve quality, but they also introduce waiting and hand-offs that slow integration. Over time, the workflow itself becomes the constraint. If you are trying to pass [The Claes Test](https://cladam.github.io/projects/the-claes-test/), especially Question 11 (CI/CD) and Question 7 (Collaboration), the pull request process may be what is holding you back.
 
