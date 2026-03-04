@@ -60,8 +60,7 @@ In practise, safety in TBD does not come from gates. It comes from fast feedback
 If reverting is easy and predictable, the cost of a mistake drops significantly. That lowers hesitation. Smaller commits feel safer. Integration stays frequent.
 
 `tbdflow undo` is a small feature, but it reinforces an important principle:
-
-    **Continuous integration only works when continuous recovery is equally simple.**
+**Continuous integration only works when continuous recovery is equally simple.**
 
 Version 0.22 is available now.
 You can read more in the [GitHub documentation](https://github.com/cladam/tbdflow#undo) or explore how this fits with non-blocking reviews and post-integration audits.
