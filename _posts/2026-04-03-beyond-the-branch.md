@@ -15,9 +15,9 @@ In reality, safety in TBD does not come from the gate. It comes from moving from
 
 The Pull Request model assumes that awareness happens at the point of the merge. We believe that because three people looked at a 400-line diff, the team now "understands" the change.
 
-In practise, this often creates a false sense of security. PRs frequently become bottlenecks where Seniors, overwhelmed by volume, perform a "rubber-stamp" review just to unblock a teammate. This is where cognitive atrophy actually starts: when the review becomes a chore rather than a conversation.
+In practise, this often creates a false sense of security. PRs frequently become bottlenecks where Seniors, overwhelmed by volume, perform a "rubber-stamp" review just to unblock a teammate. I explored this dynamic in more detail in [The Pull Request Trap](https://cladam.github.io/2026/02/19/the-pull-request-trap/). This is where cognitive atrophy actually starts: when the review becomes a chore rather than a conversation.
 
-TBD flips this. By removing the block, we force the team to find more disciplined, continuous ways to share knowledge.
+TBD takes a different approach. By removing the block, we encourage the team to find more disciplined, continuous ways to share knowledge.
 
 ### An Iteration in the Life of a TBD Team
 
