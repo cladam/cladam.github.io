@@ -19,9 +19,9 @@ In practise, this often creates a false sense of security. PRs frequently become
 
 TBD flips this. By removing the block, we force the team to find more disciplined, continuous ways to share knowledge.
 
-### A Sprint in the Life of a TBD Team
+### An Iteration in the Life of a TBD Team
 
-To understand how this works, we have to look past the commands and see how the team actually interacts throughout a typical sprint.
+To understand how this works, we have to look past the commands and see how the team actually interacts throughout a typical iteration of work.
 
 #### The Morning: The Social Radar
 
@@ -35,7 +35,7 @@ Knowledge is shared **before** the code is even committed, not as a post-hoc cor
 
 #### The Work: Executable Standards
 
-TBD requires a high level of discipline. We replace the "PR Template" with an executable Definition of Done (DoD).
+TBD requires a high level of discipline. We replace the "PR Template" with an executable _Definition of Done_ (DoD).
 
 As the team works in small, atomic batches, `tbdflow commit` presents an interactive checklist. *"Did you add tests?" "Is the documentation updated?"* This moves the "manual checks" from a document no one reads into a CLI flow no one can ignore. The machine checks the machine, ensuring that only "Done" code reaches the trunk.
 
