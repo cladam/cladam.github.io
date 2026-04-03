@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Panic Button for Trunk-Based Development
-tags: [DevOps, tbdflow, tbd]
+tags: [DevOps, tbdflow, TBD]
 comments: true
 ---
 
