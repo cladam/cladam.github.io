@@ -28,7 +28,7 @@ I don't learn languages from tutorials. I need a real problem. So I started [kok
 
 * **Sorting** I had to write an insertion sort to be able to reverse sort and get a feel of how `Koka` handles recursion.
 * **File metadata** Hidden files, permissions, timestamps. This is where I'll hit the boundary between pure logic and actual OS interaction, that will be fun when I get to more "advanced" listing.
-* **Perceus** — Koka's reference counting system. This is what makes functional code run at speeds you wouldn't expect from a language without manual memory management.
+* **Perceus** Koka's reference counting system. This is what makes functional code run at speeds you wouldn't expect from a language without manual memory management.
 
 Working through it piece by piece, following the GNU philosophy, has been a good way to see how Koka keeps things clean while dealing with the mess of a real operating system.
 
