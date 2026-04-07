@@ -5,7 +5,7 @@ tags: [koka, languages, learning]
 comments: true
 ---
 
-I collect programming languages. Most of them survive as a "Hello World" in a folder I never reopen, digital fossils of a Saturday afternoon curiosity... 
+I like to explore different programming languages, and I often try them out but most of them ends up as a "Hello World" in a folder I never reopen, digital fossils of a Saturday afternoon curiosity... 
 My actual day-to-day has been settled for a while: Kotlin when I'm building for the web, Rust when I need a CLI tool. I do think about them a lot, but their syntax, semantics, and functionality don't tickle me the same way anymore.
 
 Koka broke that, and triggered a deep-dive.
@@ -16,9 +16,11 @@ It's a research language from Microsoft Research. Functional, but not in the way
 
 The dot selection syntax was the first thing that felt right. Coming from Kotlin, I'm used to chaining: `names.filter(is-hidden).sort(cmp).foreach(println)`. Koka lets me write like that. No inside-out nesting. Data flows left to right, which is how I think about it anyway.
 
-The effect system is the bigger deal though. A function's type signature doesn't just say what it returns, it says what it *does*. If a function reads from the filesystem, that's in the type. The compiler enforces it. You can't hide side effects.
+But what really got me was the effect system. In most languages, a function signature tells you what goes in and what comes out. In Koka, it also tells you what the function *does*. A signature like `fn(path) -> <fsys,exn> list<string>` says: this touches the filesystem and might throw. It's right there, not buried in documentation or a comment you hope someone wrote.
 
-I keep calling it "honest programming" in my head. The types refuse to lie about what the code actually does.
+The compiler enforces it. You can't quietly sneak in a side effect and hope nobody notices.
+
+I'm calling it "honest programming" in my head.
 
 ### Porting `ls`
 
