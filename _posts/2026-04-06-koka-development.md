@@ -16,7 +16,7 @@ It's a research language from Microsoft Research. Functional, but not in the way
 
 The dot selection syntax was the first thing that felt right. Coming from Kotlin, I'm used to chaining: `names.filter(is-hidden).sort(cmp).foreach(println)`. Koka lets me write like that. No inside-out nesting. Data flows left to right, which is how I think about it anyway.
 
-But what really got me was the effect system. In most languages, a function signature tells you what goes in and what comes out. In Koka, it also tells you what the function *does*. A signature like `fn(path) -> <fsys,exn> list<string>` says: this touches the filesystem and might throw. It's right there, not buried in documentation or a comment you hope someone wrote.
+But what really got me was the effect system. In most languages, a function signature tells you what goes in and what comes out. In Koka, it also tells you what the function *does*. A signature like `fn(path) -> <fsys,exn> list<string>` says: this touches the filesystem and might throw. It's right there on the tin and not buried in documentation.
 
 The compiler enforces it. You can't quietly sneak in a side effect and hope nobody notices.
 
