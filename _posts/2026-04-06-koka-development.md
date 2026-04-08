@@ -18,13 +18,11 @@ The dot selection syntax was the first thing that felt right. Coming from Kotlin
 
 But what really got me was the effect system. In most languages, a function signature tells you what goes in and what comes out. In Koka, it also tells you what the function *does*. A signature like `fn(path) -> <fsys,exn> list<string>` says: this touches the filesystem and might throw. It's right there on the tin and not buried in documentation.
 
-The compiler enforces it. You can't quietly sneak in a side effect and hope nobody notices.
-
-I'm calling it "honest programming" in my head.
+The compiler enforces it. There is no way to sneak in a side-effect, type systems are great like that. It's "honest programming" in a way.
 
 ### Porting `ls`
 
-I don't learn languages from tutorials. I need a real problem. So I started [koka-labs](https://github.com/cladam/koka-labs), where I'm porting GNU Coreutils one at a time. First up: `ls`.
+I don't learn languages from tutorials. I need a real problem. So I started [koka-labs](https://github.com/cladam/koka-labs), where I'm porting `ls` and `wc` from GNU Coreutils. First up: `ls`.
 
 `ls` looks simple. List files, print strings. But a proper implementation touches a lot:
 
