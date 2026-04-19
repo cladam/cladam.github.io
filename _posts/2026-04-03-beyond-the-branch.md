@@ -57,4 +57,4 @@ PRs ensure people have *"seen"* the code, but TBD ensures people are **aligned**
 
 Using `tbdflow` is entirely optional. The tool is built on standard `git` and `gh` CLI commands, and you can always perform these actions manually. If you want to look under the hood to see exactly how it works, `tbdflow` includes a `--dry-run` flag that prints every underlying command before it runs. You can read more about why I believe dry-runs are essential for workflow tools, [Looking under the hood with a dry-run](https://cladam.github.io/2025/08/23/dry-run/).
 
-> **Throughput is a safety feature!**
+> *Throughput is a safety feature!*
