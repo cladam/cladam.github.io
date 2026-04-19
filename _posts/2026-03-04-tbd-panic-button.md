@@ -66,4 +66,4 @@ If reverting is easy and predictable, the cost of a mistake drops significantly.
 Version 0.22 is available now.
 You can read more in the [GitHub documentation](https://github.com/cladam/tbdflow#undo) or explore how this fits with non-blocking reviews and post-integration audits.
 
-> Throughput is a safety feature!
+> **Throughput is a safety feature!**

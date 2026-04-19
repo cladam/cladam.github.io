@@ -78,4 +78,4 @@ If you want to see how the Intent Log formats the final commit message, `tbdflow
 
 Give it a try and let me know if the workflow fits you and your team: [tbdflow on GitHub](https://github.com/cladam/tbdflow).
 
-> Throughput is a safety feature!
+> **Throughput is a safety feature!**

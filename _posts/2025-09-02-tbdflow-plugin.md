@@ -38,6 +38,3 @@ The goal of `tbdflow` has always been to be a "friendly assistant" that makes th
 It's available on [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/28339-tbdflow), and in the IDE just search for `tbdflow`. BTW, most of JetBrains products are supported, not just IntelliJ. I personally use it in RustRover.
 
 You can explore the source code in the tbdflow monorepo at [tbdflow/plugins/intellij](https://github.com/cladam/tbdflow/tree/main/plugins/intellij)
-
-
-

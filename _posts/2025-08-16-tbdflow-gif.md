@@ -100,3 +100,4 @@ Check it out:
 
 ![A terminal running the command tbdflow](https://raw.githubusercontent.com/cladam/tbdflow/main/docs/commit-demo.gif "A demo of tbdflow running commit-to-main commands")
 
+> *Throughput is a safety feature!*
