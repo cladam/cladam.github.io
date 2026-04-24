@@ -4,11 +4,11 @@ author:
   email: claes.adamsson@gmail.com
   avatar: "https://github.com/cladam.png"
   bio: >
-    Sysadmin, developer, architect, and engineering leader turned DevOps advocate. 
+    Sysadmin, developer, architect, and engineering leader turned DevOps advocate.
     I’m passionate about sharing ideas and building tools that help teams deliver faster, better, and with clear business impact.
   location: Sweden
   linkedin_username: cadamsson
-description: > 
+description: >
   A personal site for projects, documentation, and thoughts on software development and delivery.
 
 github_username: cladam
@@ -21,7 +21,7 @@ plugins:
   - jekyll-paginate
 
 baseurl: ""
-paginate: 5
+paginate: 10
 paginate_path: "/page:num/"
 permalink: pretty
 
