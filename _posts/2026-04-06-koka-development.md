@@ -8,7 +8,7 @@ comments: true
 I like to explore different programming languages, and I often try them out but most of them ends up as a "Hello World" in a folder I never reopen, digital fossils of a Saturday afternoon curiosity... 
 My actual day-to-day has been settled for a while: Kotlin when I'm building for the web, Rust when I need a CLI tool. I do think about them a lot, but their syntax, semantics, and functionality don't tickle me the same way anymore.
 
-Koka broke that, and triggered a deep-dive.
+Then Koka came along...
 
 ### Why Koka
 
@@ -46,9 +46,9 @@ extern is-symlink(p : string) : fsys bool
 
 ### What stands out so far
 
-The effect system changes how you structure code. When side effects are visible in the types, you naturally separate pure logic from IO. Not because a linter told you to, but because the language makes that the easiest path.
+The effect system changes how I structure code. When side effects are visible in the types, separatng pure logic from IO becomes natural. The language makes that the easiest path.
 
-Perceus is the other thing I keep coming back to. Functional languages have a reputation for being slow or memory-hungry. Koka's approach to reference counting gives you immutability without the usual performance cost. It's a serious answer to the problem that has kept functional programming away from systems-level work.
+Perceus is the other thing, functional languages have a reputation for being slow or memory-hungry. Koka's approach to reference counting gives you immutability without the usual performance cost.
 
 ### No rush
 
