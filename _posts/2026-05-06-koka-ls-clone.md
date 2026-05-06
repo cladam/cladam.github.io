@@ -58,7 +58,7 @@ To keep myself in check, I have built a test framework (klap) that diffs my outp
 
 ### Learning in Public
 
-I'll be the first to admit: I'm a mediocre programmer and a total Koka novice. GNU `ls` is not "beginner friendly" territory. The C is dense and Koka's documentation is still thin compared to other mainstream languages.
+I'll be the first to admit: I'm a decent but not pro programmer and a total Koka novice. GNU `ls` is not "beginner friendly" territory. The C is dense and Koka's documentation is still thin compared to other mainstream languages.
 
 I've spent a lot of time "rubber-ducking" with a Genie to get through the nuts and bolts, figuring out why `stat()` and `lstat()` treat symlinks differently, or how `-l` is supposed to silently override `-C`.
 
