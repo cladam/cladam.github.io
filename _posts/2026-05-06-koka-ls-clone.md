@@ -46,7 +46,7 @@ I drafted a plan of 6 phases + the infrastructure needed like a testing framwork
 5. **Phase 5 — General output formatting**
 6. **Phase 6 — Formatting the file names**
 
-To keep myself in check, I have built a test framework (klap) that diffs my output against the original GNU binary. CI fails immediatly if I'm out of line...
+To keep myself in check, I have built a test framework (kunit) that diffs my output against the original GNU binary. CI fails immediatly if I'm out of line...
 
 ### Why Koka?
 
