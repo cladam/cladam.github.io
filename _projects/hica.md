@@ -18,9 +18,9 @@ The name stands for **H**indley-milner **I**nference **C**ompiler with **A**lgeb
 
 By targeting Koka, hica inherits things I could never build myself:
 
-* **Perceus** — deterministic reference counting with in-place updates (FBIP). No garbage collector and no pauses.
-* **Algebraic effects** — side effects tracked in the type system. If a function touches the file system, the signature says so.
-* **C11 backend** — the generated code is readable C. JS and WASM backends also available.
+* **Perceus**: deterministic reference counting with in-place updates (FBIP). No garbage collector and no pauses.
+* **Algebraic effects**: side effects tracked in the type system. If a function touches the file system, the signature says so.
+* **C11 backend**: the generated code is readable C. JS and WASM backends also available.
 
 What I built is the front half: the syntax, the type checker, the diagnostics, and the emitter. Hica is essentially a syntax skin and a type-checking layer on top of Koka's full runtime.
 
@@ -91,7 +91,7 @@ Run with `hica test`. The test runner is built on [kunit](https://github.com/cla
 
 ## Links
 
-* [**Docs**](https://cladam.github.io/hica/docs/) — language reference, quick start, and style guide.
-* [**Learn hica**](https://cladam.github.io/hica/docs/learn) — 36 progressive lessons from hello world to combinators.
-* [**Source**](https://github.com/cladam/hica) — Apache-2.0 licensed.
+* [**Docs**](https://cladam.github.io/hica/docs/): language reference, quick start, and style guide.
+* [**Learn hica**](https://cladam.github.io/hica/docs/learn): 36 progressive lessons from hello world to combinators.
+* [**Source**](https://github.com/cladam/hica): Apache-2.0 licensed.
 * [**Blog post**](https://cladam.github.io/2026/05/13/introducing-hica/) — the story behind hica.

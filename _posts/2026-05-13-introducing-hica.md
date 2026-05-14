@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing hica — a language that transpiles to Koka"
+title: "Introducing hica: a language that transpiles to Koka"
 date: 2026-05-13
 tags: [koka, languages, hica, learning]
 ---
@@ -9,7 +9,7 @@ In my post about cloning [ls in Koka](https://cladam.github.io/2026/05/06/koka-l
 
 ### The itch
 
-hica is a statically typed, expression-oriented language. It compiles `.hc` source files through a Pratt parser and Hindley-Milner type checker, emits Koka `.kk` source, and lets Koka handle the rest — native C binaries, JavaScript, or WASM.
+hica is a statically typed, expression-oriented language. It compiles `.hc` source files through a Pratt parser and Hindley-Milner type checker, emits Koka `.kk` source, and lets Koka handle the rest.
 
 I've wanted to design my own language for years. Every attempt fizzled out in the same place: the plumbing. Lexers, type systems, backends, memory management – the mountain of infrastructure you need before you can even think about syntax. It felt like building a house by first inventing concrete in a way…
 
@@ -57,13 +57,13 @@ It lets me focus on the design decisions; the Genie handles the mechanical parts
 
 ### Try it
 
-The language is fun to use, and usable — structs, enums, full pattern matching, modules, closures, UFCS, built-in testing.
+The language is fun to use, and really usable with structs, enums, full pattern matching, modules, closures, UFCS, built-in testing.
 
 I have tried to document along the way, and to be honest, I think I did a good job with it, take a look:
 
-- [**Docs**](https://cladam.github.io/hica/docs/) — language reference, quick start, and style guide.
-- [**Learn hica**](https://cladam.github.io/hica/docs/learn) — 36 progressive lessons from hello world to combinators.
-- [**Source**](https://github.com/cladam/hica) — Apache-2.0 licensed.
+- [**Docs**](https://cladam.github.io/hica/docs/): language reference, quick start, and style guide.
+- [**Learn hica**](https://cladam.github.io/hica/docs/learn): 36 progressive lessons from hello world to combinators.
+- [**Source**](https://github.com/cladam/hica): Apache-2.0 licensed.
 
 ### Thank you, Koka
 
