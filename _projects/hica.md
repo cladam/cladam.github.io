@@ -94,4 +94,4 @@ Run with `hica test`. The test runner is built on [kunit](https://github.com/cla
 * [**Docs**](https://cladam.github.io/hica/docs/): language reference, quick start, and style guide.
 * [**Learn hica**](https://cladam.github.io/hica/docs/learn): 36 progressive lessons from hello world to combinators.
 * [**Source**](https://github.com/cladam/hica): Apache-2.0 licensed.
-* [**Blog post**](https://cladam.github.io/2026/05/13/introducing-hica/) — the story behind hica.
+* [**Blog post**](https://cladam.github.io/2026/05/13/introducing-hica/): the story behind hica.

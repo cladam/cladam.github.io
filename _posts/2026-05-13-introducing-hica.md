@@ -33,7 +33,7 @@ fun main() {
 }
 ```
 
-Everything is an expression: `if`, `match`, blocks all return values. No `return` keyword. `"{n}"` is string interpolation, like Kotlin's `"$n"`. The name stands for **H**indley-milner **I**nference **C**ompiler with **A**lgebraic effects.
+Everything is an expression: `if`, `match`, blocks all return values. No `return` keyword. `"{n}"` is string interpolation. The name stands for **H**indley-milner **I**nference **C**ompiler with **A**lgebraic effects.
 
 The pipeline is straightforward:
 
