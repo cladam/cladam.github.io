@@ -50,7 +50,7 @@ The CLI is using my Clap inspired [klap library](https://github.com/cladam/klap)
 
 I needed to test hica properly and have reused [kunit](https://github.com/cladam/kunit) to validate and verify its functionality, hundreds of tests across lexer, parser, checker, codegen, and CLI.
 
-### Built with a Genie
+### Built with help of a Genie
 
 I used a Genie (what I call my GenAI model – thanks [Kent Beck](https://tidyfirst.substack.com/) for the term) as a pair-programming partner throughout. I maintain [the backlog](https://github.com/cladam/hica/blob/main/documentation/backlog.md) and iterate until it's right. 
 It lets me focus on the design decisions; the Genie handles the mechanical parts. It's been superfun, and a breath of fresh air compared to grinding through boilerplate alone.
