@@ -3,6 +3,7 @@ layout: post
 title: "Introducing hica: a language that transpiles to Koka"
 date: 2026-05-13
 tags: [koka, languages, hica, learning]
+comments: true
 ---
 
 In my post about cloning [ls in Koka](https://cladam.github.io/2026/05/06/koka-ls-clone/) I mentioned wanting to build a small language that transpiles to Koka. That idea has become **hica**!
