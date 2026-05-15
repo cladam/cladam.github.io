@@ -63,7 +63,7 @@ The language is fun to use, and really usable with structs, enums, full pattern 
 I have tried to document along the way, and to be honest, I think I did a good job with it, take a look:
 
 - [**Docs**](https://cladam.github.io/hica/docs/): language reference, quick start, and style guide.
-- [**Learn hica**](https://cladam.github.io/hica/docs/learn): 36 progressive lessons from hello world to combinators.
+- [**Learn hica**](https://cladam.github.io/hica/docs/learn): 38 progressive lessons from hello world to combinators.
 - [**Source**](https://github.com/cladam/hica): Apache-2.0 licensed.
 
 ### Thank you, Koka
