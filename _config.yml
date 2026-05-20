@@ -13,7 +13,6 @@ description: >
 
 github_username: cladam
 
-theme: minima
 markdown: kramdown
 highlighter: rouge
 plugins:
