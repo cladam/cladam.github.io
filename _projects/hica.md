@@ -26,7 +26,7 @@ What I built is the front half: the syntax, the type checker, the diagnostics, a
 
 ## Example
 
-```rust
+```hica
 fun fizzbuzz(n) =>
   if n % 15 == 0 { "fizzbuzz" }
   else if n % 3 == 0 { "fizz" }
@@ -80,7 +80,7 @@ hica clean file.hc      # Remove build artifacts
 
 Tests are written directly in `.hc` files:
 
-```rust
+```hica
 test "fizzbuzz multiples of 15" {
   assert_eq(fizzbuzz(15), "fizzbuzz")
   assert_eq(fizzbuzz(30), "fizzbuzz")
@@ -91,7 +91,6 @@ Run with `hica test`. The test runner is built on [kunit](https://github.com/cla
 
 ## Links
 
-* [**Docs**](https://cladam.github.io/hica/docs/): language reference, quick start, and style guide.
-* [**Learn hica**](https://cladam.github.io/hica/docs/learn): 36 progressive lessons from hello world to combinators.
-* [**Source**](https://github.com/cladam/hica): Apache-2.0 licensed.
-* [**Blog post**](https://cladam.github.io/2026/05/13/introducing-hica/): the story behind hica.
+- [**Playground**](https://cladam.github.io/hica/playground/): try hica in the browser, no installation needed.
+- [**Docs**](https://cladam.github.io/hica/docs/): language reference, quick start, and style guide.
+- [**Source**](https://github.com/cladam/hica): Apache-2.0 licensed.
