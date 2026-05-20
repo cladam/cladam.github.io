@@ -20,7 +20,7 @@ The constraint is that hica can only express what Koka can express, but given th
 
 ### What it looks like
 
-```rust
+```hica
 fun fizzbuzz(n) =>
   if n % 15 == 0 { "fizzbuzz" }
   else if n % 3 == 0 { "fizz" }
