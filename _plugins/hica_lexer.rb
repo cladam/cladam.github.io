@@ -45,7 +45,7 @@ module Rouge
         rule %r/\s+/, Text::Whitespace
 
         # Test block with string name
-        rule %r/\b(test)\s+"/, Keyword, :test_name
+        rule %r/\b(test)\b/, Keyword, :test_name
 
         # Keywords
         rule %r/\b(#{KEYWORD_CONTROL.join('|')})\b/, Keyword
@@ -112,8 +112,9 @@ module Rouge
       end
 
       state :test_name do
-        rule %r/[^"]+/, Name::Function
-        rule %r/"/, Keyword, :pop!
+        rule %r/\s+/, Text::Whitespace
+        rule %r/"[^"]*"/, Str::Double, :pop!
+        rule %r//, Text, :pop!  # fallback if no string follows
       end
     end
   end
