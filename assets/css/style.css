@@ -76,6 +76,20 @@ a:hover {
   overflow-x: auto; /* Adds a scrollbar if wrapping isn't enough */
 }
 
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--sidebar-bg-color);
+    margin: 1.5rem 0;
+    padding: 0.6rem 1.25rem;
+    color: #555;
+    font-style: italic;
+    background-color: #f4f7fb;
+    border-radius: 0 4px 4px 0;
+}
+blockquote p {
+    margin: 0;
+}
+
 /* Targets Jekyll/Rouge code blocks */
 .highlighter-rouge, 
 pre.highlight,

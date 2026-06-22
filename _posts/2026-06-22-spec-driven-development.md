@@ -47,7 +47,7 @@ With large, spec-driven outputs, the team inherits a codebase they didn't reason
 
 ### What Elephant Carpaccio teaches us
 
-The practice of slicing work into the smallest provable unit has a name: [Elephant Carpaccio](https://alistair.cockburn.us/elephant-carpaccio/). The goal isn't smaller work for its own sake. It is to shorten the distance between a decision and its validation.
+The practice of slicing work into the smallest provable unit has a name: [Elephant Carpaccio](https://alistaircockburn.com/Elephant-Carpaccio). The goal isn't smaller work for its own sake. It is to shorten the distance between a decision and its validation.
 
 This doesn't change when an AI is doing the coding. Fast generation only helps if you can confirm assumptions just as fast. That speed advantage disappears the moment you batch everything back up into a slow, uncertain release.
 
