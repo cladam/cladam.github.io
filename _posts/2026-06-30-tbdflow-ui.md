@@ -24,7 +24,7 @@ The window is organised into three panels.
 
 The **left panel** is your context: which repo you're in, which branch, whether CI is enabled, whether radar is active. A quick glance tells you where you are and whether the trunk is healthy.
 
-The **centre panel** is where the work happens. Sync with one click. The Intent Log is right there – type a note, press Add Note, it calls `tbdflow note "<text>"` and the log refreshes immediately. The breadcrumb is the point: reasoning is sharpest at the moment you write the code, and a field sitting in front of you captures it before the next context switch. Rules that rely on documenting something later don't have the same pull. I wrote about the underlying risk in [The Comprehension Crisis](/2026/02/22/the-comprehension-crisis/). Below that is the commit form: a type dropdown populated from your repo's `tbdflow --json info` config and a message. There is an _Advanced_ toggle for the rest of the supported options.
+The **centre panel** is where the work happens. Sync with one click. The Intent Log is right in front: type a note, press Add Note, it calls `tbdflow note "<text>"` and the log refreshes immediately. The breadcrumb is the point: reasoning is sharpest at the moment you write the code, and a field sitting in front of you captures it before the next context switch. Rules that rely on documenting something later don't have the same pull. I wrote about the underlying risk in [The Comprehension Crisis](/2026/02/22/the-comprehension-crisis/). Below that is the commit form: a type dropdown populated from your repo's `tbdflow --json info` config and a message. There is an _Advanced_ toggle for the rest of the supported options.
 
 The **right panel** provides Awareness: trunk status with a colour-coded signal (green, pending, red), churn hotspots from the last three days highlighted on a red-to-yellow scale, and an overlap count across active branches.
 
@@ -82,7 +82,7 @@ The commit command builder is a good example of how hica code reads. It's purely
 
 ```hica
 pub fun build_commit_cmd(ctype: string, msg: string, scope: string, body: string, 
-                          tag: string, issue: string, breaking: bool, no_verify: bool) {
+                         tag: string, issue: string, breaking: bool, no_verify: bool) {
   let base = "tbdflow commit -t " + ctype + " -m \"" + msg + "\""
   let s1 = if scope != ""   { base + " -s " + scope }             else { base }
   let s2 = if body  != ""   { s1   + " --body \"" + body + "\"" } else { s1 }
@@ -131,8 +131,10 @@ Pre-built for macOS ARM64 and Linux x86_64. Requires `tbdflow` v0.33.0+ and SDL2
 
 If you want to build from source, install [hica](https://www.hica.dev) and run `hica run` in the repo root.
 
-- [**tbdflow-ui source**](https://github.com/cladam/tbdflow-ui) — MIT licensed
-- [**tbdflow**](https://github.com/cladam/tbdflow) — the CLI this wraps
-- [**hica**](https://www.hica.dev) — the language it's written in
+- [**tbdflow-ui source**](https://github.com/cladam/tbdflow-ui) - MIT licensed
+- [**tbdflow**](https://github.com/cladam/tbdflow) - the CLI this wraps
+- [**hica**](https://www.hica.dev) - the language it's written in
+
+This is an early release. tbdflow-ui will be improved continuously.
 
 > *Throughput is a safety feature!*
