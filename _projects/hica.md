@@ -91,6 +91,6 @@ Run with `hica test`. The test runner is built on [kunit](https://github.com/cla
 
 ## Links
 
-- [**Playground**](https://cladam.github.io/hica/playground/): try hica in the browser, no installation needed.
-- [**Docs**](https://cladam.github.io/hica/docs/): language reference, quick start, and style guide.
+- [**Playground**](https://www.hica.dev/playground/): try hica in the browser, no installation needed.
+- [**Docs**](https://www.hica.dev/docs/): language reference, quick start, and style guide.
 - [**Source**](https://github.com/cladam/hica): Apache-2.0 licensed.

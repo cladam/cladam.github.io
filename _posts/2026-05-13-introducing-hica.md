@@ -62,8 +62,8 @@ The language is fun to use, and really usable with structs, enums, full pattern 
 
 I have tried to document along the way, and to be honest, I think I did a good job with it, take a look:
 
-- [**Playground**](https://cladam.github.io/hica/playground/): try hica in the browser, no installation needed.
-- [**Docs**](https://cladam.github.io/hica/docs/): language reference, quick start, and style guide.
+- [**Playground**](https://www.hica.dev/playground/): try hica in the browser, no installation needed.
+- [**Docs**](https://www.hica.dev/docs/): language reference, quick start, and style guide.
 - [**Source**](https://github.com/cladam/hica): Apache-2.0 licensed.
 
 ### Thank you, Koka
