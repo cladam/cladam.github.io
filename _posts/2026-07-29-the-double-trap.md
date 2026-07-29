@@ -6,7 +6,7 @@ tags: [AI, DevOps, productivity, TBD, comprehension]
 comments: true
 ---
 
-In *The Comprehension Crisis*, I argued that AI can quietly erode one of our most valuable engineering assets: deep technical understanding. In *The Pull Request Trap*, I looked at how traditional delivery workflows create queues that slow down learning and feedback.
+In *[The Comprehension Crisis]({% post_url 2026-02-22-the-comprehension-crisis %})*, I argued that AI can quietly erode one of our most valuable engineering assets: deep technical understanding. In *[The Pull Request Trap]({% post_url 2026-02-19-the-pull-request-trap %})*, I looked at how traditional delivery workflows create queues that slow down learning and feedback.
 
 These two ideas are closely related. Generative AI amplifies both problems simultaneously. 
 
@@ -21,7 +21,7 @@ The result is a dangerous imbalance. We produce software faster than we can vali
 The double trap emerges when two reinforcing forces feed into each other.
 
 <a href="/assets/images/the-double-trap.png" target="_blank">
-  <img src="/assets/images/the-double-trap.png" alt="The Double Trap diagram" style="max-width: 60%; display: block; margin: 20px auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img src="/assets/images/the-double-trap.png" alt="The Double Trap diagram" style="max-width: 75%; display: block; margin: 20px auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
 </a>
 
 ### Trap 1: Faster output, slower feedback
