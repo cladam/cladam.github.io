@@ -68,8 +68,8 @@ Use AI to generate options, not ownership. Every significant design decision mus
 
 Counting lines of code or completed tickets was never a good measure of progress. In an AI-assisted world, it is completely meaningless. Instead, optimise for customer feedback, deployment frequency, lead time, recovery time, and validated outcomes. These are the true signals that the organisation is learning.
 
-## Throughput isn't the goal
+## Velocity isn't the goal
 
 AI dramatically accelerates software production, yet organisations still improve in the same fundamental ways. High-performing teams have always won by learning faster than everyone else. DevOps, Lean, and Trunk-Based Development all exist to shorten the feedback loops that make learning possible.
 
-Throughput has never been the goal, learning has. Organisations that pair AI with fast feedback, small batches, continuous integration, and deep technical ownership will increase both their delivery speed and their overall capability. Those that optimise for output alone will fall straight into the double trap: producing more, while understanding less.
+Velocity has never been the goal, learning has. Organisations that pair AI with fast feedback, small batches, continuous integration, and deep technical ownership will increase both their delivery speed and their overall capability. Those that optimise for output alone will fall straight into the double trap: producing more, while understanding less.
