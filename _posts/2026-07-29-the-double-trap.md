@@ -20,7 +20,9 @@ The result is a dangerous imbalance. We produce software faster than we can vali
 
 The double trap emerges when two reinforcing forces feed into each other.
 
-![The Double Trap](/assets/images/the-double-trap.png)
+<a href="/assets/images/the-double-trap.png" target="_blank">
+  <img src="/assets/images/the-double-trap.png" alt="The Double Trap diagram" style="max-width: 60%; display: block; margin: 20px auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+</a>
 
 ### Trap 1: Faster output, slower feedback
 
