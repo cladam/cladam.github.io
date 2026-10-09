@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Focus RSVP Reader</title>
+  <style>
+    /* Sensory-friendly base theme (Soft Dark) */
+    :root {
+      --bg-color: #1e1e2e;
+      --box-bg: #181825;
+      --text-main: #cdd6f4;
+      --text-dim: #a6adc8;
+      --accent: #f38ba8;
+      --border: #313244;
+    }
+
+    [data-theme="oled"] {
+      --bg-color: #000000;
+      --box-bg: #0a0a0a;
+      --text-main: #ffffff;
+      --text-dim: #888888;
+      --accent: #ff4444;
+      --border: #333333;
+    }
+
+    [data-theme="sepia"] {
+      --bg-color: #f4ecd8;
+      --box-bg: #faeed9;
+      --text-main: #433422;
+      --text-dim: #7a6b58;
+      --accent: #d94a38;
+      --border: #d2c5b3;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Reading Box */
+    .reader-box {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 180px;
+      background: var(--box-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      overflow: hidden;
+      cursor: pointer; /* Suggests it can be clicked */
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .reader-box:hover {
+      border-color: var(--text-dim);
+    }
+
+    /* Target guide ticks */
+    .reader-box::before, .reader-box::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 2px;
+      height: 18px;
+      background-color: var(--accent);
+      transform: translateX(-50%);
+      opacity: 0.7;
+    }
+    .reader-box::before { top: 15px; }
+    .reader-box::after { bottom: 15px; }
+
+    /* Progress Bar */
+    .progress-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--border);
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: var(--accent);
+      transition: width 0.1s linear;
+    }
+
+    /* Typography */
+    .word-container {
+      display: flex;
+      width: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 44px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .part-left {
+      flex: 1;
+      text-align: right;
+      color: var(--text-main);
+      white-space: pre;
+    }
+
+    .part-orp {
+      color: var(--accent);
+      white-space: pre;
+    }
+
+    .part-right {
+      flex: 1;
+      text-align: left;
+      color: var(--text-main);
+      white-space: pre;
+    }
+
+    /* Controls Panel */
+    .controls {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 320px;
+      background: var(--box-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-main);
+      padding: 12px;
+      font-size: 16px;
+      resize: vertical;
+      box-sizing: border-box;
+      line-height: 1.5;
+    }
+
+    textarea:focus {
+      outline: 2px solid var(--text-dim);
+    }
+
+    .settings-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--box-bg);
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .control-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    label { font-size: 14px; font-weight: 600; }
+    
+    select {
+      background: var(--bg-color);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .instructions {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-top: 10px;
+    }
+
+    kbd {
+      background: var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="reader-box" id="reader-box" title="Click to Play/Pause">
+    <div class="word-container">
+      <div class="part-left" id="left"></div>
+      <div class="part-orp" id="orp">Focus</div>
+      <div class="part-right" id="right"></div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progress"></div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <textarea id="text-input" placeholder="Paste your article here...">This is an upgraded reading experience for the neurodivergent brain. 
+
+Notice how the pacing changes based on punctuation? It slows down slightly at commas, and even more at periods. This helps your working memory chunk information into sentences. 
+
+If your focus drifts, simply hit the spacebar. When you pause, the app automatically rewinds three words so you can catch your context before continuing!</textarea>
+    
+    <div class="settings-row">
+      <div class="control-group">
+        <label for="wpm">Speed: <span id="wpm-display">400</span> WPM</label>
+        <input type="range" id="wpm" min="150" max="900" step="25" value="400">
+      </div>
+      
+      <div class="control-group">
+        <label for="theme-select">Theme:</label>
+        <select id="theme-select">
+          <option value="soft">Soft Dark</option>
+          <option value="oled">OLED Black</option>
+          <option value="sepia">Warm Sepia</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="instructions">
+      <kbd>Space</kbd> or <b>Click box</b> to Play/Pause &nbsp;|&nbsp; 
+      <kbd>←</kbd> <kbd>→</kbd> to rewind/skip &nbsp;|&nbsp;
+      <i>Auto-rewinds 3 words on pause</i>
+    </div>
+  </div>
+
+  <script>
+    let words = [];
+    let currentIndex = 0;
+    let timer = null;
+    let isPlaying = false;
+
+    const leftEl = document.getElementById('left');
+    const orpEl = document.getElementById('orp');
+    const rightEl = document.getElementById('right');
+    const textInput = document.getElementById('text-input');
+    const wpmInput = document.getElementById('wpm');
+    const wpmDisplay = document.getElementById('wpm-display');
+    const readerBox = document.getElementById('reader-box');
+    const progressBar = document.getElementById('progress');
+    const themeSelect = document.getElementById('theme-select');
+
+    // Update WPM display
+    wpmInput.addEventListener('input', () => {
+      wpmDisplay.textContent = wpmInput.value;
+    });
+
+    // Theme switcher
+    themeSelect.addEventListener('change', (e) => {
+      document.documentElement.setAttribute('data-theme', e.target.value);
+    });
+
+    // Calculate ORP (Optimal Recognition Point)
+    function getOrpIndex(word) {
+      const len = word.length;
+      if (len <= 1) return 0;
+      if (len <= 5) return 1;
+      if (len <= 9) return 2;
+      if (len <= 13) return 3;
+      return 4;
+    }
+
+    // Render the word to the screen
+    function renderWord(word) {
+      if (!word) return;
+      const orpIdx = getOrpIndex(word);
+      leftEl.textContent = word.slice(0, orpIdx);
+      orpEl.textContent = word.charAt(orpIdx);
+      rightEl.textContent = word.slice(orpIdx + 1);
+
+      // Update progress bar
+      if (words.length > 0) {
+        const percent = (currentIndex / words.length) * 100;
+        progressBar.style.width = percent + '%';
+      }
+    }
+
+    // Main loop
+    function tick() {
+      if (currentIndex >= words.length) {
+        pause();
+        currentIndex = 0;
+        progressBar.style.width = '100%';
+        leftEl.textContent = '';
+        orpEl.textContent = 'Done';
+        rightEl.textContent = '';
+        return;
+      }
+
+      const word = words[currentIndex];
+      renderWord(word);
+
+      // Smart Pacing: Calculate delay based on WPM and punctuation
+      let delay = 60000 / parseInt(wpmInput.value);
+      
+      // Pause slightly longer for commas, semicolons, dashes
+      if (/[,;\-—]$/.test(word)) {
+        delay *= 1.8; 
+      }
+      // Pause significantly longer for end-of-sentence punctuation
+      else if (/[.!?:](\"|\')?$/.test(word)) {
+        delay *= 2.8; 
+      }
+      // Give a tiny bit more time for very long words
+      else if (word.length > 8) {
+        delay *= 1.2;
+      }
+
+      currentIndex++;
+      timer = setTimeout(tick, delay);
+    }
+
+    function togglePlay() {
+      if (isPlaying) {
+        pause();
+      } else {
+        play();
+      }
+    }
+
+    function play() {
+      // Load new text if starting from scratch
+      if (currentIndex === 0 || words.length === 0) {
+        // split by whitespace, filter out empty strings
+        words = textInput.value.trim().split(/\s+/).filter(w => w.length > 0);
+        if (words.length === 0) return;
+      }
+      if (currentIndex >= words.length) currentIndex = 0;
+      
+      isPlaying = true;
+      readerBox.style.borderColor = "var(--accent)"; // visual cue that it's active
+      tick();
+    }
+
+    function pause() {
+      isPlaying = false;
+      if (timer) clearTimeout(timer);
+      readerBox.style.borderColor = "var(--border)";
+      
+      // ADHD Context-Recovery Rewind: Step back 3 words when pausing
+      if (currentIndex > 0) {
+        currentIndex = Math.max(0, currentIndex - 3);
+        renderWord(words[currentIndex]); // Show the word we rewound to
+      }
+    }
+
+    function skip(amount) {
+      if (words.length === 0) return;
+      currentIndex = Math.max(0, Math.min(words.length - 1, currentIndex + amount));
+      renderWord(words[currentIndex]);
+    }
+
+    // --- Event Listeners ---
+
+    // Click reading box to play/pause
+    readerBox.addEventListener('click', (e) => {
+      // Don't trigger if they are selecting text (optional safety)
+      if(window.getSelection().toString().length === 0) {
+        togglePlay();
+      }
+    });
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      // Don't trigger shortcuts if typing inside the textarea
+      if (document.activeElement === textInput) return;
+
+      if (e.code === 'Space') {
+        e.preventDefault(); // Stop page from scrolling
+        togglePlay();
+      } else if (e.code === 'ArrowLeft') {
+        e.preventDefault();
+        pause();
+        skip(-5); // Skip back 5 words
+      } else if (e.code === 'ArrowRight') {
+        e.preventDefault();
+        pause();
+        skip(5);  // Skip forward 5 words
+      }
+    });
+
+    // Initial render setup
+    leftEl.textContent = '';
+    orpEl.textContent = 'Ready';
+    rightEl.textContent = '';
+
+  </script>
+</body>
+</html>
